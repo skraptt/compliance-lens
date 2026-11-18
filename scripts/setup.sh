@@ -20,7 +20,7 @@ echo "Compliance Lens set-up"
 command -v python3 >/dev/null || fail "Python 3 not found. Install it from https://www.python.org/downloads/"
 python3 -c 'import sys; sys.exit(sys.version_info < (3, 10))' || fail "Python 3.10 or newer is needed (found $(python3 -V))."
 [ -d .venv ] || python3 -m venv --system-site-packages .venv
-.venv/bin/python -m pip install --quiet -r requirements.txt
+.venv/bin/python -m pip install --quiet --disable-pip-version-check -r requirements.txt
 ok "Python packages installed in .venv"
 
 # 2. HTTPS certificate for localhost
@@ -36,7 +36,7 @@ fi
 
 # 3. Sideload into Word for Mac, if installed
 WEF="$HOME/Library/Containers/com.microsoft.Word/Data/Documents/wef"
-if [ "$(uname)" = "Darwin" ] && [ -d "$HOME/Library/Containers/com.microsoft.Word" ]; then
+if [ "$(uname)" = "Darwin" ] && { [ -d "/Applications/Microsoft Word.app" ] || [ -d "$HOME/Applications/Microsoft Word.app" ]; }; then
   mkdir -p "$WEF" && cp addin/manifest.xml "$WEF/"
   ok "Add-in registered with Word for Mac (restart Word to see it)"
 else
