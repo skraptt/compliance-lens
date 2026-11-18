@@ -18,11 +18,15 @@ For each check, decide what the document says and give one status:
 
 Rules:
 - Judge only the text of this document. Do not assume that other documents cover the point.
-- A rule that is stricter than required counts as covered (for example a shorter deadline).
+- Judge each check only on what that check asks. Do not lower a check's status because of a problem that belongs to a different check in the list; that problem is reported under its own check.
+- A rule that is stricter than required counts as covered (for example a shorter deadline, such as T+1 where T+2 is required).
+- Examples in a check ("e.g.", "such as") illustrate it; they are not all required. A named team, function or role counts as saying who is responsible.
+- Use partial only when an element the check itself requires is absent or unclear. Detail you would like to see but the check does not ask for is not a reason for partial.
+- Use contradicts only when the document states something that conflicts with what this check requires. Silence is missing, not contradicts.
 - Read the requirement behind each check: a document can contradict the requirement even when it does not use the same words.
 - Cite the ids of the paragraphs you rely on (e.g. "P12"). For missing, cite none.
 - evidence: a short verbatim quote (at most 30 words) from the cited paragraph; empty for missing.
-- explanation: at most 40 words, in English, saying what is present or absent and why it matters; for contradicts, state the conflict precisely.
+- explanation: at most 40 words, in English, saying what is present or absent and why it matters; for contradicts, state the conflict precisely. Write the explanation first, then choose the status that it supports.
 - Return every check exactly once, using its key."""
 
 TOOL = {
@@ -35,14 +39,15 @@ TOOL = {
                 "type": "array",
                 "items": {
                     "type": "object",
+                    # Reasoning fields come before the status, so the status follows from them.
                     "properties": {
                         "check": {"type": "string", "description": "check key, e.g. REMIT-DIS-04.c4"},
-                        "status": {"type": "string", "enum": list(STATUSES)},
                         "paragraphs": {"type": "array", "items": {"type": "string"}},
                         "evidence": {"type": "string"},
                         "explanation": {"type": "string"},
+                        "status": {"type": "string", "enum": list(STATUSES)},
                     },
-                    "required": ["check", "status", "paragraphs", "evidence", "explanation"],
+                    "required": ["check", "paragraphs", "evidence", "explanation", "status"],
                 },
             }
         },
