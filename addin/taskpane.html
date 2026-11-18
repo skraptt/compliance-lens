@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Compliance Lens</title>
+  <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+  <link rel="stylesheet" href="taskpane.css">
+</head>
+<body>
+  <header>
+    <div class="brand"><span class="mark" aria-hidden="true"></span>Compliance Lens</div>
+    <div id="status" class="status" role="status">Starting…</div>
+  </header>
+
+  <nav class="tabs" role="tablist">
+    <button role="tab" data-tab="selection" aria-selected="true">Selection</button>
+    <button role="tab" data-tab="document" aria-selected="false">Document</button>
+    <button role="tab" data-tab="setup" aria-selected="false">Setup</button>
+  </nav>
+
+  <main>
+    <!-- Selection -->
+    <section id="tab-selection" role="tabpanel">
+      <div class="row">
+        <button id="analyse-selection" class="primary">Analyse selection</button>
+        <label class="toggle"><input type="checkbox" id="auto"> Auto</label>
+      </div>
+      <p class="hint" id="selection-hint">Select a paragraph in the document. With <b>Auto</b> on, each new selection is analysed after a short pause.</p>
+      <div id="selection-results" aria-live="polite"></div>
+    </section>
+
+    <!-- Document -->
+    <section id="tab-document" role="tabpanel" hidden>
+      <div class="row">
+        <button id="scan" class="primary">Scan document</button>
+        <button id="clear" class="secondary">Clear highlights</button>
+      </div>
+      <div class="options">
+        <label><input type="checkbox" id="opt-highlight" checked> Highlight paragraphs</label>
+        <label><input type="checkbox" id="opt-comments"> Add comments</label>
+      </div>
+      <div id="summary"></div>
+      <div id="document-results" aria-live="polite"></div>
+    </section>
+
+    <!-- Setup -->
+    <section id="tab-setup" role="tabpanel" hidden>
+      <h2>This document</h2>
+      <p class="hint">What kind of procedure is this? Checks run on the document types you tick. Saved in the document.</p>
+      <div id="doc-types" class="checks"></div>
+
+      <h2>Company</h2>
+      <label class="field">Name <input type="text" id="company" placeholder="e.g. Nordwind Energy Trading GmbH"></label>
+      <p class="hint">Which statements are true for the company? They decide which REMIT obligations apply. Saved on this computer.</p>
+      <div id="profile" class="checks"></div>
+
+      <h2>Assessment date</h2>
+      <label class="field">As of <input type="date" id="as-of"></label>
+      <p class="hint">Obligations not yet in force on this date are listed separately.</p>
+      <p class="small" id="meta"></p>
+    </section>
+  </main>
+
+  <footer class="small">First-pass review, not legal advice. Findings must be checked by a lawyer.</footer>
+
+  <script src="logic.js"></script>
+  <script src="taskpane.js"></script>
+</body>
+</html>

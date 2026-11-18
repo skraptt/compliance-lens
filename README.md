@@ -26,6 +26,10 @@ open runs/nordwind/report.md
 python -m lens eval runs/nordwind/findings.json demo/nordwind/answer_key.yaml
 ```
 
+<p><img src="docs/pane-selection.png" width="260" alt="Selection analysis"> <img src="docs/pane-document.png" width="260" alt="Document scan"></p>
+
+**Word add-in:** run `python -m lens serve` and sideload `addin/manifest.xml`. You can then analyse a selected passage, or scan the whole document with highlights and comments. Set-up for Mac is in [addin/README.md](addin/README.md).
+
 Offline options: `--dry-run` prints the prompts; `--mock-key demo/nordwind/answer_key.yaml` runs the pipeline with a fake model; `--replay responses.json` replays saved model output. Tests: `python -m unittest discover tests`.
 
 ## Demo: Nordwind Energy Trading GmbH (fictional)
@@ -37,7 +41,8 @@ Offline options: `--dry-run` prints the prompts; `--mock-key demo/nordwind/answe
 ```
 obligations/remit.yaml        checklist (v0.3) · CHANGELOG.md · REMIT-obligations-review.md
 examples/                     a sample report and findings (blind run on the Nordwind demo)
-lens/                         engine: checklist selection, document reader, Claude call, report, eval
+lens/                         engine: checklist selection, document reader, Claude call, report, eval, local server
+addin/                        Word add-in: manifest, task pane, icons
 demo/nordwind/                profile, documents, answer key
 reviews/                      independent legal reviews of the checklist
 scripts/                      checklist checker, md -> docx
@@ -50,4 +55,4 @@ Code is licensed under [Apache-2.0](LICENSE). The checklist, demo documents, ans
 
 ## Roadmap
 
-1. ~~REMIT checklist~~ · 2. ~~engine + demo~~ (real-model evaluation pending) · 3. Word add-in: side panel, analyse selection · 4. whole-document scan with highlights and comments · 5. MAR and enforcement cases
+1. ~~REMIT checklist~~ · 2. ~~engine + demo~~ (real-model evaluation pending) · 3. ~~Word add-in: side panel, analyse selection~~ · 4. ~~whole-document scan with highlights and comments~~ (both tested in headless Chrome; first run in Word pending) · 5. MAR and enforcement cases

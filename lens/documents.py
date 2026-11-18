@@ -25,7 +25,7 @@ class Paragraph:
         return self.section or self.pid
 
 
-def _from_lines(lines: list[tuple[str, bool]]) -> list[Paragraph]:
+def from_texts(lines: list[tuple[str, bool]]) -> list[Paragraph]:
     out = []
     for text, heading in lines:
         text = " ".join(text.split())
@@ -42,13 +42,13 @@ def load(path: str | Path) -> list[Paragraph]:
         import docx  # python-docx
 
         d = docx.Document(str(path))
-        return _from_lines([(p.text, p.style.name.lower().startswith(("heading", "title"))) for p in d.paragraphs])
+        return from_texts([(p.text, p.style.name.lower().startswith(("heading", "title"))) for p in d.paragraphs])
     if path.suffix.lower() in (".md", ".txt"):
         lines = []
         for raw in path.read_text(encoding="utf-8").splitlines():
             heading = raw.startswith("#")
             lines.append((raw.lstrip("#").strip(), heading))
-        return _from_lines(lines)
+        return from_texts(lines)
     raise ValueError(f"unsupported file type: {path.suffix}")
 
 

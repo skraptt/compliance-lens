@@ -133,5 +133,47 @@ def analyse(doc_name: str, company: str, paras: list[documents.Paragraph], check
     return findings
 
 
+SYSTEM_SELECTION = """You are an experienced EU energy-regulation lawyer. A user has selected a passage in their company's internal compliance procedure. Your job is to tell them which checks of a REMIT checklist this passage touches and how well it meets them.
+
+Return a finding only for checks the passage actually addresses, directly or in a way that conflicts with the requirement behind the check. Ignore checks the passage does not touch; do not report them as missing. If the passage touches none, return an empty list.
+
+Status for each finding:
+- covered: the passage clearly states what the check asks for.
+- partial: the passage addresses the point but incompletely, vaguely, or only by implication.
+- contradicts: the passage states something inconsistent with the check or with the requirement behind it (e.g. a longer deadline, a narrower scope, an excluded group, a shorter retention period).
+
+Rules: judge only the passage. A rule stricter than required counts as covered. evidence: a short verbatim quote (at most 30 words) from the passage. explanation: at most 40 words, in English; for contradicts, state the conflict precisely. Use the check keys exactly as given. Leave paragraphs empty."""
+
+
+def analyse_selection(text: str, company: str, checks: list[Check], *, model: str = llm.DEFAULT_MODEL,
+                      transport=None) -> list[Finding]:
+    """Findings for the checks that a selected passage touches (no 'missing' results).
+
+    The check list goes in the cached block, so repeated selections in the same document
+    only pay for the passage.
+    """
+    to_run = [c for c in checks if c.state == "run"]
+    if not to_run or not text.strip():
+        return []
+    by_key = {c.key: c for c in to_run}
+    out = llm.call_tool(
+        system=SYSTEM_SELECTION,
+        cached_context=f"Company: {company}\n\n{_prompt(to_run)}",
+        prompt=f"Selected passage:\n<passage>\n{text.strip()}\n</passage>",
+        tool=TOOL, model=model, transport=transport, max_tokens=4000,
+    )
+    findings, seen = [], set()
+    for r in out.get("findings", []):
+        c = by_key.get(r.get("check"))
+        if not c or c.key in seen or r.get("status") not in ("covered", "partial", "contradicts"):
+            continue
+        seen.add(c.key)
+        findings.append(Finding(c.key, r["status"], c.basis, c.primary, c.item_id, c.item_title, c.text,
+                                c.legal_basis, [], [], r.get("evidence", ""), r.get("explanation", "")))
+    order = {"contradicts": 0, "partial": 1, "covered": 2}
+    findings.sort(key=lambda f: (order[f.status], {"law": 0, "guidance": 1}.get(f.basis, 2)))
+    return findings
+
+
 def to_json(findings: list[Finding]) -> list[dict]:
     return [asdict(f) for f in findings]

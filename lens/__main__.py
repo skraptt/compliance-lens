@@ -4,6 +4,7 @@
   python -m lens analyze demo/nordwind/profile.yaml --dry-run          # print the prompts, no API call
   python -m lens analyze demo/nordwind/profile.yaml --mock-key demo/nordwind/answer_key.yaml   # offline pipeline test
   python -m lens eval runs/nordwind/findings.json demo/nordwind/answer_key.yaml
+  python -m lens serve                                                 # local server for the Word add-in
 
 Needs ANTHROPIC_API_KEY for real runs.
 """
@@ -106,6 +107,14 @@ def main(argv=None) -> int:
     an.add_argument("--replay", help="JSON file with saved model findings per document")
     an.add_argument("--replay-label", help="model name to show in the report for a replayed run")
     an.set_defaults(func=cmd_analyze)
+    sv = sub.add_parser("serve", help="run the local server for the Word add-in")
+    sv.add_argument("--port", type=int, default=3000)
+    sv.add_argument("--checklist", default=str(ROOT / "obligations/remit.yaml"))
+    sv.add_argument("--model", default=llm.DEFAULT_MODEL)
+    sv.add_argument("--cert", help="TLS certificate (default ~/.office-addin-dev-certs/localhost.crt)")
+    sv.add_argument("--key", help="TLS key (default ~/.office-addin-dev-certs/localhost.key)")
+    sv.add_argument("--no-tls", action="store_true", help="plain HTTP (API tests only; Word needs HTTPS)")
+    sv.set_defaults(func=lambda a: __import__("lens.server", fromlist=["main"]).main(a))
     ev = sub.add_parser("eval", help="score a run against an answer key")
     ev.add_argument("findings")
     ev.add_argument("key")
