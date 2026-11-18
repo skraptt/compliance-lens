@@ -315,6 +315,7 @@
       var picked = Array.prototype.map.call(document.querySelectorAll("[data-doctype]:checked"), function (el) { return el.dataset.doctype; });
       docSetting("cl.docTypes", picked);
       state.selectionCache = {};
+      if (picked.length && !state.busy) setStatus("Ready");
     });
     $("profile").addEventListener("change", function () {
       var p = {};
