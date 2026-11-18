@@ -1,0 +1,2977 @@
+{
+  "company": "Nordwind Energy Trading GmbH",
+  "checklist_version": "0.3.0",
+  "as_of": "2026-11-18",
+  "model": "claude-sonnet-5-5 via Claude Code",
+  "documents": [
+    {
+      "file": "inside-information-policy.docx",
+      "types": [
+        "IIP"
+      ],
+      "findings": [
+        {
+          "check": "REMIT-REG-02.c1",
+          "status": "missing",
+          "basis": "law",
+          "primary": false,
+          "item_id": "REMIT-REG-02",
+          "item_title": "Keep registration data up to date",
+          "check_text": "Requires any change to the information in the registration form (e.g. management, ownership, place of publication of inside information) to be communicated to the NRA.",
+          "legal_basis": [
+            "Article 9(5) REMIT"
+          ],
+          "paragraphs": [],
+          "sections": [],
+          "evidence": "",
+          "explanation": "The document does not address notifying the NRA of changes to registration form information."
+        },
+        {
+          "check": "REMIT-REG-02.c2",
+          "status": "missing",
+          "basis": "law",
+          "primary": false,
+          "item_id": "REMIT-REG-02",
+          "item_title": "Keep registration data up to date",
+          "check_text": "Requires changes to be notified to the NRA promptly.",
+          "legal_basis": [
+            "Article 9(5) REMIT"
+          ],
+          "paragraphs": [],
+          "sections": [],
+          "evidence": "",
+          "explanation": "No requirement to notify registration changes to the NRA promptly."
+        },
+        {
+          "check": "REMIT-REG-02.c3",
+          "status": "missing",
+          "basis": "good_practice",
+          "primary": false,
+          "item_id": "REMIT-REG-02",
+          "item_title": "Keep registration data up to date",
+          "check_text": "Lists the internal events that trigger a registration update.",
+          "legal_basis": [
+            "Article 9(5) REMIT"
+          ],
+          "paragraphs": [],
+          "sections": [],
+          "evidence": "",
+          "explanation": "No list of internal events triggering a registration update."
+        },
+        {
+          "check": "REMIT-REG-02.c4",
+          "status": "missing",
+          "basis": "good_practice",
+          "primary": false,
+          "item_id": "REMIT-REG-02",
+          "item_title": "Keep registration data up to date",
+          "check_text": "Sets an internal time limit (e.g. number of working days) for notifying registration changes.",
+          "legal_basis": [
+            "Article 9(5) REMIT"
+          ],
+          "paragraphs": [],
+          "sections": [],
+          "evidence": "",
+          "explanation": "No internal time limit for notifying registration changes."
+        },
+        {
+          "check": "REMIT-REG-02.c5",
+          "status": "missing",
+          "basis": "good_practice",
+          "primary": false,
+          "item_id": "REMIT-REG-02",
+          "item_title": "Keep registration data up to date",
+          "check_text": "Names the role responsible for submitting registration changes.",
+          "legal_basis": [
+            "Article 9(5) REMIT"
+          ],
+          "paragraphs": [],
+          "sections": [],
+          "evidence": "",
+          "explanation": "No role is named for submitting registration changes."
+        },
+        {
+          "check": "REMIT-REG-02.c6",
+          "status": "missing",
+          "basis": "good_practice",
+          "primary": false,
+          "item_id": "REMIT-REG-02",
+          "item_title": "Keep registration data up to date",
+          "check_text": "Specifies a review frequency for registration data (e.g. annual).",
+          "legal_basis": [
+            "Article 9(5) REMIT"
+          ],
+          "paragraphs": [],
+          "sections": [],
+          "evidence": "",
+          "explanation": "No review frequency for registration data. The two-year review in 6.2 concerns the policy itself."
+        },
+        {
+          "check": "REMIT-REP-05.c1",
+          "status": "partial",
+          "basis": "law",
+          "primary": true,
+          "item_id": "REMIT-REP-05",
+          "item_title": "Provide fundamental data and disclosed inside information to ACER",
+          "check_text": "States how fundamental data and disclosed inside information on the company's facilities reach ACER (e.g. via the IIP's reporting).",
+          "legal_basis": [
+            "Article 8(5) REMIT",
+            "Article 8(6) REMIT",
+            "Articles 11-12 REMIT IR 2026"
+          ],
+          "paragraphs": [
+            "P23"
+          ],
+          "sections": [
+            "4.6"
+          ],
+          "evidence": "The EEX Transparency Platform forwards our published Urgent Market Messages to ACER.",
+          "explanation": "States that messages reach ACER via the EEX platform. Nothing covers fundamental data on facilities, and the route is described only for disclosed inside information. The ENTSO-E point in P22 wrongly treats it as a substitute."
+        },
+        {
+          "check": "REMIT-INS-01.c1",
+          "status": "covered",
+          "basis": "law",
+          "primary": true,
+          "item_id": "REMIT-INS-01",
+          "item_title": "Prevent trading on inside information",
+          "check_text": "Defines inside information using the REMIT criteria (precise, non-public, relating to wholesale energy products, likely to significantly affect prices).",
+          "legal_basis": [
+            "Article 2(1) REMIT",
+            "Article 3(1) REMIT",
+            "Article 3(2) REMIT",
+            "Article 3(5) REMIT"
+          ],
+          "paragraphs": [
+            "P8"
+          ],
+          "sections": [
+            "2.1"
+          ],
+          "evidence": "information of a precise nature which has not been made public, which relates directly or indirectly to one or more wholesale energy products",
+          "explanation": "The definition contains all four REMIT criteria: precise, non-public, relating to wholesale energy products, and likely to significantly affect prices."
+        },
+        {
+          "check": "REMIT-INS-01.c2",
+          "status": "covered",
+          "basis": "law",
+          "primary": true,
+          "item_id": "REMIT-INS-01",
+          "item_title": "Prevent trading on inside information",
+          "check_text": "Prohibits trading, recommending and disclosure outside the normal course of duties while holding inside information.",
+          "legal_basis": [
+            "Article 2(1) REMIT",
+            "Article 3(1) REMIT",
+            "Article 3(2) REMIT",
+            "Article 3(5) REMIT"
+          ],
+          "paragraphs": [
+            "P11",
+            "P12"
+          ],
+          "sections": [
+            "3.1",
+            "3.2"
+          ],
+          "evidence": "must not acquire or dispose of wholesale energy products ... and must not recommend or induce another person to do so.",
+          "explanation": "Prohibits trading and recommending. Disclosure is restricted only by the need-to-know rule in 3.2, with no express prohibition on disclosure outside the normal course of duties."
+        },
+        {
+          "check": "REMIT-INS-01.c3",
+          "status": "missing",
+          "basis": "law",
+          "primary": true,
+          "item_id": "REMIT-INS-01",
+          "item_title": "Prevent trading on inside information",
+          "check_text": "Covers cancelling or amending orders placed before the information was received.",
+          "legal_basis": [
+            "Article 2(1) REMIT",
+            "Article 3(1) REMIT",
+            "Article 3(2) REMIT",
+            "Article 3(5) REMIT"
+          ],
+          "paragraphs": [
+            "P11"
+          ],
+          "sections": [
+            "3.1"
+          ],
+          "evidence": "must not acquire or dispose of wholesale energy products to which the information relates",
+          "explanation": "The ban covers only acquiring and disposing. Cancelling or amending existing orders is not mentioned."
+        },
+        {
+          "check": "REMIT-INS-01.c4",
+          "status": "covered",
+          "basis": "law",
+          "primary": true,
+          "item_id": "REMIT-INS-01",
+          "item_title": "Prevent trading on inside information",
+          "check_text": "States that inside information may be shared only on a need-to-know basis in the normal course of duties.",
+          "legal_basis": [
+            "Article 2(1) REMIT",
+            "Article 3(1) REMIT",
+            "Article 3(2) REMIT",
+            "Article 3(5) REMIT"
+          ],
+          "paragraphs": [
+            "P12"
+          ],
+          "sections": [
+            "3.2"
+          ],
+          "evidence": "Inside information may only be shared with colleagues who need it to perform their duties (need-to-know).",
+          "explanation": "Clear need-to-know restriction tied to performing duties."
+        },
+        {
+          "check": "REMIT-INS-01.c5",
+          "status": "contradicts",
+          "basis": "law",
+          "primary": true,
+          "item_id": "REMIT-INS-01",
+          "item_title": "Prevent trading on inside information",
+          "check_text": "States that inside information about other companies' facilities must not be traded on, even though the company has no duty to publish it.",
+          "legal_basis": [
+            "Article 2(1) REMIT",
+            "Article 3(1) REMIT",
+            "Article 3(2) REMIT",
+            "Article 3(5) REMIT"
+          ],
+          "paragraphs": [
+            "P6"
+          ],
+          "sections": [
+            "1.3"
+          ],
+          "evidence": "Kraftwerk Elbufer is owned by our sister company Nordwind Erzeugung GmbH and is therefore outside the scope of this policy.",
+          "explanation": "The policy excludes a sister company's plant from its scope. It does not say that inside information about other companies' facilities must not be traded on."
+        },
+        {
+          "check": "REMIT-INS-01.c6",
+          "status": "covered",
+          "basis": "good_practice",
+          "primary": true,
+          "item_id": "REMIT-INS-01",
+          "item_title": "Prevent trading on inside information",
+          "check_text": "Gives at least one example of inside information relevant to the company's assets or markets.",
+          "legal_basis": [
+            "Article 2(1) REMIT",
+            "Article 3(1) REMIT",
+            "Article 3(2) REMIT",
+            "Article 3(5) REMIT"
+          ],
+          "paragraphs": [
+            "P9"
+          ],
+          "sections": [
+            "2.2"
+          ],
+          "evidence": "any planned or unplanned change of 100 MW or more in the available capacity of a power plant is presumed to be inside information.",
+          "explanation": "Gives a power plant capacity change as an example of inside information."
+        },
+        {
+          "check": "REMIT-INS-01.c7",
+          "status": "covered",
+          "basis": "good_practice",
+          "primary": true,
+          "item_id": "REMIT-INS-01",
+          "item_title": "Prevent trading on inside information",
+          "check_text": "Requires staff who receive possible inside information to escalate it to a named function.",
+          "legal_basis": [
+            "Article 2(1) REMIT",
+            "Article 3(1) REMIT",
+            "Article 3(2) REMIT",
+            "Article 3(5) REMIT"
+          ],
+          "paragraphs": [
+            "P13"
+          ],
+          "sections": [
+            "3.3"
+          ],
+          "evidence": "Employees who believe they have received inside information must inform Compliance immediately.",
+          "explanation": "Staff must escalate to Compliance, a named function."
+        },
+        {
+          "check": "REMIT-INS-03.c1",
+          "status": "missing",
+          "basis": "good_practice",
+          "primary": false,
+          "item_id": "REMIT-INS-03",
+          "item_title": "Document reliance on other insider-trading exemptions",
+          "check_text": "States which insider-trading exemptions the company relies on, if any.",
+          "legal_basis": [
+            "Article 3(3) REMIT",
+            "Article 3(4)(a) REMIT",
+            "Article 3(4)(c) REMIT"
+          ],
+          "paragraphs": [],
+          "sections": [],
+          "evidence": "",
+          "explanation": "The document does not mention any insider-trading exemptions."
+        },
+        {
+          "check": "REMIT-INS-03.c2",
+          "status": "missing",
+          "basis": "good_practice",
+          "primary": false,
+          "item_id": "REMIT-INS-03",
+          "item_title": "Document reliance on other insider-trading exemptions",
+          "check_text": "Requires evidence that the agreement or order behind an exempt transaction was concluded or placed before the inside information was received.",
+          "legal_basis": [
+            "Article 3(3) REMIT",
+            "Article 3(4)(a) REMIT",
+            "Article 3(4)(c) REMIT"
+          ],
+          "paragraphs": [],
+          "sections": [],
+          "evidence": "",
+          "explanation": "No requirement for evidence that an agreement or order predates receipt of the inside information."
+        },
+        {
+          "check": "REMIT-DIS-01.c1",
+          "status": "partial",
+          "basis": "law",
+          "primary": true,
+          "item_id": "REMIT-DIS-01",
+          "item_title": "Disclose inside information through an IIP",
+          "check_text": "Names the IIP(s) used.",
+          "legal_basis": [
+            "Article 4(1) REMIT"
+          ],
+          "paragraphs": [
+            "P18"
+          ],
+          "sections": [
+            "4.1"
+          ],
+          "evidence": "published on our company website www.nordwind-trading.example and, where possible, also on the EEX Transparency Platform.",
+          "explanation": "The company website is the primary channel. EEX is optional ('where possible'), and the document does not designate an IIP as the required route."
+        },
+        {
+          "check": "REMIT-DIS-01.c2",
+          "status": "contradicts",
+          "basis": "law",
+          "primary": true,
+          "item_id": "REMIT-DIS-01",
+          "item_title": "Disclose inside information through an IIP",
+          "check_text": "States who discloses inside information on facilities of the parent or related undertakings.",
+          "legal_basis": [
+            "Article 4(1) REMIT"
+          ],
+          "paragraphs": [
+            "P6"
+          ],
+          "sections": [
+            "1.3"
+          ],
+          "evidence": "Only information about facilities owned by Nordwind Trading itself needs to be published under this policy.",
+          "explanation": "The policy limits disclosure to facilities owned by Nordwind Trading and excludes sister-company plants. It does not say who discloses for parent or related undertakings."
+        },
+        {
+          "check": "REMIT-DIS-01.c3",
+          "status": "contradicts",
+          "basis": "guidance",
+          "primary": true,
+          "item_id": "REMIT-DIS-01",
+          "item_title": "Disclose inside information through an IIP",
+          "check_text": "States that any other channel (e.g. website) is additional only and must carry identical content.",
+          "legal_basis": [
+            "Article 4(1) REMIT"
+          ],
+          "paragraphs": [
+            "P18"
+          ],
+          "sections": [
+            "4.1"
+          ],
+          "evidence": "published on our company website ... and, where possible, also on the EEX Transparency Platform.",
+          "explanation": "The website is treated as the primary channel and the IIP as optional, which reverses the rule. There is no identical-content requirement."
+        },
+        {
+          "check": "REMIT-DIS-01.c4",
+          "status": "covered",
+          "basis": "good_practice",
+          "primary": true,
+          "item_id": "REMIT-DIS-01",
+          "item_title": "Disclose inside information through an IIP",
+          "check_text": "Names who assesses whether information is inside information.",
+          "legal_basis": [
+            "Article 4(1) REMIT"
+          ],
+          "paragraphs": [
+            "P9"
+          ],
+          "sections": [
+            "2.2"
+          ],
+          "evidence": "Compliance assesses whether information is inside information using the criteria in paragraph 2.1.",
+          "explanation": "Compliance is named as the assessor."
+        },
+        {
+          "check": "REMIT-DIS-01.c5",
+          "status": "missing",
+          "basis": "good_practice",
+          "primary": true,
+          "item_id": "REMIT-DIS-01",
+          "item_title": "Disclose inside information through an IIP",
+          "check_text": "Names who publishes on the IIP.",
+          "legal_basis": [
+            "Article 4(1) REMIT"
+          ],
+          "paragraphs": [
+            "P18"
+          ],
+          "sections": [
+            "4.1"
+          ],
+          "evidence": "Inside information is published on our company website www.nordwind-trading.example and, where possible, also on the EEX Transparency Platform.",
+          "explanation": "Names the channels but not a person, role or team responsible for publishing. It also treats the website as primary and the IIP as optional, which is not a statement of who publishes."
+        },
+        {
+          "check": "REMIT-DIS-02.c1",
+          "status": "contradicts",
+          "basis": "law",
+          "primary": true,
+          "item_id": "REMIT-DIS-02",
+          "item_title": "Disclose in a timely manner (ACER target - within one hour)",
+          "check_text": "Requires inside information to be published without delay.",
+          "legal_basis": [
+            "Article 4(1) REMIT"
+          ],
+          "paragraphs": [
+            "P19"
+          ],
+          "sections": [
+            "4.2"
+          ],
+          "evidence": "Publication takes place within 24 hours of the information becoming known to Nordwind Trading.",
+          "explanation": "A 24-hour window is not 'without delay' and conflicts with the requirement of timely, as-soon-as-possible disclosure."
+        },
+        {
+          "check": "REMIT-DIS-02.c2",
+          "status": "partial",
+          "basis": "law",
+          "primary": true,
+          "item_id": "REMIT-DIS-02",
+          "item_title": "Disclose in a timely manner (ACER target - within one hour)",
+          "check_text": "Prohibits trading or recommending trading on the information until the UMM is published.",
+          "legal_basis": [
+            "Article 4(1) REMIT"
+          ],
+          "paragraphs": [
+            "P11"
+          ],
+          "sections": [
+            "3.1"
+          ],
+          "evidence": "must not acquire or dispose of wholesale energy products to which the information relates",
+          "explanation": "The general insider-trading ban exists, but it is not tied to the period before the UMM is published. It does not state that trading or recommending is barred until publication."
+        },
+        {
+          "check": "REMIT-DIS-02.c3",
+          "status": "contradicts",
+          "basis": "guidance",
+          "primary": true,
+          "item_id": "REMIT-DIS-02",
+          "item_title": "Disclose in a timely manner (ACER target - within one hour)",
+          "check_text": "Sets a target of publication at the latest within one hour.",
+          "legal_basis": [
+            "Article 4(1) REMIT"
+          ],
+          "paragraphs": [
+            "P19"
+          ],
+          "sections": [
+            "4.2"
+          ],
+          "evidence": "Publication takes place within 24 hours of the information becoming known to Nordwind Trading.",
+          "explanation": "The target is 24 hours, far longer than ACER's one-hour expectation."
+        },
+        {
+          "check": "REMIT-DIS-02.c4",
+          "status": "missing",
+          "basis": "good_practice",
+          "primary": true,
+          "item_id": "REMIT-DIS-02",
+          "item_title": "Disclose in a timely manner (ACER target - within one hour)",
+          "check_text": "Names an on-call or 24/7 arrangement for publishing inside information outside office hours.",
+          "legal_basis": [
+            "Article 4(1) REMIT"
+          ],
+          "paragraphs": [],
+          "sections": [],
+          "evidence": "",
+          "explanation": "No on-call or 24/7 arrangement for publishing outside office hours is mentioned."
+        },
+        {
+          "check": "REMIT-DIS-02.c5",
+          "status": "missing",
+          "basis": "guidance",
+          "primary": true,
+          "item_id": "REMIT-DIS-02",
+          "item_title": "Disclose in a timely manner (ACER target - within one hour)",
+          "check_text": "Requires the publication time to be recorded.",
+          "legal_basis": [
+            "Article 4(1) REMIT"
+          ],
+          "paragraphs": [],
+          "sections": [],
+          "evidence": "",
+          "explanation": "The document does not require the publication time to be recorded. Only the template has a publication date/time field."
+        },
+        {
+          "check": "REMIT-DIS-03.c1",
+          "status": "covered",
+          "basis": "guidance",
+          "primary": true,
+          "item_id": "REMIT-DIS-03",
+          "item_title": "Make disclosures complete, correct and in the standard UMM format",
+          "check_text": "Refers to the UMM fields in Annex VII of the REMIT MoP or provides a template.",
+          "legal_basis": [
+            "Article 4(1) REMIT"
+          ],
+          "paragraphs": [
+            "P20",
+            "P31"
+          ],
+          "sections": [
+            "4.3",
+            "P31"
+          ],
+          "evidence": "template in Annex A, which follows the data fields of Annex VII of the ACER Manual of Procedures on data reporting",
+          "explanation": "The policy provides a UMM template that refers to the Annex VII fields."
+        },
+        {
+          "check": "REMIT-DIS-03.c2",
+          "status": "covered",
+          "basis": "guidance",
+          "primary": true,
+          "item_id": "REMIT-DIS-03",
+          "item_title": "Make disclosures complete, correct and in the standard UMM format",
+          "check_text": "Requires the UMM to be updated when the expected duration or capacity changes.",
+          "legal_basis": [
+            "Article 4(1) REMIT"
+          ],
+          "paragraphs": [
+            "P21"
+          ],
+          "sections": [
+            "4.4"
+          ],
+          "evidence": "When the expected duration or the available capacity changes, the message is updated as soon as the new information is available.",
+          "explanation": "Requires prompt updates when expected duration or capacity changes."
+        },
+        {
+          "check": "REMIT-DIS-03.c3",
+          "status": "missing",
+          "basis": "guidance",
+          "primary": true,
+          "item_id": "REMIT-DIS-03",
+          "item_title": "Make disclosures complete, correct and in the standard UMM format",
+          "check_text": "Excludes executive statements and advertising from the message; any disclaimer is avoided or clearly separated.",
+          "legal_basis": [
+            "Article 4(1) REMIT"
+          ],
+          "paragraphs": [],
+          "sections": [],
+          "evidence": "",
+          "explanation": "Nothing excludes executive statements or advertising from the message, and nothing addresses disclaimers."
+        },
+        {
+          "check": "REMIT-DIS-03.c4",
+          "status": "covered",
+          "basis": "guidance",
+          "primary": true,
+          "item_id": "REMIT-DIS-03",
+          "item_title": "Make disclosures complete, correct and in the standard UMM format",
+          "check_text": "Requires the UMM to be checked against the required fields before publication, and names who checks.",
+          "legal_basis": [
+            "Article 4(1) REMIT"
+          ],
+          "paragraphs": [
+            "P20"
+          ],
+          "sections": [
+            "4.3"
+          ],
+          "evidence": "Each message is checked by a second person from the Market Operations team before publication.",
+          "explanation": "A pre-publication check by a named team is required. It does not say the check is against the required fields, but the template follows Annex VII."
+        },
+        {
+          "check": "REMIT-DIS-04.c1",
+          "status": "covered",
+          "basis": "good_practice",
+          "primary": true,
+          "item_id": "REMIT-DIS-04",
+          "item_title": "Delay disclosure only under the Article 4(2) conditions",
+          "check_text": "Names who may decide to delay disclosure.",
+          "legal_basis": [
+            "Article 4(2) REMIT"
+          ],
+          "paragraphs": [
+            "P25"
+          ],
+          "sections": [
+            "5.1"
+          ],
+          "evidence": "The Head of Trading may decide to delay publication of inside information",
+          "explanation": "Names the Head of Trading as the decision-maker. This is a role-based designation, though it sits with trading, which is a questionable choice."
+        },
+        {
+          "check": "REMIT-DIS-04.c2",
+          "status": "partial",
+          "basis": "law",
+          "primary": true,
+          "item_id": "REMIT-DIS-04",
+          "item_title": "Delay disclosure only under the Article 4(2) conditions",
+          "check_text": "States the legitimate-interest, not-misleading and confidentiality conditions for delay.",
+          "legal_basis": [
+            "Article 4(2) REMIT"
+          ],
+          "paragraphs": [
+            "P25"
+          ],
+          "sections": [
+            "5.1"
+          ],
+          "evidence": "if publication would harm Nordwind Trading's commercial interests",
+          "explanation": "Only a broad commercial-harm test is given. The not-misleading and confidentiality conditions are absent, and commercial harm is wider than the legitimate-interest condition."
+        },
+        {
+          "check": "REMIT-DIS-04.c3",
+          "status": "missing",
+          "basis": "law",
+          "primary": true,
+          "item_id": "REMIT-DIS-04",
+          "item_title": "Delay disclosure only under the Article 4(2) conditions",
+          "check_text": "Prohibits trading decisions based on the delayed information.",
+          "legal_basis": [
+            "Article 4(2) REMIT"
+          ],
+          "paragraphs": [],
+          "sections": [],
+          "evidence": "",
+          "explanation": "The delay section does not prohibit trading decisions based on the delayed information."
+        },
+        {
+          "check": "REMIT-DIS-04.c4",
+          "status": "missing",
+          "basis": "law",
+          "primary": true,
+          "item_id": "REMIT-DIS-04",
+          "item_title": "Delay disclosure only under the Article 4(2) conditions",
+          "check_text": "Requires notification of ACER and the NRA without delay when disclosure is delayed, with a written justification.",
+          "legal_basis": [
+            "Article 4(2) REMIT"
+          ],
+          "paragraphs": [
+            "P26"
+          ],
+          "sections": [
+            "5.2"
+          ],
+          "evidence": "Compliance documents each decision to delay publication, including the reasons.",
+          "explanation": "Internal documentation only. There is no requirement to notify ACER and the NRA without delay."
+        },
+        {
+          "check": "REMIT-DIS-04.c5",
+          "status": "missing",
+          "basis": "guidance",
+          "primary": true,
+          "item_id": "REMIT-DIS-04",
+          "item_title": "Delay disclosure only under the Article 4(2) conditions",
+          "check_text": "Requires disclosure as soon as the legitimate interest ends.",
+          "legal_basis": [
+            "Article 4(2) REMIT"
+          ],
+          "paragraphs": [],
+          "sections": [],
+          "evidence": "",
+          "explanation": "No requirement to publish as soon as the legitimate interest ends."
+        },
+        {
+          "check": "REMIT-DIS-04.c6",
+          "status": "covered",
+          "basis": "good_practice",
+          "primary": true,
+          "item_id": "REMIT-DIS-04",
+          "item_title": "Delay disclosure only under the Article 4(2) conditions",
+          "check_text": "Requires the decision to delay to be documented.",
+          "legal_basis": [
+            "Article 4(2) REMIT"
+          ],
+          "paragraphs": [
+            "P26"
+          ],
+          "sections": [
+            "5.2"
+          ],
+          "evidence": "Compliance documents each decision to delay publication, including the reasons.",
+          "explanation": "Requires each delay decision to be documented with reasons, and names Compliance."
+        },
+        {
+          "check": "REMIT-DIS-04.c7",
+          "status": "missing",
+          "basis": "good_practice",
+          "primary": true,
+          "item_id": "REMIT-DIS-04",
+          "item_title": "Delay disclosure only under the Article 4(2) conditions",
+          "check_text": "Uses ACER's standard notification format (unless the NRA requires another).",
+          "legal_basis": [
+            "Article 4(2) REMIT"
+          ],
+          "paragraphs": [],
+          "sections": [],
+          "evidence": "",
+          "explanation": "No mention of ACER's standard notification format."
+        },
+        {
+          "check": "REMIT-DIS-05.c1",
+          "status": "partial",
+          "basis": "law",
+          "primary": true,
+          "item_id": "REMIT-DIS-05",
+          "item_title": "Handle selective disclosure",
+          "check_text": "Requires that inside information shared externally goes only to recipients with a duty of confidentiality, or is published at the same time.",
+          "legal_basis": [
+            "Article 4(3) REMIT"
+          ],
+          "paragraphs": [
+            "P16"
+          ],
+          "sections": [
+            "3.6"
+          ],
+          "evidence": "Inside information may be shared with external advisers and banks only after they have signed a non-disclosure agreement.",
+          "explanation": "Requires an NDA for advisers and banks. It does not cover all external recipients, nor the alternative of simultaneous publication."
+        },
+        {
+          "check": "REMIT-DIS-05.c2",
+          "status": "missing",
+          "basis": "law",
+          "primary": true,
+          "item_id": "REMIT-DIS-05",
+          "item_title": "Handle selective disclosure",
+          "check_text": "Requires public disclosure as soon as possible after an unintentional disclosure.",
+          "legal_basis": [
+            "Article 4(3) REMIT"
+          ],
+          "paragraphs": [],
+          "sections": [],
+          "evidence": "",
+          "explanation": "No rule on publishing as soon as possible after an unintentional disclosure."
+        },
+        {
+          "check": "REMIT-DIS-05.c3",
+          "status": "covered",
+          "basis": "good_practice",
+          "primary": true,
+          "item_id": "REMIT-DIS-05",
+          "item_title": "Handle selective disclosure",
+          "check_text": "Uses NDAs for external recipients who have no confidentiality duty by law.",
+          "legal_basis": [
+            "Article 4(3) REMIT"
+          ],
+          "paragraphs": [
+            "P16"
+          ],
+          "sections": [
+            "3.6"
+          ],
+          "evidence": "only after they have signed a non-disclosure agreement",
+          "explanation": "External advisers and banks must sign NDAs before receiving inside information."
+        },
+        {
+          "check": "REMIT-DIS-06.c1",
+          "status": "partial",
+          "basis": "guidance",
+          "primary": true,
+          "item_id": "REMIT-DIS-06",
+          "item_title": "Have a fallback if the IIP fails",
+          "check_text": "Describes a backup publication channel that meets the IIP minimum quality requirements, and when to use it.",
+          "legal_basis": [
+            "Article 4(1) REMIT"
+          ],
+          "paragraphs": [
+            "P18"
+          ],
+          "sections": [
+            "4.1"
+          ],
+          "evidence": "published on our company website www.nordwind-trading.example and, where possible, also on the EEX Transparency Platform",
+          "explanation": "Website and EEX are mentioned as channels, but no backup channel for IIP failure, minimum quality requirements or switching trigger is described."
+        },
+        {
+          "check": "REMIT-DIS-06.c2",
+          "status": "partial",
+          "basis": "law",
+          "primary": true,
+          "item_id": "REMIT-DIS-06",
+          "item_title": "Have a fallback if the IIP fails",
+          "check_text": "States that trading on the information remains prohibited until it is public.",
+          "legal_basis": [
+            "Article 4(1) REMIT"
+          ],
+          "paragraphs": [
+            "P11"
+          ],
+          "sections": [
+            "3.1"
+          ],
+          "evidence": "must not acquire or dispose of wholesale energy products to which the information relates",
+          "explanation": "The trading ban applies to those possessing inside information, but the document does not state that it continues until publication, including during IIP failure."
+        },
+        {
+          "check": "REMIT-DIS-07.c1",
+          "status": "contradicts",
+          "basis": "law",
+          "primary": true,
+          "item_id": "REMIT-DIS-07",
+          "item_title": "Do not treat transparency-platform publication as timely disclosure",
+          "check_text": "Does not rely on transparency-platform publication alone to meet the Article 4(1) disclosure duty.",
+          "legal_basis": [
+            "Article 4(4) REMIT",
+            "Article 4(6) REMIT"
+          ],
+          "paragraphs": [
+            "P22"
+          ],
+          "sections": [
+            "4.5"
+          ],
+          "evidence": "Where an outage is also published on the ENTSO-E Transparency Platform, this satisfies our obligation under REMIT and no separate Urgent Market Message is needed.",
+          "explanation": "The policy relies on transparency-platform publication alone to meet the REMIT disclosure duty. That conflicts with Article 4(1), under which such publication is not necessarily timely disclosure."
+        },
+        {
+          "check": "REMIT-DIS-08.c1",
+          "status": "missing",
+          "basis": "good_practice",
+          "primary": true,
+          "item_id": "REMIT-DIS-08",
+          "item_title": "Delay for classified critical-infrastructure information",
+          "check_text": "If relied on, names who decides that information is classified critical-infrastructure information and how this is documented.",
+          "legal_basis": [
+            "Article 4(7) REMIT"
+          ],
+          "paragraphs": [
+            "P25"
+          ],
+          "sections": [
+            "5.1"
+          ],
+          "evidence": "The Head of Trading may decide to delay publication of inside information if publication would harm Nordwind Trading's commercial interests.",
+          "explanation": "The delay provisions do not rely on the critical-infrastructure delay, so the check does not apply. Silence on it is not a defect."
+        },
+        {
+          "check": "REMIT-DIS-09.c1",
+          "status": "upcoming",
+          "basis": "good_practice",
+          "primary": true,
+          "item_id": "REMIT-DIS-09",
+          "item_title": "Use authorised IIPs and RRMs",
+          "check_text": "Requires checking that the chosen IIP and RRM are authorised by ACER or, during the transition, registered and awaiting ACER's decision.",
+          "legal_basis": [
+            "Article 4(1) REMIT",
+            "Article 8(1) REMIT",
+            "Article 4a REMIT",
+            "Article 9a REMIT",
+            "Article 40 Delegated Regulation (EU) 2026/255"
+          ],
+          "paragraphs": [],
+          "sections": [],
+          "evidence": "",
+          "explanation": "applies from 2027-10-29"
+        },
+        {
+          "check": "REMIT-DIS-09.c2",
+          "status": "upcoming",
+          "basis": "good_practice",
+          "primary": true,
+          "item_id": "REMIT-DIS-09",
+          "item_title": "Use authorised IIPs and RRMs",
+          "check_text": "Describes what happens if the IIP or RRM loses its authorisation.",
+          "legal_basis": [
+            "Article 4(1) REMIT",
+            "Article 8(1) REMIT",
+            "Article 4a REMIT",
+            "Article 9a REMIT",
+            "Article 40 Delegated Regulation (EU) 2026/255"
+          ],
+          "paragraphs": [],
+          "sections": [],
+          "evidence": "",
+          "explanation": "applies from 2027-10-29"
+        },
+        {
+          "check": "REMIT-GP-07.c1",
+          "status": "covered",
+          "basis": "guidance",
+          "primary": true,
+          "item_id": "REMIT-GP-07",
+          "item_title": "Framework for identifying inside information",
+          "check_text": "Sets criteria or thresholds for assessing whether an event is inside information.",
+          "legal_basis": [],
+          "paragraphs": [
+            "P9"
+          ],
+          "sections": [
+            "2.2"
+          ],
+          "evidence": "any planned or unplanned change of 100 MW or more in the available capacity of a power plant is presumed to be inside information",
+          "explanation": "The policy gives the Article 2.1 criteria and a 100 MW rule-of-thumb threshold for assessing events."
+        },
+        {
+          "check": "REMIT-GP-07.c2",
+          "status": "missing",
+          "basis": "guidance",
+          "primary": true,
+          "item_id": "REMIT-GP-07",
+          "item_title": "Framework for identifying inside information",
+          "check_text": "Maps where inside information arises (assets, departments) and where it flows.",
+          "legal_basis": [],
+          "paragraphs": [
+            "P14",
+            "P15"
+          ],
+          "sections": [
+            "3.4",
+            "3.5"
+          ],
+          "evidence": "Compliance keeps a list of all persons who have access to inside information about the plants marketed by Nordwind Trading.",
+          "explanation": "There is no map of where inside information arises or flows. The document only mentions plants and a separate operations building."
+        },
+        {
+          "check": "REMIT-GP-08.c1",
+          "status": "covered",
+          "basis": "guidance",
+          "primary": true,
+          "item_id": "REMIT-GP-08",
+          "item_title": "Identify insiders and log access to inside information",
+          "check_text": "Requires a list of persons with access to inside information, or another mechanism to identify them.",
+          "legal_basis": [],
+          "paragraphs": [
+            "P14"
+          ],
+          "sections": [
+            "3.4"
+          ],
+          "evidence": "Compliance keeps a list of all persons who have access to inside information about the plants marketed by Nordwind Trading.",
+          "explanation": "Compliance keeps an insider list. It is limited to plants marketed by Nordwind, but the check is met."
+        },
+        {
+          "check": "REMIT-GP-08.c2",
+          "status": "partial",
+          "basis": "good_practice",
+          "primary": true,
+          "item_id": "REMIT-GP-08",
+          "item_title": "Identify insiders and log access to inside information",
+          "check_text": "Requires a log of who received inside information and when, especially during a delayed disclosure.",
+          "legal_basis": [],
+          "paragraphs": [
+            "P14"
+          ],
+          "sections": [
+            "3.4"
+          ],
+          "evidence": "Compliance keeps a list of all persons who have access to inside information",
+          "explanation": "A list of persons with access exists, but there is no log of who received information and when, and none for delayed disclosure."
+        },
+        {
+          "check": "REMIT-GP-09.c1",
+          "status": "covered",
+          "basis": "good_practice",
+          "primary": true,
+          "item_id": "REMIT-GP-09",
+          "item_title": "Information barriers and a documented trade stop",
+          "check_text": "Describes the information barriers between asset operations and trading.",
+          "legal_basis": [],
+          "paragraphs": [
+            "P15"
+          ],
+          "sections": [
+            "3.5"
+          ],
+          "evidence": "Plant operations staff sit in a separate building and have no access to trading systems.",
+          "explanation": "A physical and system separation between operations and trading is stated. It is brief but describes the barrier."
+        },
+        {
+          "check": "REMIT-GP-09.c2",
+          "status": "missing",
+          "basis": "good_practice",
+          "primary": true,
+          "item_id": "REMIT-GP-09",
+          "item_title": "Information barriers and a documented trade stop",
+          "check_text": "Describes a trade-stop mechanism and what is recorded when it is used.",
+          "legal_basis": [],
+          "paragraphs": [
+            "P11"
+          ],
+          "sections": [
+            "3.1"
+          ],
+          "evidence": "must not acquire or dispose of wholesale energy products to which the information relates",
+          "explanation": "There is a personal trading prohibition, but no trade-stop mechanism or recording of its use."
+        },
+        {
+          "check": "REMIT-GP-12.c1",
+          "status": "missing",
+          "basis": "good_practice",
+          "primary": false,
+          "item_id": "REMIT-GP-12",
+          "item_title": "Erroneous-order handling",
+          "check_text": "Requires each erroneous order or trade to be assessed as possible inside information.",
+          "legal_basis": [],
+          "paragraphs": [],
+          "sections": [],
+          "evidence": "",
+          "explanation": "The document does not address erroneous orders or trades or assess them as possible inside information."
+        },
+        {
+          "check": "REMIT-GP-12.c2",
+          "status": "missing",
+          "basis": "good_practice",
+          "primary": false,
+          "item_id": "REMIT-GP-12",
+          "item_title": "Erroneous-order handling",
+          "check_text": "Describes the incident investigation steps after an erroneous order.",
+          "legal_basis": [],
+          "paragraphs": [],
+          "sections": [],
+          "evidence": "",
+          "explanation": "The document has no incident investigation steps for erroneous orders."
+        }
+      ]
+    },
+    {
+      "file": "market-conduct-policy.docx",
+      "types": [
+        "MCP",
+        "ALG"
+      ],
+      "findings": [
+        {
+          "check": "REMIT-INS-01.c1",
+          "status": "missing",
+          "basis": "law",
+          "primary": false,
+          "item_id": "REMIT-INS-01",
+          "item_title": "Prevent trading on inside information",
+          "check_text": "Defines inside information using the REMIT criteria (precise, non-public, relating to wholesale energy products, likely to significantly affect prices).",
+          "legal_basis": [
+            "Article 2(1) REMIT",
+            "Article 3(1) REMIT",
+            "Article 3(2) REMIT",
+            "Article 3(5) REMIT"
+          ],
+          "paragraphs": [],
+          "sections": [],
+          "evidence": "",
+          "explanation": "The policy contains no definition of inside information or its REMIT criteria and does not address insider trading."
+        },
+        {
+          "check": "REMIT-INS-01.c2",
+          "status": "missing",
+          "basis": "law",
+          "primary": false,
+          "item_id": "REMIT-INS-01",
+          "item_title": "Prevent trading on inside information",
+          "check_text": "Prohibits trading, recommending and disclosure outside the normal course of duties while holding inside information.",
+          "legal_basis": [
+            "Article 2(1) REMIT",
+            "Article 3(1) REMIT",
+            "Article 3(2) REMIT",
+            "Article 3(5) REMIT"
+          ],
+          "paragraphs": [],
+          "sections": [],
+          "evidence": "",
+          "explanation": "No prohibition on trading, recommending or disclosing while holding inside information appears in the document."
+        },
+        {
+          "check": "REMIT-INS-01.c3",
+          "status": "missing",
+          "basis": "law",
+          "primary": false,
+          "item_id": "REMIT-INS-01",
+          "item_title": "Prevent trading on inside information",
+          "check_text": "Covers cancelling or amending orders placed before the information was received.",
+          "legal_basis": [
+            "Article 2(1) REMIT",
+            "Article 3(1) REMIT",
+            "Article 3(2) REMIT",
+            "Article 3(5) REMIT"
+          ],
+          "paragraphs": [],
+          "sections": [],
+          "evidence": "",
+          "explanation": "Cancelling or amending orders on the basis of inside information is not addressed."
+        },
+        {
+          "check": "REMIT-INS-01.c4",
+          "status": "missing",
+          "basis": "law",
+          "primary": false,
+          "item_id": "REMIT-INS-01",
+          "item_title": "Prevent trading on inside information",
+          "check_text": "States that inside information may be shared only on a need-to-know basis in the normal course of duties.",
+          "legal_basis": [
+            "Article 2(1) REMIT",
+            "Article 3(1) REMIT",
+            "Article 3(2) REMIT",
+            "Article 3(5) REMIT"
+          ],
+          "paragraphs": [],
+          "sections": [],
+          "evidence": "",
+          "explanation": "No need-to-know rule for sharing inside information exists."
+        },
+        {
+          "check": "REMIT-INS-01.c5",
+          "status": "missing",
+          "basis": "law",
+          "primary": false,
+          "item_id": "REMIT-INS-01",
+          "item_title": "Prevent trading on inside information",
+          "check_text": "States that inside information about other companies' facilities must not be traded on, even though the company has no duty to publish it.",
+          "legal_basis": [
+            "Article 2(1) REMIT",
+            "Article 3(1) REMIT",
+            "Article 3(2) REMIT",
+            "Article 3(5) REMIT"
+          ],
+          "paragraphs": [],
+          "sections": [],
+          "evidence": "",
+          "explanation": "Inside information about other companies' facilities is not mentioned."
+        },
+        {
+          "check": "REMIT-INS-01.c6",
+          "status": "missing",
+          "basis": "good_practice",
+          "primary": false,
+          "item_id": "REMIT-INS-01",
+          "item_title": "Prevent trading on inside information",
+          "check_text": "Gives at least one example of inside information relevant to the company's assets or markets.",
+          "legal_basis": [
+            "Article 2(1) REMIT",
+            "Article 3(1) REMIT",
+            "Article 3(2) REMIT",
+            "Article 3(5) REMIT"
+          ],
+          "paragraphs": [],
+          "sections": [],
+          "evidence": "",
+          "explanation": "No example of inside information is given."
+        },
+        {
+          "check": "REMIT-INS-01.c7",
+          "status": "missing",
+          "basis": "good_practice",
+          "primary": false,
+          "item_id": "REMIT-INS-01",
+          "item_title": "Prevent trading on inside information",
+          "check_text": "Requires staff who receive possible inside information to escalate it to a named function.",
+          "legal_basis": [
+            "Article 2(1) REMIT",
+            "Article 3(1) REMIT",
+            "Article 3(2) REMIT",
+            "Article 3(5) REMIT"
+          ],
+          "paragraphs": [],
+          "sections": [],
+          "evidence": "",
+          "explanation": "No escalation of possible inside information to a named function is required. P11 covers market abuse concerns only, not inside information."
+        },
+        {
+          "check": "REMIT-INS-03.c1",
+          "status": "missing",
+          "basis": "good_practice",
+          "primary": true,
+          "item_id": "REMIT-INS-03",
+          "item_title": "Document reliance on other insider-trading exemptions",
+          "check_text": "States which insider-trading exemptions the company relies on, if any.",
+          "legal_basis": [
+            "Article 3(3) REMIT",
+            "Article 3(4)(a) REMIT",
+            "Article 3(4)(c) REMIT"
+          ],
+          "paragraphs": [],
+          "sections": [],
+          "evidence": "",
+          "explanation": "The document does not state any insider-trading exemptions relied on."
+        },
+        {
+          "check": "REMIT-INS-03.c2",
+          "status": "missing",
+          "basis": "good_practice",
+          "primary": true,
+          "item_id": "REMIT-INS-03",
+          "item_title": "Document reliance on other insider-trading exemptions",
+          "check_text": "Requires evidence that the agreement or order behind an exempt transaction was concluded or placed before the inside information was received.",
+          "legal_basis": [
+            "Article 3(3) REMIT",
+            "Article 3(4)(a) REMIT",
+            "Article 3(4)(c) REMIT"
+          ],
+          "paragraphs": [],
+          "sections": [],
+          "evidence": "",
+          "explanation": "No requirement for evidence that an agreement or order predates receipt of inside information."
+        },
+        {
+          "check": "REMIT-MAN-01.c1",
+          "status": "partial",
+          "basis": "law",
+          "primary": true,
+          "item_id": "REMIT-MAN-01",
+          "item_title": "Prevent trading-based market manipulation",
+          "check_text": "Prohibits market manipulation and attempted market manipulation.",
+          "legal_basis": [
+            "Article 5 REMIT",
+            "Article 2(2)(a) REMIT",
+            "Article 2(3) REMIT"
+          ],
+          "paragraphs": [
+            "P7"
+          ],
+          "sections": [
+            "2.1"
+          ],
+          "evidence": "Market manipulation is strictly prohibited.",
+          "explanation": "Manipulation is prohibited, including orders giving false signals. Attempted manipulation is reflected only partly, through 'orders without intention to execute'. It is not expressly prohibited as an attempt."
+        },
+        {
+          "check": "REMIT-MAN-01.c2",
+          "status": "covered",
+          "basis": "guidance",
+          "primary": true,
+          "item_id": "REMIT-MAN-01",
+          "item_title": "Prevent trading-based market manipulation",
+          "check_text": "Names specific prohibited practices (e.g. wash trades, layering, spoofing, marking the close), not only the general prohibition.",
+          "legal_basis": [
+            "Article 5 REMIT",
+            "Article 2(2)(a) REMIT",
+            "Article 2(3) REMIT"
+          ],
+          "paragraphs": [
+            "P8"
+          ],
+          "sections": [
+            "2.2"
+          ],
+          "evidence": "wash trades, layering and spoofing, marking the close, and placing orders without the intention to execute them.",
+          "explanation": "The policy names specific prohibited practices beyond the general prohibition."
+        },
+        {
+          "check": "REMIT-MAN-01.c3",
+          "status": "missing",
+          "basis": "law",
+          "primary": true,
+          "item_id": "REMIT-MAN-01",
+          "item_title": "Prevent trading-based market manipulation",
+          "check_text": "Addresses physical and economic withholding of capacity from the company's assets.",
+          "legal_basis": [
+            "Article 5 REMIT",
+            "Article 2(2)(a) REMIT",
+            "Article 2(3) REMIT"
+          ],
+          "paragraphs": [],
+          "sections": [],
+          "evidence": "",
+          "explanation": "Physical and economic withholding of capacity is not addressed."
+        },
+        {
+          "check": "REMIT-MAN-01.c4",
+          "status": "contradicts",
+          "basis": "good_practice",
+          "primary": true,
+          "item_id": "REMIT-MAN-01",
+          "item_title": "Prevent trading-based market manipulation",
+          "check_text": "Sets rules for, or monitors, trades between the company's own desks or group entities.",
+          "legal_basis": [
+            "Article 5 REMIT",
+            "Article 2(2)(a) REMIT",
+            "Article 2(3) REMIT"
+          ],
+          "paragraphs": [
+            "P10"
+          ],
+          "sections": [
+            "2.4"
+          ],
+          "evidence": "Trades between Nordwind group companies on EPEX SPOT are allowed to balance positions within the group.",
+          "explanation": "Intragroup trades are expressly allowed without any monitoring or conditions. This permits wash-trade-like activity, which conflicts with the requirement to control such trades."
+        },
+        {
+          "check": "REMIT-MAN-01.c5",
+          "status": "covered",
+          "basis": "good_practice",
+          "primary": true,
+          "item_id": "REMIT-MAN-01",
+          "item_title": "Prevent trading-based market manipulation",
+          "check_text": "Requires staff to report manipulation concerns to compliance.",
+          "legal_basis": [
+            "Article 5 REMIT",
+            "Article 2(2)(a) REMIT",
+            "Article 2(3) REMIT"
+          ],
+          "paragraphs": [
+            "P11"
+          ],
+          "sections": [
+            "2.5"
+          ],
+          "evidence": "Any employee who has concerns about possible market abuse must report them to Compliance.",
+          "explanation": "Staff must report market abuse concerns to Compliance, with an anonymous channel also available."
+        },
+        {
+          "check": "REMIT-MAN-02.c1",
+          "status": "partial",
+          "basis": "law",
+          "primary": true,
+          "item_id": "REMIT-MAN-02",
+          "item_title": "Prevent information-based and benchmark manipulation",
+          "check_text": "Covers external communications (press, social media, analyst calls) about supply, demand or prices.",
+          "legal_basis": [
+            "Article 2(2)(b) REMIT",
+            "Article 2(2)(c) REMIT",
+            "Article 2(3)(b) REMIT",
+            "Article 5 REMIT"
+          ],
+          "paragraphs": [
+            "P9"
+          ],
+          "sections": [
+            "2.3"
+          ],
+          "evidence": "Only the Communications department may speak to the press or publish statements about market conditions. Traders must not comment on market rumours on social media.",
+          "explanation": "The policy restricts press and social media communications to Communications. It does not expressly prohibit false or misleading information on supply, demand or price, or cover analyst calls, but it addresses the channel."
+        },
+        {
+          "check": "REMIT-MAN-02.c2",
+          "status": "missing",
+          "basis": "law",
+          "primary": true,
+          "item_id": "REMIT-MAN-02",
+          "item_title": "Prevent information-based and benchmark manipulation",
+          "check_text": "Covers data submitted to price reporting agencies or benchmark administrators.",
+          "legal_basis": [
+            "Article 2(2)(b) REMIT",
+            "Article 2(2)(c) REMIT",
+            "Article 2(3)(b) REMIT",
+            "Article 5 REMIT"
+          ],
+          "paragraphs": [],
+          "sections": [],
+          "evidence": "",
+          "explanation": "Data submitted to price reporting agencies or benchmark administrators is not addressed."
+        },
+        {
+          "check": "REMIT-MAN-02.c3",
+          "status": "missing",
+          "basis": "good_practice",
+          "primary": true,
+          "item_id": "REMIT-MAN-02",
+          "item_title": "Prevent information-based and benchmark manipulation",
+          "check_text": "Names who may submit data to price reporters and how its accuracy is checked.",
+          "legal_basis": [
+            "Article 2(2)(b) REMIT",
+            "Article 2(2)(c) REMIT",
+            "Article 2(3)(b) REMIT",
+            "Article 5 REMIT"
+          ],
+          "paragraphs": [],
+          "sections": [],
+          "evidence": "",
+          "explanation": "No rule on who may submit data to price reporters or how its accuracy is checked."
+        },
+        {
+          "check": "REMIT-ALG-01.c1",
+          "status": "covered",
+          "basis": "law",
+          "primary": true,
+          "item_id": "REMIT-ALG-01",
+          "item_title": "Systems and risk controls for algorithmic trading",
+          "check_text": "Defines trading thresholds and limits for algorithms.",
+          "legal_basis": [
+            "Article 5a(1) REMIT"
+          ],
+          "paragraphs": [
+            "P17"
+          ],
+          "sections": [
+            "4.2"
+          ],
+          "evidence": "a price collar of ±20% around the last traded price, a maximum order volume of 50 MW, and a maximum of 30 order messages per second.",
+          "explanation": "The policy defines concrete pre-trade thresholds and limits for every algorithm."
+        },
+        {
+          "check": "REMIT-ALG-01.c2",
+          "status": "covered",
+          "basis": "law",
+          "primary": true,
+          "item_id": "REMIT-ALG-01",
+          "item_title": "Systems and risk controls for algorithmic trading",
+          "check_text": "Describes controls that prevent erroneous orders.",
+          "legal_basis": [
+            "Article 5a(1) REMIT"
+          ],
+          "paragraphs": [
+            "P17",
+            "P18"
+          ],
+          "sections": [
+            "4.2",
+            "4.3"
+          ],
+          "evidence": "Orders that breach a pre-trade limit are rejected automatically.",
+          "explanation": "Price collar and volume limits with automatic rejection, plus a kill switch, prevent erroneous orders."
+        },
+        {
+          "check": "REMIT-ALG-01.c3",
+          "status": "partial",
+          "basis": "law",
+          "primary": true,
+          "item_id": "REMIT-ALG-01",
+          "item_title": "Systems and risk controls for algorithmic trading",
+          "check_text": "Describes testing before deployment and after changes.",
+          "legal_basis": [
+            "Article 5a(1) REMIT"
+          ],
+          "paragraphs": [
+            "P19"
+          ],
+          "sections": [
+            "4.4"
+          ],
+          "evidence": "New algorithms are tested in the EPEX simulation environment before go-live and require the written approval of the Head of Trading.",
+          "explanation": "Pre-deployment testing is described, but testing after changes to existing algorithms is not addressed."
+        },
+        {
+          "check": "REMIT-ALG-01.c4",
+          "status": "missing",
+          "basis": "law",
+          "primary": true,
+          "item_id": "REMIT-ALG-01",
+          "item_title": "Systems and risk controls for algorithmic trading",
+          "check_text": "Describes business continuity arrangements for system failure.",
+          "legal_basis": [
+            "Article 5a(1) REMIT"
+          ],
+          "paragraphs": [],
+          "sections": [],
+          "evidence": "",
+          "explanation": "No business continuity or system failure arrangements are described; only a kill switch and automatic rejection exist, which are not continuity arrangements."
+        },
+        {
+          "check": "REMIT-ALG-01.c5",
+          "status": "covered",
+          "basis": "law",
+          "primary": true,
+          "item_id": "REMIT-ALG-01",
+          "item_title": "Systems and risk controls for algorithmic trading",
+          "check_text": "Names who monitors running algorithms.",
+          "legal_basis": [
+            "Article 5a(1) REMIT"
+          ],
+          "paragraphs": [
+            "P20"
+          ],
+          "sections": [
+            "4.5"
+          ],
+          "evidence": "The intraday desk monitors running algorithms during trading hours.",
+          "explanation": "The intraday desk is named as the function monitoring running algorithms."
+        },
+        {
+          "check": "REMIT-ALG-01.c6",
+          "status": "covered",
+          "basis": "good_practice",
+          "primary": true,
+          "item_id": "REMIT-ALG-01",
+          "item_title": "Systems and risk controls for algorithmic trading",
+          "check_text": "Specifies limit types (e.g. price, volume, order rate).",
+          "legal_basis": [
+            "Article 5a(1) REMIT"
+          ],
+          "paragraphs": [
+            "P17"
+          ],
+          "sections": [
+            "4.2"
+          ],
+          "evidence": "a price collar of ±20% around the last traded price, a maximum order volume of 50 MW, and a maximum of 30 order messages per second",
+          "explanation": "Price, volume and order-rate limits are all specified."
+        },
+        {
+          "check": "REMIT-ALG-01.c7",
+          "status": "covered",
+          "basis": "good_practice",
+          "primary": true,
+          "item_id": "REMIT-ALG-01",
+          "item_title": "Systems and risk controls for algorithmic trading",
+          "check_text": "Provides a means to stop an algorithm immediately (kill switch).",
+          "legal_basis": [
+            "Article 5a(1) REMIT"
+          ],
+          "paragraphs": [
+            "P18"
+          ],
+          "sections": [
+            "4.3"
+          ],
+          "evidence": "The intraday desk can stop all algorithms immediately with a kill switch.",
+          "explanation": "A kill switch is provided and the desk that operates it is named."
+        },
+        {
+          "check": "REMIT-ALG-02.c1",
+          "status": "missing",
+          "basis": "law",
+          "primary": true,
+          "item_id": "REMIT-ALG-02",
+          "item_title": "Notify algorithmic trading to the NRA and ACER",
+          "check_text": "Requires notification of the NRA and ACER (e.g. via CEREMP) before algorithmic trading starts.",
+          "legal_basis": [
+            "Article 5a(2) REMIT"
+          ],
+          "paragraphs": [],
+          "sections": [],
+          "evidence": "",
+          "explanation": "The policy does not require notifying the NRA or ACER about algorithmic trading."
+        },
+        {
+          "check": "REMIT-ALG-02.c2",
+          "status": "partial",
+          "basis": "law",
+          "primary": true,
+          "item_id": "REMIT-ALG-02",
+          "item_title": "Notify algorithmic trading to the NRA and ACER",
+          "check_text": "Keeps strategy descriptions, parameters, limits and controls ready to provide on request.",
+          "legal_basis": [
+            "Article 5a(2) REMIT"
+          ],
+          "paragraphs": [
+            "P21"
+          ],
+          "sections": [
+            "4.6"
+          ],
+          "evidence": "Documentation of algorithms, including strategy descriptions, parameters and test results, is kept for three years.",
+          "explanation": "Strategy descriptions, parameters and tests are kept, but nothing says they are ready to provide to the NRA on request, and limits and controls are not listed."
+        },
+        {
+          "check": "REMIT-ALG-02.c3",
+          "status": "missing",
+          "basis": "good_practice",
+          "primary": true,
+          "item_id": "REMIT-ALG-02",
+          "item_title": "Notify algorithmic trading to the NRA and ACER",
+          "check_text": "Names the role that maintains the notification.",
+          "legal_basis": [
+            "Article 5a(2) REMIT"
+          ],
+          "paragraphs": [],
+          "sections": [],
+          "evidence": "",
+          "explanation": "No notification exists and no role is named to maintain it."
+        },
+        {
+          "check": "REMIT-ALG-03.c1",
+          "status": "contradicts",
+          "basis": "law",
+          "primary": true,
+          "item_id": "REMIT-ALG-03",
+          "item_title": "Keep algorithmic trading records for five years",
+          "check_text": "States a retention period of at least five years.",
+          "legal_basis": [
+            "Article 5a(2), third subparagraph, REMIT"
+          ],
+          "paragraphs": [
+            "P21"
+          ],
+          "sections": [
+            "4.6"
+          ],
+          "evidence": "Documentation of algorithms, including strategy descriptions, parameters and test results, is kept for three years.",
+          "explanation": "Algorithm documentation is retained for three years, shorter than the five years REMIT requires. The five-year period in P14 covers only recordings, chats and tickets."
+        },
+        {
+          "check": "REMIT-ALG-03.c2",
+          "status": "partial",
+          "basis": "law",
+          "primary": true,
+          "item_id": "REMIT-ALG-03",
+          "item_title": "Keep algorithmic trading records for five years",
+          "check_text": "Lists the records kept (strategies, parameters, limits, tests, changes).",
+          "legal_basis": [
+            "Article 5a(2), third subparagraph, REMIT"
+          ],
+          "paragraphs": [
+            "P21"
+          ],
+          "sections": [
+            "4.6"
+          ],
+          "evidence": "including strategy descriptions, parameters and test results",
+          "explanation": "Strategies, parameters and test results are listed. Limits and changes to algorithms are not mentioned, so the list is incomplete."
+        },
+        {
+          "check": "MAR-SCOPE-01.c1",
+          "status": "missing",
+          "basis": "good_practice",
+          "primary": true,
+          "item_id": "MAR-SCOPE-01",
+          "item_title": "Identify which products are also financial instruments",
+          "check_text": "Maps the company's traded products to REMIT-only or REMIT-and-MAR.",
+          "legal_basis": [
+            "Article 1(2) REMIT",
+            "Article 2 MAR"
+          ],
+          "paragraphs": [],
+          "sections": [],
+          "evidence": "",
+          "explanation": "The policy does not map traded products to REMIT-only or REMIT-and-MAR."
+        },
+        {
+          "check": "MAR-SCOPE-01.c2",
+          "status": "missing",
+          "basis": "law",
+          "primary": true,
+          "item_id": "MAR-SCOPE-01",
+          "item_title": "Identify which products are also financial instruments",
+          "check_text": "States that MAR rules apply in addition where products are financial instruments.",
+          "legal_basis": [
+            "Article 1(2) REMIT",
+            "Article 2 MAR"
+          ],
+          "paragraphs": [],
+          "sections": [],
+          "evidence": "",
+          "explanation": "MAR is not mentioned, and there is no statement that it applies in addition for financial instruments."
+        },
+        {
+          "check": "REMIT-GP-01.c1",
+          "status": "partial",
+          "basis": "good_practice",
+          "primary": false,
+          "item_id": "REMIT-GP-01",
+          "item_title": "Independent, resourced compliance function",
+          "check_text": "Names the REMIT compliance officer or responsible function.",
+          "legal_basis": [],
+          "paragraphs": [
+            "P2",
+            "P11"
+          ],
+          "sections": [
+            "P2",
+            "2.5"
+          ],
+          "evidence": "Owner: Head of Trading, with Compliance",
+          "explanation": "Compliance is mentioned only as co-owner and as the recipient of abuse concerns. No REMIT compliance officer or responsible function is clearly named."
+        },
+        {
+          "check": "REMIT-GP-01.c2",
+          "status": "missing",
+          "basis": "good_practice",
+          "primary": false,
+          "item_id": "REMIT-GP-01",
+          "item_title": "Independent, resourced compliance function",
+          "check_text": "States that compliance reports to senior management independently of trading.",
+          "legal_basis": [],
+          "paragraphs": [],
+          "sections": [],
+          "evidence": "",
+          "explanation": "Nothing says compliance reports to senior management independently of trading. The policy is owned by the Head of Trading."
+        },
+        {
+          "check": "REMIT-GP-01.c3",
+          "status": "missing",
+          "basis": "good_practice",
+          "primary": false,
+          "item_id": "REMIT-GP-01",
+          "item_title": "Independent, resourced compliance function",
+          "check_text": "States that compliance has access to all trading and operational information.",
+          "legal_basis": [],
+          "paragraphs": [],
+          "sections": [],
+          "evidence": "",
+          "explanation": "No statement gives compliance access to trading and operational information."
+        },
+        {
+          "check": "REMIT-GP-04.c1",
+          "status": "missing",
+          "basis": "good_practice",
+          "primary": false,
+          "item_id": "REMIT-GP-04",
+          "item_title": "Role-based REMIT training with records",
+          "check_text": "Defines training audiences by role.",
+          "legal_basis": [],
+          "paragraphs": [],
+          "sections": [],
+          "evidence": "",
+          "explanation": "The policy does not mention training or training audiences."
+        },
+        {
+          "check": "REMIT-GP-04.c2",
+          "status": "missing",
+          "basis": "good_practice",
+          "primary": false,
+          "item_id": "REMIT-GP-04",
+          "item_title": "Role-based REMIT training with records",
+          "check_text": "States the training frequency, including onboarding.",
+          "legal_basis": [],
+          "paragraphs": [],
+          "sections": [],
+          "evidence": "",
+          "explanation": "No training frequency or onboarding training is stated."
+        },
+        {
+          "check": "REMIT-GP-04.c3",
+          "status": "missing",
+          "basis": "good_practice",
+          "primary": false,
+          "item_id": "REMIT-GP-04",
+          "item_title": "Role-based REMIT training with records",
+          "check_text": "Requires attendance and results to be recorded.",
+          "legal_basis": [],
+          "paragraphs": [],
+          "sections": [],
+          "evidence": "",
+          "explanation": "No requirement to record training attendance or results."
+        },
+        {
+          "check": "REMIT-GP-05.c1",
+          "status": "covered",
+          "basis": "good_practice",
+          "primary": false,
+          "item_id": "REMIT-GP-05",
+          "item_title": "Speak-up channel for REMIT concerns",
+          "check_text": "Describes how staff can raise REMIT concerns, including anonymously.",
+          "legal_basis": [],
+          "paragraphs": [
+            "P11"
+          ],
+          "sections": [
+            "2.5"
+          ],
+          "evidence": "must report them to Compliance. Reports can also be made anonymously through the group whistleblowing system",
+          "explanation": "Staff report to Compliance or anonymously through the whistleblowing system. This covers market abuse concerns."
+        },
+        {
+          "check": "REMIT-GP-05.c2",
+          "status": "covered",
+          "basis": "good_practice",
+          "primary": false,
+          "item_id": "REMIT-GP-05",
+          "item_title": "Speak-up channel for REMIT concerns",
+          "check_text": "States that people who raise concerns are protected from retaliation.",
+          "legal_basis": [],
+          "paragraphs": [
+            "P11"
+          ],
+          "sections": [
+            "2.5"
+          ],
+          "evidence": "nobody will suffer disadvantages for reporting in good faith",
+          "explanation": "The policy protects good-faith reporters from retaliation."
+        },
+        {
+          "check": "REMIT-GP-09.c1",
+          "status": "missing",
+          "basis": "good_practice",
+          "primary": false,
+          "item_id": "REMIT-GP-09",
+          "item_title": "Information barriers and a documented trade stop",
+          "check_text": "Describes the information barriers between asset operations and trading.",
+          "legal_basis": [],
+          "paragraphs": [],
+          "sections": [],
+          "evidence": "",
+          "explanation": "The policy does not describe information barriers between asset operations and trading."
+        },
+        {
+          "check": "REMIT-GP-09.c2",
+          "status": "partial",
+          "basis": "good_practice",
+          "primary": false,
+          "item_id": "REMIT-GP-09",
+          "item_title": "Information barriers and a documented trade stop",
+          "check_text": "Describes a trade-stop mechanism and what is recorded when it is used.",
+          "legal_basis": [],
+          "paragraphs": [
+            "P18"
+          ],
+          "sections": [
+            "4.3"
+          ],
+          "evidence": "The intraday desk can stop all algorithms immediately with a kill switch.",
+          "explanation": "A kill switch for algorithms exists, but there is no general trade-stop mechanism for traders, and nothing says what is recorded when it is used."
+        },
+        {
+          "check": "REMIT-GP-10.c1",
+          "status": "covered",
+          "basis": "good_practice",
+          "primary": true,
+          "item_id": "REMIT-GP-10",
+          "item_title": "Record trader communications and keep trading records for five years",
+          "check_text": "States which communication channels of traders are recorded (phone, chat, e-mail).",
+          "legal_basis": [],
+          "paragraphs": [
+            "P14"
+          ],
+          "sections": [
+            "3.2"
+          ],
+          "evidence": "Trader telephone lines and Bloomberg chats are recorded.",
+          "explanation": "Phone and chat are named as recorded. E-mail is not mentioned, but the check only gives it as an example, so the channels are clearly stated."
+        },
+        {
+          "check": "REMIT-GP-10.c2",
+          "status": "partial",
+          "basis": "good_practice",
+          "primary": true,
+          "item_id": "REMIT-GP-10",
+          "item_title": "Record trader communications and keep trading records for five years",
+          "check_text": "States a retention period of at least five years for transactions, disclosures and trade communications.",
+          "legal_basis": [],
+          "paragraphs": [
+            "P14"
+          ],
+          "sections": [
+            "3.2"
+          ],
+          "evidence": "Recordings, chat logs and trade tickets are kept for five years.",
+          "explanation": "Five years is stated for recordings, chat logs and trade tickets (transactions). Disclosures, such as inside information publications, are not mentioned, so coverage is incomplete."
+        },
+        {
+          "check": "REMIT-GP-11.c1",
+          "status": "covered",
+          "basis": "good_practice",
+          "primary": true,
+          "item_id": "REMIT-GP-11",
+          "item_title": "Trading mandates and rationale for unusual trades",
+          "check_text": "Refers to documented trading mandates and limits.",
+          "legal_basis": [],
+          "paragraphs": [
+            "P13"
+          ],
+          "sections": [
+            "3.1"
+          ],
+          "evidence": "Each trader trades only within the products, markets and limits set out in his or her individual trading mandate",
+          "explanation": "Individual trading mandates with products, markets and limits are required and approved by named roles."
+        },
+        {
+          "check": "REMIT-GP-11.c2",
+          "status": "missing",
+          "basis": "good_practice",
+          "primary": true,
+          "item_id": "REMIT-GP-11",
+          "item_title": "Trading mandates and rationale for unusual trades",
+          "check_text": "Requires traders to record the reason for unusual orders or trades.",
+          "legal_basis": [],
+          "paragraphs": [],
+          "sections": [],
+          "evidence": "",
+          "explanation": "The policy has no requirement for traders to record the reason for unusual orders or trades."
+        },
+        {
+          "check": "REMIT-GP-12.c1",
+          "status": "missing",
+          "basis": "good_practice",
+          "primary": true,
+          "item_id": "REMIT-GP-12",
+          "item_title": "Erroneous-order handling",
+          "check_text": "Requires each erroneous order or trade to be assessed as possible inside information.",
+          "legal_basis": [],
+          "paragraphs": [],
+          "sections": [],
+          "evidence": "",
+          "explanation": "Nothing requires erroneous orders or trades to be assessed as possible inside information."
+        },
+        {
+          "check": "REMIT-GP-12.c2",
+          "status": "missing",
+          "basis": "good_practice",
+          "primary": true,
+          "item_id": "REMIT-GP-12",
+          "item_title": "Erroneous-order handling",
+          "check_text": "Describes the incident investigation steps after an erroneous order.",
+          "legal_basis": [],
+          "paragraphs": [
+            "P18"
+          ],
+          "sections": [
+            "4.3"
+          ],
+          "evidence": "Orders that breach a pre-trade limit are rejected automatically.",
+          "explanation": "Only automatic rejection of limit-breaching orders is described. There are no investigation steps after an erroneous order."
+        },
+        {
+          "check": "REMIT-GP-13.c1",
+          "status": "partial",
+          "basis": "good_practice",
+          "primary": true,
+          "item_id": "REMIT-GP-13",
+          "item_title": "Algorithm governance, including vendor algorithms",
+          "check_text": "Requires documented approval before an algorithm or a change goes live.",
+          "legal_basis": [],
+          "paragraphs": [
+            "P19"
+          ],
+          "sections": [
+            "4.4"
+          ],
+          "evidence": "New algorithms are tested in the EPEX simulation environment before go-live and require the written approval of the Head of Trading.",
+          "explanation": "Written approval is required before go-live for new algorithms. Changes to existing algorithms are not mentioned, so the requirement is only partly met."
+        },
+        {
+          "check": "REMIT-GP-13.c2",
+          "status": "missing",
+          "basis": "good_practice",
+          "primary": true,
+          "item_id": "REMIT-GP-13",
+          "item_title": "Algorithm governance, including vendor algorithms",
+          "check_text": "Applies the same controls to vendor-supplied algorithms.",
+          "legal_basis": [],
+          "paragraphs": [],
+          "sections": [],
+          "evidence": "",
+          "explanation": "The policy does not mention vendor-supplied algorithms or apply the same controls to them."
+        },
+        {
+          "check": "REMIT-GP-14.c1",
+          "status": "missing",
+          "basis": "good_practice",
+          "primary": false,
+          "item_id": "REMIT-GP-14",
+          "item_title": "Compliance involvement in new products and markets",
+          "check_text": "Requires compliance sign-off before trading a new product or on a new venue.",
+          "legal_basis": [],
+          "paragraphs": [],
+          "sections": [],
+          "evidence": "",
+          "explanation": "The policy has no requirement for compliance sign-off before trading a new product or on a new venue."
+        }
+      ]
+    },
+    {
+      "file": "transaction-reporting-procedure.docx",
+      "types": [
+        "TRP",
+        "REG"
+      ],
+      "findings": [
+        {
+          "check": "REMIT-REG-01.c1",
+          "status": "covered",
+          "basis": "law",
+          "primary": true,
+          "item_id": "REMIT-REG-01",
+          "item_title": "Register with the NRA before trading",
+          "check_text": "Names the NRA with which the company is registered.",
+          "legal_basis": [
+            "Article 9(1) REMIT",
+            "Article 9(4) REMIT"
+          ],
+          "paragraphs": [
+            "P4"
+          ],
+          "sections": [
+            "1.1"
+          ],
+          "evidence": "registered as a market participant with the Bundesnetzagentur (ACER code A0001234N.DE)",
+          "explanation": "The document names the Bundesnetzagentur as the NRA of registration."
+        },
+        {
+          "check": "REMIT-REG-01.c2",
+          "status": "missing",
+          "basis": "law",
+          "primary": true,
+          "item_id": "REMIT-REG-01",
+          "item_title": "Register with the NRA before trading",
+          "check_text": "Requires registration to be in place before any new legal entity in the group starts reportable trading.",
+          "legal_basis": [
+            "Article 9(1) REMIT",
+            "Article 9(4) REMIT"
+          ],
+          "paragraphs": [],
+          "sections": [],
+          "evidence": "",
+          "explanation": "No requirement that a new group legal entity be registered before starting reportable trading."
+        },
+        {
+          "check": "REMIT-REG-01.c3",
+          "status": "covered",
+          "basis": "good_practice",
+          "primary": true,
+          "item_id": "REMIT-REG-01",
+          "item_title": "Register with the NRA before trading",
+          "check_text": "Names the role or function responsible for submitting and maintaining the registration.",
+          "legal_basis": [
+            "Article 9(1) REMIT",
+            "Article 9(4) REMIT"
+          ],
+          "paragraphs": [
+            "P5"
+          ],
+          "sections": [
+            "1.2"
+          ],
+          "evidence": "The Head of Back Office is responsible for the registration in CEREMP and for keeping it up to date.",
+          "explanation": "A named role is responsible for registration and maintenance."
+        },
+        {
+          "check": "REMIT-REG-01.c4",
+          "status": "covered",
+          "basis": "good_practice",
+          "primary": true,
+          "item_id": "REMIT-REG-01",
+          "item_title": "Register with the NRA before trading",
+          "check_text": "States where the company's ACER code is recorded.",
+          "legal_basis": [
+            "Article 9(1) REMIT",
+            "Article 9(4) REMIT"
+          ],
+          "paragraphs": [
+            "P4"
+          ],
+          "sections": [
+            "1.1"
+          ],
+          "evidence": "The ACER code is recorded in the static data of the trading system.",
+          "explanation": "States where the ACER code is recorded."
+        },
+        {
+          "check": "REMIT-REG-02.c1",
+          "status": "covered",
+          "basis": "law",
+          "primary": true,
+          "item_id": "REMIT-REG-02",
+          "item_title": "Keep registration data up to date",
+          "check_text": "Requires any change to the information in the registration form (e.g. management, ownership, place of publication of inside information) to be communicated to the NRA.",
+          "legal_basis": [
+            "Article 9(5) REMIT"
+          ],
+          "paragraphs": [
+            "P6"
+          ],
+          "sections": [
+            "1.3"
+          ],
+          "evidence": "Changes to registration data are reported to the Bundesnetzagentur at the annual review of registration data in January.",
+          "explanation": "Changes are reported to the NRA, though only at the annual review. The check asks only that changes be communicated, and that is stated. Promptness is assessed under c2."
+        },
+        {
+          "check": "REMIT-REG-02.c2",
+          "status": "contradicts",
+          "basis": "law",
+          "primary": true,
+          "item_id": "REMIT-REG-02",
+          "item_title": "Keep registration data up to date",
+          "check_text": "Requires changes to be notified to the NRA promptly.",
+          "legal_basis": [
+            "Article 9(5) REMIT"
+          ],
+          "paragraphs": [
+            "P6"
+          ],
+          "sections": [
+            "1.3"
+          ],
+          "evidence": "reported to the Bundesnetzagentur at the annual review of registration data in January",
+          "explanation": "Changes are batched to an annual January review, which is not prompt notification as Article 9(5) requires."
+        },
+        {
+          "check": "REMIT-REG-02.c3",
+          "status": "missing",
+          "basis": "good_practice",
+          "primary": true,
+          "item_id": "REMIT-REG-02",
+          "item_title": "Keep registration data up to date",
+          "check_text": "Lists the internal events that trigger a registration update.",
+          "legal_basis": [
+            "Article 9(5) REMIT"
+          ],
+          "paragraphs": [],
+          "sections": [],
+          "evidence": "",
+          "explanation": "No internal events triggering a registration update are listed."
+        },
+        {
+          "check": "REMIT-REG-02.c4",
+          "status": "missing",
+          "basis": "good_practice",
+          "primary": true,
+          "item_id": "REMIT-REG-02",
+          "item_title": "Keep registration data up to date",
+          "check_text": "Sets an internal time limit (e.g. number of working days) for notifying registration changes.",
+          "legal_basis": [
+            "Article 9(5) REMIT"
+          ],
+          "paragraphs": [
+            "P6"
+          ],
+          "sections": [
+            "1.3"
+          ],
+          "evidence": "at the annual review of registration data in January",
+          "explanation": "Only an annual review date is given, not a time limit for notifying changes, so no working-day limit is set."
+        },
+        {
+          "check": "REMIT-REG-02.c5",
+          "status": "covered",
+          "basis": "good_practice",
+          "primary": true,
+          "item_id": "REMIT-REG-02",
+          "item_title": "Keep registration data up to date",
+          "check_text": "Names the role responsible for submitting registration changes.",
+          "legal_basis": [
+            "Article 9(5) REMIT"
+          ],
+          "paragraphs": [
+            "P5"
+          ],
+          "sections": [
+            "1.2"
+          ],
+          "evidence": "The Head of Back Office is responsible for the registration in CEREMP and for keeping it up to date.",
+          "explanation": "The Head of Back Office is responsible for keeping the registration up to date, which implies submitting changes."
+        },
+        {
+          "check": "REMIT-REG-02.c6",
+          "status": "covered",
+          "basis": "good_practice",
+          "primary": true,
+          "item_id": "REMIT-REG-02",
+          "item_title": "Keep registration data up to date",
+          "check_text": "Specifies a review frequency for registration data (e.g. annual).",
+          "legal_basis": [
+            "Article 9(5) REMIT"
+          ],
+          "paragraphs": [
+            "P6"
+          ],
+          "sections": [
+            "1.3"
+          ],
+          "evidence": "annual review of registration data in January",
+          "explanation": "An annual review frequency is specified."
+        },
+        {
+          "check": "REMIT-REP-01.c1",
+          "status": "covered",
+          "basis": "law",
+          "primary": true,
+          "item_id": "REMIT-REP-01",
+          "item_title": "Report transactions and orders through an RRM",
+          "check_text": "Lists the reportable products and venues, or refers to where that list is kept.",
+          "legal_basis": [
+            "Article 8(1) REMIT",
+            "Article 8(4) REMIT IR 2026",
+            "Article 3 IR 1348/2014 (until 2027-10-28)",
+            "Article 3 REMIT IR 2026 (from 2027-10-29)"
+          ],
+          "paragraphs": [
+            "P8"
+          ],
+          "sections": [
+            "2.1"
+          ],
+          "evidence": "power and natural gas spot and futures on EEX and EPEX SPOT, and OTC forwards in power and gas",
+          "explanation": "Lists the reportable products and venues."
+        },
+        {
+          "check": "REMIT-REP-01.c2",
+          "status": "covered",
+          "basis": "law",
+          "primary": true,
+          "item_id": "REMIT-REP-01",
+          "item_title": "Report transactions and orders through an RRM",
+          "check_text": "Names the RRM(s) and any third party reporting on the company's behalf.",
+          "legal_basis": [
+            "Article 8(1) REMIT",
+            "Article 8(4) REMIT IR 2026",
+            "Article 3 IR 1348/2014 (until 2027-10-28)",
+            "Article 3 REMIT IR 2026 (from 2027-10-29)"
+          ],
+          "paragraphs": [
+            "P10",
+            "P17"
+          ],
+          "sections": [
+            "2.3",
+            "4.1"
+          ],
+          "evidence": "reported by Nordwind Trading through the registered reporting mechanism TradeLink RRM",
+          "explanation": "TradeLink RRM is named, and the exchanges are named as reporting for on-venue trades."
+        },
+        {
+          "check": "REMIT-REP-01.c3",
+          "status": "contradicts",
+          "basis": "law",
+          "primary": true,
+          "item_id": "REMIT-REP-01",
+          "item_title": "Report transactions and orders through an RRM",
+          "check_text": "Covers orders to trade as well as executed transactions.",
+          "legal_basis": [
+            "Article 8(1) REMIT",
+            "Article 8(4) REMIT IR 2026",
+            "Article 3 IR 1348/2014 (until 2027-10-28)",
+            "Article 3 REMIT IR 2026 (from 2027-10-29)"
+          ],
+          "paragraphs": [
+            "P9"
+          ],
+          "sections": [
+            "2.2"
+          ],
+          "evidence": "Only executed transactions are reported. Orders that are not executed are not reportable.",
+          "explanation": "Orders to trade are expressly excluded, although REMIT requires them to be reported."
+        },
+        {
+          "check": "REMIT-REP-01.c4",
+          "status": "covered",
+          "basis": "law",
+          "primary": true,
+          "item_id": "REMIT-REP-01",
+          "item_title": "Report transactions and orders through an RRM",
+          "check_text": "States that transactions concluded outside OMPs, including non-standard contracts, are reported by the company or its delegate.",
+          "legal_basis": [
+            "Article 8(1) REMIT",
+            "Article 8(4) REMIT IR 2026",
+            "Article 3 IR 1348/2014 (until 2027-10-28)",
+            "Article 3 REMIT IR 2026 (from 2027-10-29)"
+          ],
+          "paragraphs": [
+            "P10"
+          ],
+          "sections": [
+            "2.3"
+          ],
+          "evidence": "OTC trades, including non-standard contracts, are reported by Nordwind Trading through the registered reporting mechanism TradeLink RRM.",
+          "explanation": "OTC and non-standard contracts are reported by the company itself."
+        },
+        {
+          "check": "REMIT-REP-02.c1",
+          "status": "covered",
+          "basis": "law",
+          "primary": true,
+          "item_id": "REMIT-REP-02",
+          "item_title": "Meet reporting deadlines",
+          "check_text": "States the two-working-day deadline for standard contracts.",
+          "legal_basis": [
+            "Article 10 REMIT IR 2026",
+            "Article 17 REMIT IR 2026"
+          ],
+          "paragraphs": [
+            "P14"
+          ],
+          "sections": [
+            "3.1"
+          ],
+          "evidence": "Standard contracts are reported by the end of the next working day (T+1).",
+          "explanation": "T+1 is stricter than the T+2 required."
+        },
+        {
+          "check": "REMIT-REP-02.c2",
+          "status": "contradicts",
+          "basis": "law",
+          "primary": true,
+          "item_id": "REMIT-REP-02",
+          "item_title": "Meet reporting deadlines",
+          "check_text": "States the ten-working-day deadline for non-standard contracts.",
+          "legal_basis": [
+            "Article 10 REMIT IR 2026",
+            "Article 17 REMIT IR 2026"
+          ],
+          "paragraphs": [
+            "P15"
+          ],
+          "sections": [
+            "3.2"
+          ],
+          "evidence": "Non-standard contracts are reported within one month of their conclusion.",
+          "explanation": "One month is longer than the ten working days allowed."
+        },
+        {
+          "check": "REMIT-REP-02.c3",
+          "status": "missing",
+          "basis": "law",
+          "primary": true,
+          "item_id": "REMIT-REP-02",
+          "item_title": "Meet reporting deadlines",
+          "check_text": "Applies the deadlines to lifecycle events (amendments, cancellations, terminations).",
+          "legal_basis": [
+            "Article 10 REMIT IR 2026",
+            "Article 17 REMIT IR 2026"
+          ],
+          "paragraphs": [],
+          "sections": [],
+          "evidence": "",
+          "explanation": "The deadlines are not applied to lifecycle events such as amendments, cancellations or terminations."
+        },
+        {
+          "check": "REMIT-REP-02.c4",
+          "status": "partial",
+          "basis": "guidance",
+          "primary": true,
+          "item_id": "REMIT-REP-02",
+          "item_title": "Meet reporting deadlines",
+          "check_text": "Classifies trades on OMPs as standard (T+2) and OTC trades as non-standard (T+10), including off-venue lifecycle events on OMP trades (T+2).",
+          "legal_basis": [
+            "Article 10 REMIT IR 2026",
+            "Article 17 REMIT IR 2026"
+          ],
+          "paragraphs": [
+            "P14",
+            "P15"
+          ],
+          "sections": [
+            "3.1",
+            "3.2"
+          ],
+          "evidence": "Standard contracts are reported by the end of the next working day (T+1).",
+          "explanation": "The document does not classify OMP trades as standard and OTC trades as non-standard, and does not cover off-venue lifecycle events. It sets a one-month deadline for non-standard contracts."
+        },
+        {
+          "check": "REMIT-REP-03.c1",
+          "status": "covered",
+          "basis": "law",
+          "primary": true,
+          "item_id": "REMIT-REP-03",
+          "item_title": "Keep responsibility for delegated reporting",
+          "check_text": "Identifies which trades are reported by OMPs or third parties and which the company reports itself.",
+          "legal_basis": [
+            "Article 8(1) REMIT",
+            "Article 8(4) REMIT"
+          ],
+          "paragraphs": [
+            "P10",
+            "P17"
+          ],
+          "sections": [
+            "2.3",
+            "4.1"
+          ],
+          "evidence": "Trades on EEX and EPEX SPOT are also reported to ACER by the exchanges.",
+          "explanation": "Exchange trades are reported by the exchanges, and OTC trades by the company through TradeLink RRM."
+        },
+        {
+          "check": "REMIT-REP-03.c2",
+          "status": "covered",
+          "basis": "law",
+          "primary": true,
+          "item_id": "REMIT-REP-03",
+          "item_title": "Keep responsibility for delegated reporting",
+          "check_text": "Requires verification that delegated reports were submitted.",
+          "legal_basis": [
+            "Article 8(1) REMIT",
+            "Article 8(4) REMIT"
+          ],
+          "paragraphs": [
+            "P17"
+          ],
+          "sections": [
+            "4.1"
+          ],
+          "evidence": "Back Office checks every morning that the exchanges' reporting confirmations have been received.",
+          "explanation": "A daily check that the exchanges' reporting confirmations were received is required."
+        },
+        {
+          "check": "REMIT-REP-03.c3",
+          "status": "partial",
+          "basis": "law",
+          "primary": true,
+          "item_id": "REMIT-REP-03",
+          "item_title": "Keep responsibility for delegated reporting",
+          "check_text": "Requires verification that delegated reports are accurate.",
+          "legal_basis": [
+            "Article 8(1) REMIT",
+            "Article 8(4) REMIT"
+          ],
+          "paragraphs": [
+            "P17"
+          ],
+          "sections": [
+            "4.1"
+          ],
+          "evidence": "Back Office checks every morning that the exchanges' reporting confirmations have been received.",
+          "explanation": "Back Office checks receipt of exchange confirmations and reconciles RRM reports against the blotter. This is some verification of delegated reporting, but accuracy of delegated reports is not verified; receipt only."
+        },
+        {
+          "check": "REMIT-REP-03.c4",
+          "status": "missing",
+          "basis": "guidance",
+          "primary": true,
+          "item_id": "REMIT-REP-03",
+          "item_title": "Keep responsibility for delegated reporting",
+          "check_text": "Describes an escalation step when the RRM or third party cannot report, including informing the NRA and ACER.",
+          "legal_basis": [
+            "Article 8(1) REMIT",
+            "Article 8(4) REMIT"
+          ],
+          "paragraphs": [],
+          "sections": [],
+          "evidence": "",
+          "explanation": "No escalation step if the RRM or a third party cannot report, and no informing of the NRA or ACER."
+        },
+        {
+          "check": "REMIT-REP-04.c1",
+          "status": "upcoming",
+          "basis": "law",
+          "primary": true,
+          "item_id": "REMIT-REP-04",
+          "item_title": "Report exposures (from 2027)",
+          "check_text": "Describes how the exposure-reporting threshold is assessed (separately for electricity and gas).",
+          "legal_basis": [
+            "Article 8(1) REMIT",
+            "Article 6 REMIT IR 2026",
+            "Article 17(2) REMIT IR 2026"
+          ],
+          "paragraphs": [],
+          "sections": [],
+          "evidence": "",
+          "explanation": "applies from 2027-01-01"
+        },
+        {
+          "check": "REMIT-REP-04.c2",
+          "status": "upcoming",
+          "basis": "law",
+          "primary": true,
+          "item_id": "REMIT-REP-04",
+          "item_title": "Report exposures (from 2027)",
+          "check_text": "Assesses the threshold at the end of each calendar year, on transactions concluded by 31 December.",
+          "legal_basis": [
+            "Article 8(1) REMIT",
+            "Article 6 REMIT IR 2026",
+            "Article 17(2) REMIT IR 2026"
+          ],
+          "paragraphs": [],
+          "sections": [],
+          "evidence": "",
+          "explanation": "applies from 2027-01-01"
+        },
+        {
+          "check": "REMIT-REP-04.c3",
+          "status": "upcoming",
+          "basis": "law",
+          "primary": true,
+          "item_id": "REMIT-REP-04",
+          "item_title": "Report exposures (from 2027)",
+          "check_text": "States that exposure reports are due quarterly, by the last day of the month after each quarter, starting October 2027.",
+          "legal_basis": [
+            "Article 8(1) REMIT",
+            "Article 6 REMIT IR 2026",
+            "Article 17(2) REMIT IR 2026"
+          ],
+          "paragraphs": [],
+          "sections": [],
+          "evidence": "",
+          "explanation": "applies from 2027-01-01"
+        },
+        {
+          "check": "REMIT-REP-04.c4",
+          "status": "upcoming",
+          "basis": "good_practice",
+          "primary": true,
+          "item_id": "REMIT-REP-04",
+          "item_title": "Report exposures (from 2027)",
+          "check_text": "Names the role that performs the threshold assessment.",
+          "legal_basis": [
+            "Article 8(1) REMIT",
+            "Article 6 REMIT IR 2026",
+            "Article 17(2) REMIT IR 2026"
+          ],
+          "paragraphs": [],
+          "sections": [],
+          "evidence": "",
+          "explanation": "applies from 2027-01-01"
+        },
+        {
+          "check": "REMIT-REP-05.c1",
+          "status": "missing",
+          "basis": "law",
+          "primary": false,
+          "item_id": "REMIT-REP-05",
+          "item_title": "Provide fundamental data and disclosed inside information to ACER",
+          "check_text": "States how fundamental data and disclosed inside information on the company's facilities reach ACER (e.g. via the IIP's reporting).",
+          "legal_basis": [
+            "Article 8(5) REMIT",
+            "Article 8(6) REMIT",
+            "Articles 11-12 REMIT IR 2026"
+          ],
+          "paragraphs": [],
+          "sections": [],
+          "evidence": "",
+          "explanation": "The document does not say how fundamental data or disclosed inside information reach ACER."
+        },
+        {
+          "check": "REMIT-REP-06.c1",
+          "status": "contradicts",
+          "basis": "law",
+          "primary": true,
+          "item_id": "REMIT-REP-06",
+          "item_title": "Leave OMP reporting to the OMP and give it the data it lacks",
+          "check_text": "States that orders and trades on OMPs are reported by the OMP and not reported again by the company.",
+          "legal_basis": [
+            "Article 8(1) REMIT IR 2026",
+            "Article 8(3) REMIT IR 2026",
+            "Article 8(4) REMIT IR 2026",
+            "Article 8(5) REMIT IR 2026"
+          ],
+          "paragraphs": [
+            "P11",
+            "P17"
+          ],
+          "sections": [
+            "2.4",
+            "4.1"
+          ],
+          "evidence": "Nordwind Trading additionally reports all trades executed on EEX and EPEX SPOT through TradeLink RRM.",
+          "explanation": "The document says exchanges report to ACER, but it also has the company report all exchange trades again. That is double reporting, which the requirement prohibits."
+        },
+        {
+          "check": "REMIT-REP-06.c2",
+          "status": "upcoming",
+          "basis": "law",
+          "primary": true,
+          "item_id": "REMIT-REP-06",
+          "item_title": "Leave OMP reporting to the OMP and give it the data it lacks",
+          "check_text": "Identifies which data the company must give each OMP and by when.",
+          "legal_basis": [
+            "Article 8(1) REMIT IR 2026",
+            "Article 8(3) REMIT IR 2026",
+            "Article 8(4) REMIT IR 2026",
+            "Article 8(5) REMIT IR 2026"
+          ],
+          "paragraphs": [],
+          "sections": [],
+          "evidence": "",
+          "explanation": "applies from 2027-10-29"
+        },
+        {
+          "check": "REMIT-REP-06.c3",
+          "status": "partial",
+          "basis": "good_practice",
+          "primary": true,
+          "item_id": "REMIT-REP-06",
+          "item_title": "Leave OMP reporting to the OMP and give it the data it lacks",
+          "check_text": "Uses the OMP's reported-data access to reconcile OMP-reported records.",
+          "legal_basis": [
+            "Article 8(1) REMIT IR 2026",
+            "Article 8(3) REMIT IR 2026",
+            "Article 8(4) REMIT IR 2026",
+            "Article 8(5) REMIT IR 2026"
+          ],
+          "paragraphs": [
+            "P17"
+          ],
+          "sections": [
+            "4.1"
+          ],
+          "evidence": "Back Office checks every morning that the exchanges' reporting confirmations have been received.",
+          "explanation": "Back Office checks that exchange confirmations arrive each morning. It does not reconcile OMP-reported records using the OMP's access to reported data, so this is only partial."
+        },
+        {
+          "check": "REMIT-REP-07.c1",
+          "status": "covered",
+          "basis": "law",
+          "primary": true,
+          "item_id": "REMIT-REP-07",
+          "item_title": "Have procedures to verify data quality",
+          "check_text": "Describes a check that the reports the company submits (itself or through its RRM) are complete against the trading system.",
+          "legal_basis": [
+            "Article 14(1) REMIT IR 2026",
+            "Article 14(2) REMIT IR 2026",
+            "Article 14(3) REMIT IR 2026"
+          ],
+          "paragraphs": [
+            "P18"
+          ],
+          "sections": [
+            "4.2"
+          ],
+          "evidence": "Back Office reconciles the trades reported through TradeLink RRM against the trade blotter of the trading system to ensure that all trades have been reported.",
+          "explanation": "The daily reconciliation of RRM-reported trades against the trading system blotter checks completeness."
+        },
+        {
+          "check": "REMIT-REP-07.c2",
+          "status": "missing",
+          "basis": "law",
+          "primary": true,
+          "item_id": "REMIT-REP-07",
+          "item_title": "Have procedures to verify data quality",
+          "check_text": "Describes a check that reported fields are accurate.",
+          "legal_basis": [
+            "Article 14(1) REMIT IR 2026",
+            "Article 14(2) REMIT IR 2026",
+            "Article 14(3) REMIT IR 2026"
+          ],
+          "paragraphs": [
+            "P18",
+            "P19"
+          ],
+          "sections": [
+            "4.2",
+            "4.3"
+          ],
+          "evidence": "Rejected reports and validation errors received from TradeLink RRM are corrected and resubmitted on the same working day.",
+          "explanation": "The reconciliation only ensures all trades were reported. No check of field accuracy is described. Validation errors are fixed, but that does not verify accuracy."
+        },
+        {
+          "check": "REMIT-REP-07.c3",
+          "status": "missing",
+          "basis": "law",
+          "primary": true,
+          "item_id": "REMIT-REP-07",
+          "item_title": "Have procedures to verify data quality",
+          "check_text": "Describes a check that reports were submitted within the applicable deadline.",
+          "legal_basis": [
+            "Article 14(1) REMIT IR 2026",
+            "Article 14(2) REMIT IR 2026",
+            "Article 14(3) REMIT IR 2026"
+          ],
+          "paragraphs": [
+            "P14",
+            "P15"
+          ],
+          "sections": [
+            "3.1",
+            "3.2"
+          ],
+          "evidence": "Standard contracts are reported by the end of the next working day (T+1).",
+          "explanation": "Deadlines are stated, but no check that reports were submitted on time is described."
+        },
+        {
+          "check": "REMIT-REP-07.c4",
+          "status": "covered",
+          "basis": "guidance",
+          "primary": true,
+          "item_id": "REMIT-REP-07",
+          "item_title": "Have procedures to verify data quality",
+          "check_text": "Describes how rejections or validation errors from the RRM or ACER are corrected and resubmitted.",
+          "legal_basis": [
+            "Article 14(1) REMIT IR 2026",
+            "Article 14(2) REMIT IR 2026",
+            "Article 14(3) REMIT IR 2026"
+          ],
+          "paragraphs": [
+            "P19"
+          ],
+          "sections": [
+            "4.3"
+          ],
+          "evidence": "Rejected reports and validation errors received from TradeLink RRM are corrected and resubmitted on the same working day.",
+          "explanation": "Describes correcting and resubmitting RRM rejections and validation errors on the same day."
+        },
+        {
+          "check": "REMIT-REP-07.c5",
+          "status": "covered",
+          "basis": "good_practice",
+          "primary": true,
+          "item_id": "REMIT-REP-07",
+          "item_title": "Have procedures to verify data quality",
+          "check_text": "States the frequency of reconciliation against the trading system (e.g. daily).",
+          "legal_basis": [
+            "Article 14(1) REMIT IR 2026",
+            "Article 14(2) REMIT IR 2026",
+            "Article 14(3) REMIT IR 2026"
+          ],
+          "paragraphs": [
+            "P18"
+          ],
+          "sections": [
+            "4.2"
+          ],
+          "evidence": "Every working day, Back Office reconciles the trades reported through TradeLink RRM against the trade blotter",
+          "explanation": "Reconciliation frequency is stated as every working day."
+        },
+        {
+          "check": "REMIT-REP-08.c1",
+          "status": "contradicts",
+          "basis": "law",
+          "primary": true,
+          "item_id": "REMIT-REP-08",
+          "item_title": "Keep records of transactions reportable only on request",
+          "check_text": "Requires records of transactions reportable only on ACER request (e.g. off-OMP intragroup deals) to be kept.",
+          "legal_basis": [
+            "Article 5(1) REMIT IR 2026",
+            "Article 5(3) REMIT IR 2026"
+          ],
+          "paragraphs": [
+            "P12"
+          ],
+          "sections": [
+            "2.5"
+          ],
+          "evidence": "Intragroup trades between Nordwind companies concluded outside an organised market place are not REMIT-relevant and are not recorded for REMIT purposes.",
+          "explanation": "The document says intragroup trades are not recorded. This conflicts with the duty to keep records of transactions reportable on request."
+        },
+        {
+          "check": "REMIT-REP-08.c2",
+          "status": "contradicts",
+          "basis": "law",
+          "primary": true,
+          "item_id": "REMIT-REP-08",
+          "item_title": "Keep records of transactions reportable only on request",
+          "check_text": "States a retention period of at least five years following conclusion for these transactions.",
+          "legal_basis": [
+            "Article 5(1) REMIT IR 2026",
+            "Article 5(3) REMIT IR 2026"
+          ],
+          "paragraphs": [
+            "P12"
+          ],
+          "sections": [
+            "2.5"
+          ],
+          "evidence": "are not REMIT-relevant and are not recorded for REMIT purposes.",
+          "explanation": "No five-year retention period is stated. The document says intragroup trades are not recorded at all."
+        },
+        {
+          "check": "REMIT-REP-08.c3",
+          "status": "partial",
+          "basis": "good_practice",
+          "primary": true,
+          "item_id": "REMIT-REP-08",
+          "item_title": "Keep records of transactions reportable only on request",
+          "check_text": "Identifies which of the company's transactions are reportable only on request.",
+          "legal_basis": [
+            "Article 5(1) REMIT IR 2026",
+            "Article 5(3) REMIT IR 2026"
+          ],
+          "paragraphs": [
+            "P12"
+          ],
+          "sections": [
+            "2.5"
+          ],
+          "evidence": "Intragroup trades between Nordwind companies concluded outside an organised market place are not REMIT-relevant",
+          "explanation": "The document identifies intragroup trades but treats them as not relevant, not as reportable on request. It does not identify the other categories."
+        },
+        {
+          "check": "REMIT-REP-08.c4",
+          "status": "missing",
+          "basis": "good_practice",
+          "primary": true,
+          "item_id": "REMIT-REP-08",
+          "item_title": "Keep records of transactions reportable only on request",
+          "check_text": "Describes how an ad-hoc ACER request for these transactions would be answered.",
+          "legal_basis": [
+            "Article 5(1) REMIT IR 2026",
+            "Article 5(3) REMIT IR 2026"
+          ],
+          "paragraphs": [],
+          "sections": [],
+          "evidence": "",
+          "explanation": "The document does not describe how an ad-hoc ACER request for these transactions would be answered."
+        },
+        {
+          "check": "REMIT-REP-09b.c1",
+          "status": "upcoming",
+          "basis": "law",
+          "primary": true,
+          "item_id": "REMIT-REP-09b",
+          "item_title": "Report balancing, capacity-mechanism and gas-storage transactions periodically",
+          "check_text": "Identifies which periodic-reporting categories (capacity mechanisms, electricity balancing, gas storage) apply to the company.",
+          "legal_basis": [
+            "Article 4(1) REMIT IR 2026",
+            "Article 4(3)-(7) REMIT IR 2026",
+            "Article 4(11) REMIT IR 2026",
+            "Article 16(3) REMIT IR 2026",
+            "Article 17(4) REMIT IR 2026"
+          ],
+          "paragraphs": [],
+          "sections": [],
+          "evidence": "",
+          "explanation": "applies from 2028-04-29"
+        },
+        {
+          "check": "REMIT-REP-09b.c2",
+          "status": "upcoming",
+          "basis": "law",
+          "primary": true,
+          "item_id": "REMIT-REP-09b",
+          "item_title": "Report balancing, capacity-mechanism and gas-storage transactions periodically",
+          "check_text": "States the reporting frequency and deadline for each applicable category.",
+          "legal_basis": [
+            "Article 4(1) REMIT IR 2026",
+            "Article 4(3)-(7) REMIT IR 2026",
+            "Article 4(11) REMIT IR 2026",
+            "Article 16(3) REMIT IR 2026",
+            "Article 17(4) REMIT IR 2026"
+          ],
+          "paragraphs": [],
+          "sections": [],
+          "evidence": "",
+          "explanation": "applies from 2028-04-29"
+        },
+        {
+          "check": "REMIT-REP-09b.c3",
+          "status": "upcoming",
+          "basis": "law",
+          "primary": true,
+          "item_id": "REMIT-REP-09b",
+          "item_title": "Report balancing, capacity-mechanism and gas-storage transactions periodically",
+          "check_text": "Provides for reporting, within 90 days of the obligation applying, of outstanding transactions concluded before that date.",
+          "legal_basis": [
+            "Article 4(1) REMIT IR 2026",
+            "Article 4(3)-(7) REMIT IR 2026",
+            "Article 4(11) REMIT IR 2026",
+            "Article 16(3) REMIT IR 2026",
+            "Article 17(4) REMIT IR 2026"
+          ],
+          "paragraphs": [],
+          "sections": [],
+          "evidence": "",
+          "explanation": "applies from 2028-04-29"
+        },
+        {
+          "check": "REMIT-REP-09b.c4",
+          "status": "upcoming",
+          "basis": "law",
+          "primary": true,
+          "item_id": "REMIT-REP-09b",
+          "item_title": "Report balancing, capacity-mechanism and gas-storage transactions periodically",
+          "check_text": "States a retention period of at least five years.",
+          "legal_basis": [
+            "Article 4(1) REMIT IR 2026",
+            "Article 4(3)-(7) REMIT IR 2026",
+            "Article 4(11) REMIT IR 2026",
+            "Article 16(3) REMIT IR 2026",
+            "Article 17(4) REMIT IR 2026"
+          ],
+          "paragraphs": [],
+          "sections": [],
+          "evidence": "",
+          "explanation": "applies from 2028-04-29"
+        },
+        {
+          "check": "REMIT-COOP-02.c1",
+          "status": "covered",
+          "basis": "good_practice",
+          "primary": true,
+          "item_id": "REMIT-COOP-02",
+          "item_title": "Answer ACER requests about reported data, including original contracts",
+          "check_text": "Keeps original contracts (including OTC and non-standard contracts) retrievable so they can be produced if ACER requests them.",
+          "legal_basis": [
+            "Article 8(9) REMIT IR 2026"
+          ],
+          "paragraphs": [
+            "P21"
+          ],
+          "sections": [
+            "5.1"
+          ],
+          "evidence": "Original OTC and non-standard contracts are archived in the contract management system and can be retrieved on request.",
+          "explanation": "Original OTC and non-standard contracts are archived and retrievable on request."
+        },
+        {
+          "check": "REMIT-COOP-02.c2",
+          "status": "missing",
+          "basis": "good_practice",
+          "primary": true,
+          "item_id": "REMIT-COOP-02",
+          "item_title": "Answer ACER requests about reported data, including original contracts",
+          "check_text": "Names who answers ACER data-quality queries.",
+          "legal_basis": [
+            "Article 8(9) REMIT IR 2026"
+          ],
+          "paragraphs": [],
+          "sections": [],
+          "evidence": "",
+          "explanation": "The document does not name who answers ACER data-quality queries."
+        },
+        {
+          "check": "REMIT-DIS-09.c1",
+          "status": "upcoming",
+          "basis": "good_practice",
+          "primary": false,
+          "item_id": "REMIT-DIS-09",
+          "item_title": "Use authorised IIPs and RRMs",
+          "check_text": "Requires checking that the chosen IIP and RRM are authorised by ACER or, during the transition, registered and awaiting ACER's decision.",
+          "legal_basis": [
+            "Article 4(1) REMIT",
+            "Article 8(1) REMIT",
+            "Article 4a REMIT",
+            "Article 9a REMIT",
+            "Article 40 Delegated Regulation (EU) 2026/255"
+          ],
+          "paragraphs": [],
+          "sections": [],
+          "evidence": "",
+          "explanation": "applies from 2027-10-29"
+        },
+        {
+          "check": "REMIT-DIS-09.c2",
+          "status": "upcoming",
+          "basis": "good_practice",
+          "primary": false,
+          "item_id": "REMIT-DIS-09",
+          "item_title": "Use authorised IIPs and RRMs",
+          "check_text": "Describes what happens if the IIP or RRM loses its authorisation.",
+          "legal_basis": [
+            "Article 4(1) REMIT",
+            "Article 8(1) REMIT",
+            "Article 4a REMIT",
+            "Article 9a REMIT",
+            "Article 40 Delegated Regulation (EU) 2026/255"
+          ],
+          "paragraphs": [],
+          "sections": [],
+          "evidence": "",
+          "explanation": "applies from 2027-10-29"
+        },
+        {
+          "check": "REMIT-ALG-02.c1",
+          "status": "missing",
+          "basis": "law",
+          "primary": false,
+          "item_id": "REMIT-ALG-02",
+          "item_title": "Notify algorithmic trading to the NRA and ACER",
+          "check_text": "Requires notification of the NRA and ACER (e.g. via CEREMP) before algorithmic trading starts.",
+          "legal_basis": [
+            "Article 5a(2) REMIT"
+          ],
+          "paragraphs": [],
+          "sections": [],
+          "evidence": "",
+          "explanation": "The document does not mention algorithmic trading or its notification to the NRA and ACER."
+        },
+        {
+          "check": "REMIT-ALG-02.c2",
+          "status": "missing",
+          "basis": "law",
+          "primary": false,
+          "item_id": "REMIT-ALG-02",
+          "item_title": "Notify algorithmic trading to the NRA and ACER",
+          "check_text": "Keeps strategy descriptions, parameters, limits and controls ready to provide on request.",
+          "legal_basis": [
+            "Article 5a(2) REMIT"
+          ],
+          "paragraphs": [],
+          "sections": [],
+          "evidence": "",
+          "explanation": "The document does not mention strategy descriptions, parameters, limits or controls for algorithmic trading."
+        },
+        {
+          "check": "REMIT-ALG-02.c3",
+          "status": "missing",
+          "basis": "good_practice",
+          "primary": false,
+          "item_id": "REMIT-ALG-02",
+          "item_title": "Notify algorithmic trading to the NRA and ACER",
+          "check_text": "Names the role that maintains the notification.",
+          "legal_basis": [
+            "Article 5a(2) REMIT"
+          ],
+          "paragraphs": [],
+          "sections": [],
+          "evidence": "",
+          "explanation": "The document names no role that maintains an algorithmic trading notification."
+        }
+      ]
+    }
+  ]
+}

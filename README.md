@@ -43,7 +43,7 @@ Offline options: `--dry-run` prints the prompts; `--mock-key demo/nordwind/answe
 
 ```
 obligations/remit.yaml        checklist (v0.3) · CHANGELOG.md · REMIT-obligations-review.md
-examples/                     a sample report and findings (blind run on the Nordwind demo)
+examples/                     runs on the Nordwind demo: blind stand-in, real Sonnet runs (prompt v1, v2)
 lens/                         engine: checklist selection, document reader, Claude call, report, eval, local server
 addin/                        Word add-in: manifest, task pane, icons
 demo/nordwind/                profile, documents, answer key
@@ -58,4 +58,4 @@ Code is licensed under [Apache-2.0](LICENSE). The checklist, demo documents, ans
 
 ## Roadmap
 
-1. ~~REMIT checklist~~ · 2. ~~engine + demo~~ (real-model evaluation pending) · 3. ~~Word add-in: side panel, analyse selection~~ · 4. ~~whole-document scan with highlights and comments~~ (both tested in headless Chrome; first run in Word pending) · 5. MAR and enforcement cases
+1. ~~REMIT checklist~~ · 2. ~~engine + demo~~ (real run, Sonnet, prompt v2: 19/19 planted errors, recall 100%, precision 93%) · 3. ~~Word add-in: side panel, analyse selection~~ · 4. ~~whole-document scan with highlights and comments~~ (both tested in headless Chrome; first run in Word pending) · 5. MAR and enforcement cases

@@ -23,6 +23,7 @@ Rules:
 - Examples in a check ("e.g.", "such as") illustrate it; they are not all required. A named team, function or role counts as saying who is responsible.
 - Use partial only when an element the check itself requires is absent or unclear. Detail you would like to see but the check does not ask for is not a reason for partial.
 - Use contradicts only when the document states something that conflicts with what this check requires. Silence is missing, not contradicts.
+- If what the check requires is absent, the status is missing, even when the document says related things nearby. Related content without the required element is not partial.
 - Read the requirement behind each check: a document can contradict the requirement even when it does not use the same words.
 - Cite the ids of the paragraphs you rely on (e.g. "P12"). For missing, cite none.
 - evidence: a short verbatim quote (at most 30 words) from the cited paragraph; empty for missing.

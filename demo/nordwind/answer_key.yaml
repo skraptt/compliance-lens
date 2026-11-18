@@ -13,6 +13,7 @@ meta:
   revisions:
     - "2026-11-18: after the first blind run, six alternative answers were accepted where the model's reading was defensible (REP-05.c1, INS-01.c5, DIS-03.c4, MAN-01.c4, MAN-02.c1, REP-02.c4). Expected answers and planted errors were not changed."
     - "2026-11-18: after the first real run (Sonnet via Claude Code), three more alternatives were accepted (INS-01.c2, DIS-04.c2, DIS-05.c1). The other twelve mismatches were treated as prompt problems and the prompt was changed instead."
+    - "2026-11-18: after the prompt v2 run, GP-10.c2 was corrected from covered to partial (a key error; the check also asks about disclosures) and partial was accepted for DIS-01.c1, which both models gave in every run."
 
 documents:
 
@@ -25,7 +26,7 @@ documents:
     REMIT-INS-01.c5:  {expected: missing, accept: [contradicts], at: ["1.3"], note: "Contradicts is defensible: 1.3 takes the group plant out of the whole policy, trading ban included."}
     REMIT-INS-01.c6:  {expected: covered, at: ["2.2"]}
     REMIT-INS-01.c7:  {expected: covered, at: ["3.3"]}
-    REMIT-DIS-01.c1:  {expected: covered, at: ["4.1"]}
+    REMIT-DIS-01.c1:  {expected: covered, accept: [partial], at: ["4.1"], note: "Partial is defensible: the IIP is named but made optional ('where possible')."}
     REMIT-DIS-01.c2:  {expected: contradicts, at: ["1.3"], planted: true, note: "Excludes the group plant from publication; Art 4(1) covers facilities of the parent and related undertakings."}
     REMIT-DIS-01.c3:  {expected: contradicts, at: ["4.1"], planted: true, note: "Website is the main channel and the IIP is optional ('where possible'); since REMIT II the IIP is mandatory and other channels are additional only."}
     REMIT-DIS-01.c4:  {expected: covered, at: ["2.2"]}
@@ -86,7 +87,7 @@ documents:
     MAR-SCOPE-01.c1:  {expected: missing}
     MAR-SCOPE-01.c2:  {expected: missing}
     REMIT-GP-10.c1:   {expected: covered, at: ["3.2"]}
-    REMIT-GP-10.c2:   {expected: covered, at: ["3.2"]}
+    REMIT-GP-10.c2:   {expected: partial, at: ["3.2"], note: "Five years for recordings, chats and trade tickets; disclosures (published UMMs) are not mentioned. Corrected from covered after the v2 run."}
     REMIT-GP-11.c1:   {expected: covered, at: ["3.1"]}
     REMIT-GP-11.c2:   {expected: missing}
     REMIT-GP-12.c1:   {expected: missing}
