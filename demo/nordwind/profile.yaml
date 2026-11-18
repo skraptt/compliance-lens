@@ -1,0 +1,43 @@
+# Fictional company used for demos and evaluation. Any resemblance to a real company is
+# unintended. All names, codes and figures are invented.
+company: Nordwind Energy Trading GmbH
+established_in: DE
+description: >-
+  Hamburg-based trading company of the Nordwind group. Trades power and gas on EEX and
+  EPEX SPOT and OTC through brokers, markets the output of the group's gas-fired plant
+  "Kraftwerk Elbufer" (430 MW, owned and operated by sister company Nordwind Erzeugung
+  GmbH), and runs algorithms on the intraday market. Registered with the
+  Bundesnetzagentur. Not a broker or exchange, no LNG or hydrogen, no supply to large
+  consumers.
+
+# Answers to the profile questions in obligations/remit.yaml
+profile:
+  market_participant: true
+  registered_mp: true
+  third_country_mp: false
+  mp_disclosing: true            # group facility (Kraftwerk Elbufer)
+  has_group_facilities: true
+  asset_operator_3_4_b: false    # the producer is the sister company, not Nordwind Trading
+  lng_market_participant: false
+  hydrogen_participant: false
+  tso: false
+  system_operator: false
+  supplier_to_large_consumer: false
+  exposure_reporter: true
+  algo_trader: true
+  dea_provider: false
+  omp: false
+  ppat: false
+  ppet: false
+  trades_for_third_parties: false
+  eamp: false
+  mar_ppaet: false
+  trades_financial_instruments: true   # EEX futures
+
+documents:
+  - file: inside-information-policy.docx
+    types: [IIP]
+  - file: market-conduct-policy.docx
+    types: [MCP, ALG]
+  - file: transaction-reporting-procedure.docx
+    types: [TRP, REG]

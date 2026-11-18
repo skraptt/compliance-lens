@@ -1,0 +1,131 @@
+# Answer key for the Nordwind demo documents, checklist v0.3, assessed as of 2026-11-18.
+#
+# One entry per check that runs on the document's primary obligations (state "run").
+#   expected  covered | partial | missing | contradicts
+#   accept    other answers that are also defensible (ambiguous wording); scored as correct
+#   at        section number(s) of the relevant paragraph(s)
+# `planted` marks the deliberate errors that a demo should surface.
+
+meta:
+  checklist_version: 0.3.0
+  as_of: 2026-11-18
+  author: Claude (draft) - to be confirmed by a lawyer
+  revisions:
+    - "2026-11-18: after the first blind run, six alternative answers were accepted where the model's reading was defensible (REP-05.c1, INS-01.c5, DIS-03.c4, MAN-01.c4, MAN-02.c1, REP-02.c4). Expected answers and planted errors were not changed."
+
+documents:
+
+  inside-information-policy.docx:
+    REMIT-REP-05.c1:  {expected: covered, accept: [partial], at: ["4.6"], note: "Partial is defensible: IIP publication is only 'where possible' (4.1)."}
+    REMIT-INS-01.c1:  {expected: covered, at: ["2.1"]}
+    REMIT-INS-01.c2:  {expected: covered, at: ["3.1", "3.2"]}
+    REMIT-INS-01.c3:  {expected: missing, planted: true, note: "No mention of cancelling or amending orders placed before the information was received."}
+    REMIT-INS-01.c4:  {expected: covered, at: ["3.2"]}
+    REMIT-INS-01.c5:  {expected: missing, accept: [contradicts], at: ["1.3"], note: "Contradicts is defensible: 1.3 takes the group plant out of the whole policy, trading ban included."}
+    REMIT-INS-01.c6:  {expected: covered, at: ["2.2"]}
+    REMIT-INS-01.c7:  {expected: covered, at: ["3.3"]}
+    REMIT-DIS-01.c1:  {expected: covered, at: ["4.1"]}
+    REMIT-DIS-01.c2:  {expected: contradicts, at: ["1.3"], planted: true, note: "Excludes the group plant from publication; Art 4(1) covers facilities of the parent and related undertakings."}
+    REMIT-DIS-01.c3:  {expected: contradicts, at: ["4.1"], planted: true, note: "Website is the main channel and the IIP is optional ('where possible'); since REMIT II the IIP is mandatory and other channels are additional only."}
+    REMIT-DIS-01.c4:  {expected: covered, at: ["2.2"]}
+    REMIT-DIS-01.c5:  {expected: partial, accept: [missing], at: ["4.3"], note: "Implied (Market Operations checks), not stated."}
+    REMIT-DIS-02.c1:  {expected: contradicts, at: ["4.2"], planted: true, note: "'Within 24 hours' is not publication without delay."}
+    REMIT-DIS-02.c2:  {expected: partial, accept: [covered, missing], at: ["3.1"], note: "General prohibition in 3.1 applies, but no explicit rule tied to publication."}
+    REMIT-DIS-02.c3:  {expected: contradicts, at: ["4.2"], planted: true, note: "24 hours vs ACER's one hour."}
+    REMIT-DIS-02.c4:  {expected: missing}
+    REMIT-DIS-02.c5:  {expected: partial, accept: [covered, missing], at: ["Annex A"], note: "Template has a publication date/time field; no explicit recording rule."}
+    REMIT-DIS-03.c1:  {expected: covered, at: ["4.3"]}
+    REMIT-DIS-03.c2:  {expected: covered, at: ["4.4"]}
+    REMIT-DIS-03.c3:  {expected: missing}
+    REMIT-DIS-03.c4:  {expected: covered, accept: [partial], at: ["4.3"], note: "Four-eyes check exists; not stated to be against the Annex VII fields."}
+    REMIT-DIS-04.c1:  {expected: covered, at: ["5.1"]}
+    REMIT-DIS-04.c2:  {expected: partial, at: ["5.1"], planted: true, note: "Only commercial interest; the not-misleading and confidentiality conditions are absent."}
+    REMIT-DIS-04.c3:  {expected: missing, planted: true}
+    REMIT-DIS-04.c4:  {expected: missing, planted: true, note: "No notification of ACER and the BNetzA when publication is delayed - the key Art 4(2) duty."}
+    REMIT-DIS-04.c5:  {expected: missing}
+    REMIT-DIS-04.c6:  {expected: covered, at: ["5.2"]}
+    REMIT-DIS-04.c7:  {expected: missing}
+    REMIT-DIS-05.c1:  {expected: covered, at: ["3.6"]}
+    REMIT-DIS-05.c2:  {expected: missing}
+    REMIT-DIS-05.c3:  {expected: covered, at: ["3.6"]}
+    REMIT-DIS-06.c1:  {expected: missing}
+    REMIT-DIS-06.c2:  {expected: partial, accept: [covered, missing], at: ["3.1"], note: "Follows from 3.1 but not stated."}
+    REMIT-DIS-07.c1:  {expected: contradicts, at: ["4.5"], planted: true, note: "Relies on ENTSO-E publication alone; Art 4(4) makes it effective but not necessarily timely and public."}
+    REMIT-DIS-08.c1:  {expected: missing}
+    REMIT-GP-07.c1:   {expected: covered, at: ["2.2"]}
+    REMIT-GP-07.c2:   {expected: missing}
+    REMIT-GP-08.c1:   {expected: covered, at: ["3.4"]}
+    REMIT-GP-08.c2:   {expected: missing}
+    REMIT-GP-09.c1:   {expected: covered, at: ["3.5"]}
+    REMIT-GP-09.c2:   {expected: missing}
+
+  market-conduct-policy.docx:
+    REMIT-INS-03.c1:  {expected: missing}
+    REMIT-INS-03.c2:  {expected: missing}
+    REMIT-MAN-01.c1:  {expected: partial, at: ["2.1"], planted: true, note: "Attempted manipulation is not covered."}
+    REMIT-MAN-01.c2:  {expected: covered, at: ["2.2"]}
+    REMIT-MAN-01.c3:  {expected: missing, planted: true, note: "Group markets a 430 MW plant; capacity withholding is not addressed."}
+    REMIT-MAN-01.c4:  {expected: partial, accept: [covered, missing, contradicts], at: ["2.4"], note: "Permits intragroup trades without any control; contradicts is defensible (wash-trade risk)."}
+    REMIT-MAN-01.c5:  {expected: covered, at: ["2.5"]}
+    REMIT-MAN-02.c1:  {expected: covered, accept: [partial], at: ["2.3"], note: "Restricts who speaks; no explicit ban on spreading false information."}
+    REMIT-MAN-02.c2:  {expected: missing}
+    REMIT-MAN-02.c3:  {expected: missing}
+    REMIT-ALG-01.c1:  {expected: covered, at: ["4.2"]}
+    REMIT-ALG-01.c2:  {expected: covered, at: ["4.3"]}
+    REMIT-ALG-01.c3:  {expected: partial, at: ["4.4"], note: "Testing before go-live only, not after changes."}
+    REMIT-ALG-01.c4:  {expected: missing, planted: true, note: "No business continuity arrangements."}
+    REMIT-ALG-01.c5:  {expected: covered, at: ["4.5"]}
+    REMIT-ALG-01.c6:  {expected: covered, at: ["4.2"]}
+    REMIT-ALG-01.c7:  {expected: covered, at: ["4.3"]}
+    REMIT-ALG-02.c1:  {expected: missing, planted: true, note: "No notification of algorithmic trading to the BNetzA and ACER."}
+    REMIT-ALG-02.c2:  {expected: partial, accept: [covered], at: ["4.6"]}
+    REMIT-ALG-02.c3:  {expected: missing}
+    REMIT-ALG-03.c1:  {expected: contradicts, at: ["4.6"], planted: true, note: "Three years instead of five."}
+    REMIT-ALG-03.c2:  {expected: partial, accept: [covered], at: ["4.6"]}
+    MAR-SCOPE-01.c1:  {expected: missing}
+    MAR-SCOPE-01.c2:  {expected: missing}
+    REMIT-GP-10.c1:   {expected: covered, at: ["3.2"]}
+    REMIT-GP-10.c2:   {expected: covered, at: ["3.2"]}
+    REMIT-GP-11.c1:   {expected: covered, at: ["3.1"]}
+    REMIT-GP-11.c2:   {expected: missing}
+    REMIT-GP-12.c1:   {expected: missing}
+    REMIT-GP-12.c2:   {expected: missing}
+    REMIT-GP-13.c1:   {expected: partial, accept: [covered], at: ["4.4"], note: "New algorithms only, not changes."}
+    REMIT-GP-13.c2:   {expected: missing}
+
+  transaction-reporting-procedure.docx:
+    REMIT-REG-01.c1:  {expected: covered, at: ["1.1"]}
+    REMIT-REG-01.c2:  {expected: missing}
+    REMIT-REG-01.c3:  {expected: covered, at: ["1.2"]}
+    REMIT-REG-01.c4:  {expected: covered, at: ["1.1"]}
+    REMIT-REG-02.c1:  {expected: covered, accept: [partial], at: ["1.3"]}
+    REMIT-REG-02.c2:  {expected: contradicts, at: ["1.3"], planted: true, note: "Changes wait for the annual review; Art 9(5) requires prompt notification."}
+    REMIT-REG-02.c3:  {expected: missing}
+    REMIT-REG-02.c4:  {expected: missing, accept: [contradicts]}
+    REMIT-REG-02.c5:  {expected: covered, at: ["1.2"]}
+    REMIT-REG-02.c6:  {expected: covered, at: ["1.3"]}
+    REMIT-REP-01.c1:  {expected: covered, at: ["2.1"]}
+    REMIT-REP-01.c2:  {expected: covered, at: ["2.3"]}
+    REMIT-REP-01.c3:  {expected: contradicts, at: ["2.2"], planted: true, note: "Orders to trade are reportable; the procedure excludes them."}
+    REMIT-REP-01.c4:  {expected: covered, at: ["2.3"]}
+    REMIT-REP-02.c1:  {expected: covered, accept: [partial], at: ["3.1"], note: "T+1 is stricter than T+2 and therefore compliant - a test of judgement."}
+    REMIT-REP-02.c2:  {expected: contradicts, at: ["3.2"], planted: true, note: "One month (old IR 1348/2014) instead of ten working days."}
+    REMIT-REP-02.c3:  {expected: missing}
+    REMIT-REP-02.c4:  {expected: missing, accept: [partial], at: ["3.1", "3.2"]}
+    REMIT-REP-03.c1:  {expected: covered, at: ["2.3", "4.1"]}
+    REMIT-REP-03.c2:  {expected: covered, at: ["4.1"]}
+    REMIT-REP-03.c3:  {expected: missing}
+    REMIT-REP-03.c4:  {expected: missing}
+    REMIT-REP-06.c1:  {expected: contradicts, at: ["2.4"], planted: true, note: "Re-reports exchange trades; Art 8(1) IR 2026 says participants shall not report OMP data."}
+    REMIT-REP-06.c3:  {expected: missing, accept: [partial]}
+    REMIT-REP-07.c1:  {expected: covered, at: ["4.2"]}
+    REMIT-REP-07.c2:  {expected: missing, accept: [partial], at: ["4.2"]}
+    REMIT-REP-07.c3:  {expected: missing}
+    REMIT-REP-07.c4:  {expected: covered, at: ["4.3"]}
+    REMIT-REP-07.c5:  {expected: covered, at: ["4.2"]}
+    REMIT-REP-08.c1:  {expected: contradicts, at: ["2.5"], planted: true, note: "Off-OMP intragroup trades are reportable on request and must be kept for five years."}
+    REMIT-REP-08.c2:  {expected: missing, accept: [contradicts]}
+    REMIT-REP-08.c3:  {expected: contradicts, accept: [partial, missing], at: ["2.5"]}
+    REMIT-REP-08.c4:  {expected: missing}
+    REMIT-COOP-02.c1: {expected: covered, at: ["5.1"]}
+    REMIT-COOP-02.c2: {expected: missing}

@@ -1,0 +1,1154 @@
+{
+ "inside-information-policy.docx": [
+  {
+   "check": "REMIT-REG-02.c1",
+   "status": "missing",
+   "paragraphs": [],
+   "evidence": "",
+   "explanation": "The policy does not address notifying the NRA of changes to registration data, including a change of the place where inside information is published."
+  },
+  {
+   "check": "REMIT-REG-02.c2",
+   "status": "missing",
+   "paragraphs": [],
+   "evidence": "",
+   "explanation": "No requirement to notify registration changes to the NRA promptly."
+  },
+  {
+   "check": "REMIT-REG-02.c3",
+   "status": "missing",
+   "paragraphs": [],
+   "evidence": "",
+   "explanation": "No internal trigger events for registration updates are listed."
+  },
+  {
+   "check": "REMIT-REG-02.c4",
+   "status": "missing",
+   "paragraphs": [],
+   "evidence": "",
+   "explanation": "No internal time limit for notifying registration changes."
+  },
+  {
+   "check": "REMIT-REG-02.c5",
+   "status": "missing",
+   "paragraphs": [],
+   "evidence": "",
+   "explanation": "No role is named as responsible for submitting registration changes."
+  },
+  {
+   "check": "REMIT-REG-02.c6",
+   "status": "missing",
+   "paragraphs": [],
+   "evidence": "",
+   "explanation": "No review frequency for registration data is specified."
+  },
+  {
+   "check": "REMIT-REP-05.c1",
+   "status": "partial",
+   "paragraphs": [
+    "P23"
+   ],
+   "evidence": "The EEX Transparency Platform forwards our published Urgent Market Messages to ACER.",
+   "explanation": "Explains how published UMMs reach ACER, but says nothing on fundamental capacity/unavailability data, and publication on the IIP is only 'where possible', so ACER may not receive all disclosures."
+  },
+  {
+   "check": "REMIT-INS-01.c1",
+   "status": "covered",
+   "paragraphs": [
+    "P8"
+   ],
+   "evidence": "Inside information is information of a precise nature which has not been made public, which relates directly or indirectly to one or more wholesale energy products",
+   "explanation": "Definition reproduces all REMIT criteria: precise, non-public, relating to wholesale energy products, likely to significantly affect prices."
+  },
+  {
+   "check": "REMIT-INS-01.c2",
+   "status": "covered",
+   "paragraphs": [
+    "P11",
+    "P12"
+   ],
+   "evidence": "must not recommend or induce another person to do so.",
+   "explanation": "Trading and recommending are prohibited and sharing is limited to need-to-know colleagues, covering disclosure outside the normal course of duties."
+  },
+  {
+   "check": "REMIT-INS-01.c3",
+   "status": "missing",
+   "paragraphs": [],
+   "evidence": "",
+   "explanation": "The prohibition covers acquiring or disposing only; cancelling or amending orders placed before receipt of inside information is not addressed."
+  },
+  {
+   "check": "REMIT-INS-01.c4",
+   "status": "covered",
+   "paragraphs": [
+    "P12"
+   ],
+   "evidence": "Inside information may only be shared with colleagues who need it to perform their duties (need-to-know).",
+   "explanation": "Sharing is restricted to need-to-know colleagues in the performance of their duties."
+  },
+  {
+   "check": "REMIT-INS-01.c5",
+   "status": "contradicts",
+   "paragraphs": [
+    "P6"
+   ],
+   "evidence": "Kraftwerk Elbufer is owned by our sister company Nordwind Erzeugung GmbH and is therefore outside the scope of this policy.",
+   "explanation": "Excludes a group company's plant from the whole policy, including the trading prohibition; REMIT prohibits trading on inside information about any facility, including other companies' facilities."
+  },
+  {
+   "check": "REMIT-INS-01.c6",
+   "status": "covered",
+   "paragraphs": [
+    "P9"
+   ],
+   "evidence": "any planned or unplanned change of 100 MW or more in the available capacity of a power plant is presumed to be inside information.",
+   "explanation": "Gives a concrete example relevant to the company's power-plant assets."
+  },
+  {
+   "check": "REMIT-INS-01.c7",
+   "status": "covered",
+   "paragraphs": [
+    "P13"
+   ],
+   "evidence": "Employees who believe they have received inside information must inform Compliance immediately.",
+   "explanation": "Staff must escalate possible inside information to Compliance immediately."
+  },
+  {
+   "check": "REMIT-INS-03.c1",
+   "status": "missing",
+   "paragraphs": [],
+   "evidence": "",
+   "explanation": "The policy does not state which insider-trading exemptions, if any, the company relies on."
+  },
+  {
+   "check": "REMIT-INS-03.c2",
+   "status": "missing",
+   "paragraphs": [],
+   "evidence": "",
+   "explanation": "No requirement to evidence that agreements or orders behind exempt transactions predate receipt of inside information."
+  },
+  {
+   "check": "REMIT-DIS-01.c1",
+   "status": "contradicts",
+   "paragraphs": [
+    "P18"
+   ],
+   "evidence": "Inside information is published on our company website www.nordwind-trading.example and, where possible, also on the EEX Transparency Platform.",
+   "explanation": "Names EEX Transparency Platform but makes IIP publication optional ('where possible') with the website as primary channel; REMIT II requires disclosure through an IIP."
+  },
+  {
+   "check": "REMIT-DIS-01.c2",
+   "status": "contradicts",
+   "paragraphs": [
+    "P6"
+   ],
+   "evidence": "Only information about facilities owned by Nordwind Trading itself needs to be published under this policy.",
+   "explanation": "Article 4(1) covers facilities owned, controlled or operated by the parent or related undertakings; the policy excludes the sister company's Kraftwerk Elbufer and does not assign disclosure responsibility."
+  },
+  {
+   "check": "REMIT-DIS-01.c3",
+   "status": "contradicts",
+   "paragraphs": [
+    "P18"
+   ],
+   "evidence": "Inside information is published on our company website www.nordwind-trading.example and, where possible, also on the EEX Transparency Platform.",
+   "explanation": "The website is the primary channel and the IIP secondary; ACER expects the website to be additional only, with identical content. No identical-content requirement."
+  },
+  {
+   "check": "REMIT-DIS-01.c4",
+   "status": "covered",
+   "paragraphs": [
+    "P9"
+   ],
+   "evidence": "Compliance assesses whether information is inside information using the criteria in paragraph 2.1.",
+   "explanation": "Compliance is named as the function assessing inside information."
+  },
+  {
+   "check": "REMIT-DIS-01.c5",
+   "status": "partial",
+   "paragraphs": [
+    "P20"
+   ],
+   "evidence": "Each message is checked by a second person from the Market Operations team before publication.",
+   "explanation": "Implies Market Operations prepares and publishes UMMs, but does not expressly name who publishes on the IIP."
+  },
+  {
+   "check": "REMIT-DIS-02.c1",
+   "status": "contradicts",
+   "paragraphs": [
+    "P19"
+   ],
+   "evidence": "Publication takes place within 24 hours of the information becoming known to Nordwind Trading.",
+   "explanation": "A 24-hour window is inconsistent with disclosure in a timely manner / without delay under Article 4(1)."
+  },
+  {
+   "check": "REMIT-DIS-02.c2",
+   "status": "partial",
+   "paragraphs": [
+    "P11"
+   ],
+   "evidence": "Employees who possess inside information must not acquire or dispose of wholesale energy products to which the information relates",
+   "explanation": "General prohibition on trading while holding inside information implies no trading before publication, but there is no explicit rule tying trading to UMM publication."
+  },
+  {
+   "check": "REMIT-DIS-02.c3",
+   "status": "contradicts",
+   "paragraphs": [
+    "P19"
+   ],
+   "evidence": "Publication takes place within 24 hours of the information becoming known to Nordwind Trading.",
+   "explanation": "Sets a 24-hour deadline, far beyond ACER's expectation of publication at the latest within one hour."
+  },
+  {
+   "check": "REMIT-DIS-02.c4",
+   "status": "missing",
+   "paragraphs": [],
+   "evidence": "",
+   "explanation": "No on-call or 24/7 publication arrangement outside office hours."
+  },
+  {
+   "check": "REMIT-DIS-02.c5",
+   "status": "partial",
+   "paragraphs": [
+    "P31"
+   ],
+   "evidence": "publication date/time",
+   "explanation": "The UMM template contains a publication date/time field, but the policy does not require the publication time to be recorded internally."
+  },
+  {
+   "check": "REMIT-DIS-03.c1",
+   "status": "covered",
+   "paragraphs": [
+    "P20",
+    "P31"
+   ],
+   "evidence": "Urgent Market Messages are prepared using the template in Annex A, which follows the data fields of Annex VII of the ACER Manual of Procedures on data reporting.",
+   "explanation": "Refers to Annex VII fields and provides a template."
+  },
+  {
+   "check": "REMIT-DIS-03.c2",
+   "status": "covered",
+   "paragraphs": [
+    "P21"
+   ],
+   "evidence": "When the expected duration or the available capacity changes, the message is updated as soon as the new information is available.",
+   "explanation": "UMM updates on changes in duration or capacity are required."
+  },
+  {
+   "check": "REMIT-DIS-03.c3",
+   "status": "missing",
+   "paragraphs": [],
+   "evidence": "",
+   "explanation": "Nothing excludes executive statements, advertising or disclaimers from UMMs."
+  },
+  {
+   "check": "REMIT-DIS-03.c4",
+   "status": "partial",
+   "paragraphs": [
+    "P20"
+   ],
+   "evidence": "Each message is checked by a second person from the Market Operations team before publication.",
+   "explanation": "A four-eyes check by Market Operations is required, but it is not stated that the check is against the required Annex VII fields."
+  },
+  {
+   "check": "REMIT-DIS-04.c1",
+   "status": "covered",
+   "paragraphs": [
+    "P25"
+   ],
+   "evidence": "The Head of Trading may decide to delay publication of inside information",
+   "explanation": "Names the Head of Trading as decision-maker on delay (note: trading-side decision-maker raises conflict concerns)."
+  },
+  {
+   "check": "REMIT-DIS-04.c2",
+   "status": "partial",
+   "paragraphs": [
+    "P25"
+   ],
+   "evidence": "The Head of Trading may decide to delay publication of inside information if publication would harm Nordwind Trading's commercial interests.",
+   "explanation": "Only a broad commercial-interest ground; the not-misleading and confidentiality conditions of Article 4(2) are absent."
+  },
+  {
+   "check": "REMIT-DIS-04.c3",
+   "status": "missing",
+   "paragraphs": [],
+   "evidence": "",
+   "explanation": "No prohibition on trading decisions based on information whose disclosure is delayed."
+  },
+  {
+   "check": "REMIT-DIS-04.c4",
+   "status": "missing",
+   "paragraphs": [],
+   "evidence": "",
+   "explanation": "No notification of ACER and the NRA with justification; only internal documentation is required."
+  },
+  {
+   "check": "REMIT-DIS-04.c5",
+   "status": "missing",
+   "paragraphs": [],
+   "evidence": "",
+   "explanation": "No requirement to disclose once the legitimate interest ends."
+  },
+  {
+   "check": "REMIT-DIS-04.c6",
+   "status": "covered",
+   "paragraphs": [
+    "P26"
+   ],
+   "evidence": "Compliance documents each decision to delay publication, including the reasons.",
+   "explanation": "Delay decisions and reasons are documented by Compliance."
+  },
+  {
+   "check": "REMIT-DIS-04.c7",
+   "status": "missing",
+   "paragraphs": [],
+   "evidence": "",
+   "explanation": "No reference to ACER's standard delay-notification format."
+  },
+  {
+   "check": "REMIT-DIS-05.c1",
+   "status": "covered",
+   "paragraphs": [
+    "P16"
+   ],
+   "evidence": "Inside information may be shared with external advisers and banks only after they have signed a non-disclosure agreement.",
+   "explanation": "External sharing is limited to recipients bound by contractual confidentiality, satisfying the Article 4(3) exception."
+  },
+  {
+   "check": "REMIT-DIS-05.c2",
+   "status": "missing",
+   "paragraphs": [],
+   "evidence": "",
+   "explanation": "No requirement to publish as soon as possible after an unintentional disclosure."
+  },
+  {
+   "check": "REMIT-DIS-05.c3",
+   "status": "covered",
+   "paragraphs": [
+    "P16"
+   ],
+   "evidence": "Inside information may be shared with external advisers and banks only after they have signed a non-disclosure agreement.",
+   "explanation": "NDAs are required for external recipients."
+  },
+  {
+   "check": "REMIT-DIS-06.c1",
+   "status": "missing",
+   "paragraphs": [],
+   "evidence": "",
+   "explanation": "No backup publication channel or IIP-failure procedure is described."
+  },
+  {
+   "check": "REMIT-DIS-06.c2",
+   "status": "partial",
+   "paragraphs": [
+    "P11"
+   ],
+   "evidence": "Employees who possess inside information must not acquire or dispose of wholesale energy products to which the information relates",
+   "explanation": "General insider-trading prohibition applies, but the policy does not state that it continues until publication, e.g. during an IIP outage."
+  },
+  {
+   "check": "REMIT-DIS-07.c1",
+   "status": "contradicts",
+   "paragraphs": [
+    "P22"
+   ],
+   "evidence": "Where an outage is also published on the ENTSO-E Transparency Platform, this satisfies our obligation under REMIT and no separate Urgent Market Message is needed.",
+   "explanation": "Relies on ENTSO-E publication alone; under Article 4(4) such publication is effective but not necessarily timely and public disclosure under Article 4(1)."
+  },
+  {
+   "check": "REMIT-DIS-08.c1",
+   "status": "missing",
+   "paragraphs": [],
+   "evidence": "",
+   "explanation": "Delay for classified critical-infrastructure information is not addressed."
+  },
+  {
+   "check": "REMIT-GP-07.c1",
+   "status": "covered",
+   "paragraphs": [
+    "P9"
+   ],
+   "evidence": "any planned or unplanned change of 100 MW or more in the available capacity of a power plant is presumed to be inside information.",
+   "explanation": "A 100 MW threshold and the paragraph 2.1 criteria are set for assessment."
+  },
+  {
+   "check": "REMIT-GP-07.c2",
+   "status": "missing",
+   "paragraphs": [],
+   "evidence": "",
+   "explanation": "No map of where inside information arises (assets, departments) or how it flows."
+  },
+  {
+   "check": "REMIT-GP-08.c1",
+   "status": "covered",
+   "paragraphs": [
+    "P14"
+   ],
+   "evidence": "Compliance keeps a list of all persons who have access to inside information about the plants marketed by Nordwind Trading.",
+   "explanation": "An insider list is maintained by Compliance."
+  },
+  {
+   "check": "REMIT-GP-08.c2",
+   "status": "missing",
+   "paragraphs": [],
+   "evidence": "",
+   "explanation": "No log of who received inside information and when, including during delayed disclosure."
+  },
+  {
+   "check": "REMIT-GP-09.c1",
+   "status": "covered",
+   "paragraphs": [
+    "P15"
+   ],
+   "evidence": "Plant operations staff sit in a separate building and have no access to trading systems.",
+   "explanation": "Describes physical and system separation between plant operations and trading."
+  },
+  {
+   "check": "REMIT-GP-09.c2",
+   "status": "missing",
+   "paragraphs": [],
+   "evidence": "",
+   "explanation": "No trade-stop mechanism or record of its use is described."
+  },
+  {
+   "check": "REMIT-GP-12.c1",
+   "status": "missing",
+   "paragraphs": [],
+   "evidence": "",
+   "explanation": "Erroneous orders or trades are not addressed."
+  },
+  {
+   "check": "REMIT-GP-12.c2",
+   "status": "missing",
+   "paragraphs": [],
+   "evidence": "",
+   "explanation": "No investigation steps after erroneous orders."
+  }
+ ],
+ "market-conduct-policy.docx": [
+  {
+   "check": "REMIT-INS-01.c1",
+   "status": "missing",
+   "paragraphs": [],
+   "evidence": "",
+   "explanation": "The policy contains no definition of inside information."
+  },
+  {
+   "check": "REMIT-INS-01.c2",
+   "status": "missing",
+   "paragraphs": [],
+   "evidence": "",
+   "explanation": "No prohibition on trading, recommending or disclosing while holding inside information."
+  },
+  {
+   "check": "REMIT-INS-01.c3",
+   "status": "missing",
+   "paragraphs": [],
+   "evidence": "",
+   "explanation": "Cancelling or amending orders on the basis of inside information is not addressed."
+  },
+  {
+   "check": "REMIT-INS-01.c4",
+   "status": "missing",
+   "paragraphs": [],
+   "evidence": "",
+   "explanation": "No need-to-know rule for sharing inside information."
+  },
+  {
+   "check": "REMIT-INS-01.c5",
+   "status": "missing",
+   "paragraphs": [],
+   "evidence": "",
+   "explanation": "No statement on trading on inside information about other companies' facilities."
+  },
+  {
+   "check": "REMIT-INS-01.c6",
+   "status": "missing",
+   "paragraphs": [],
+   "evidence": "",
+   "explanation": "No example of inside information is given."
+  },
+  {
+   "check": "REMIT-INS-01.c7",
+   "status": "missing",
+   "paragraphs": [],
+   "evidence": "",
+   "explanation": "No escalation requirement for possible inside information; P11 covers only market-abuse concerns generally."
+  },
+  {
+   "check": "REMIT-INS-03.c1",
+   "status": "missing",
+   "paragraphs": [],
+   "evidence": "",
+   "explanation": "No insider-trading exemptions are stated."
+  },
+  {
+   "check": "REMIT-INS-03.c2",
+   "status": "missing",
+   "paragraphs": [],
+   "evidence": "",
+   "explanation": "No evidence requirement for exempt transactions."
+  },
+  {
+   "check": "REMIT-MAN-01.c1",
+   "status": "partial",
+   "paragraphs": [
+    "P7"
+   ],
+   "evidence": "Market manipulation is strictly prohibited.",
+   "explanation": "Market manipulation is prohibited, but attempted market manipulation is not mentioned."
+  },
+  {
+   "check": "REMIT-MAN-01.c2",
+   "status": "covered",
+   "paragraphs": [
+    "P8"
+   ],
+   "evidence": "the following practices are prohibited: wash trades, layering and spoofing, marking the close, and placing orders without the intention to execute them.",
+   "explanation": "Specific prohibited practices are named."
+  },
+  {
+   "check": "REMIT-MAN-01.c3",
+   "status": "missing",
+   "paragraphs": [],
+   "evidence": "",
+   "explanation": "Physical and economic capacity withholding are not addressed."
+  },
+  {
+   "check": "REMIT-MAN-01.c4",
+   "status": "contradicts",
+   "paragraphs": [
+    "P10"
+   ],
+   "evidence": "Trades between Nordwind group companies on EPEX SPOT are allowed to balance positions within the group.",
+   "explanation": "Permits intra-group trades on the exchange without controls or monitoring; such trades without change in beneficial interest risk being wash trades, a practice ACER treats as manipulation."
+  },
+  {
+   "check": "REMIT-MAN-01.c5",
+   "status": "covered",
+   "paragraphs": [
+    "P11"
+   ],
+   "evidence": "Any employee who has concerns about possible market abuse must report them to Compliance.",
+   "explanation": "Staff must report market-abuse concerns to Compliance."
+  },
+  {
+   "check": "REMIT-MAN-02.c1",
+   "status": "partial",
+   "paragraphs": [
+    "P9"
+   ],
+   "evidence": "Only the Communications department may speak to the press or publish statements about market conditions. Traders must not comment on market rumours on social media.",
+   "explanation": "Restricts who communicates externally, but does not prohibit disseminating false or misleading information on supply, demand or prices, nor cover analyst calls."
+  },
+  {
+   "check": "REMIT-MAN-02.c2",
+   "status": "missing",
+   "paragraphs": [],
+   "evidence": "",
+   "explanation": "Data submitted to price reporting agencies or benchmark administrators is not addressed."
+  },
+  {
+   "check": "REMIT-MAN-02.c3",
+   "status": "missing",
+   "paragraphs": [],
+   "evidence": "",
+   "explanation": "No rule on who submits data to price reporters or how accuracy is checked."
+  },
+  {
+   "check": "REMIT-ALG-01.c1",
+   "status": "covered",
+   "paragraphs": [
+    "P17"
+   ],
+   "evidence": "Every algorithm runs within pre-trade limits: a price collar of ±20% around the last traded price, a maximum order volume of 50 MW",
+   "explanation": "Thresholds and limits for algorithms are defined."
+  },
+  {
+   "check": "REMIT-ALG-01.c2",
+   "status": "covered",
+   "paragraphs": [
+    "P17",
+    "P18"
+   ],
+   "evidence": "Orders that breach a pre-trade limit are rejected automatically.",
+   "explanation": "Automatic rejection of orders breaching pre-trade limits prevents erroneous orders."
+  },
+  {
+   "check": "REMIT-ALG-01.c3",
+   "status": "partial",
+   "paragraphs": [
+    "P19"
+   ],
+   "evidence": "New algorithms are tested in the EPEX simulation environment before go-live",
+   "explanation": "Testing before deployment is required, but not testing after changes to existing algorithms."
+  },
+  {
+   "check": "REMIT-ALG-01.c4",
+   "status": "missing",
+   "paragraphs": [],
+   "evidence": "",
+   "explanation": "No business continuity arrangements for algorithmic system failure."
+  },
+  {
+   "check": "REMIT-ALG-01.c5",
+   "status": "covered",
+   "paragraphs": [
+    "P20"
+   ],
+   "evidence": "The intraday desk monitors running algorithms during trading hours.",
+   "explanation": "The intraday desk is named as monitoring function."
+  },
+  {
+   "check": "REMIT-ALG-01.c6",
+   "status": "covered",
+   "paragraphs": [
+    "P17"
+   ],
+   "evidence": "a price collar of ±20% around the last traded price, a maximum order volume of 50 MW, and a maximum of 30 order messages per second.",
+   "explanation": "Price, volume and order-rate limits are specified."
+  },
+  {
+   "check": "REMIT-ALG-01.c7",
+   "status": "covered",
+   "paragraphs": [
+    "P18"
+   ],
+   "evidence": "The intraday desk can stop all algorithms immediately with a kill switch.",
+   "explanation": "A kill switch exists."
+  },
+  {
+   "check": "REMIT-ALG-02.c1",
+   "status": "missing",
+   "paragraphs": [],
+   "evidence": "",
+   "explanation": "No notification of algorithmic trading to the NRA and ACER."
+  },
+  {
+   "check": "REMIT-ALG-02.c2",
+   "status": "partial",
+   "paragraphs": [
+    "P21"
+   ],
+   "evidence": "Documentation of algorithms, including strategy descriptions, parameters and test results, is kept for three years.",
+   "explanation": "Strategy descriptions, parameters and test results are kept, but limits and controls are not listed and nothing addresses providing them on request."
+  },
+  {
+   "check": "REMIT-ALG-02.c3",
+   "status": "missing",
+   "paragraphs": [],
+   "evidence": "",
+   "explanation": "No role is named to maintain the algorithmic-trading notification."
+  },
+  {
+   "check": "REMIT-ALG-03.c1",
+   "status": "contradicts",
+   "paragraphs": [
+    "P21"
+   ],
+   "evidence": "Documentation of algorithms, including strategy descriptions, parameters and test results, is kept for three years.",
+   "explanation": "Three-year retention is shorter than the five years required by Article 5a(2) REMIT."
+  },
+  {
+   "check": "REMIT-ALG-03.c2",
+   "status": "partial",
+   "paragraphs": [
+    "P21"
+   ],
+   "evidence": "Documentation of algorithms, including strategy descriptions, parameters and test results",
+   "explanation": "Strategies, parameters and tests are listed; limits and changes are not."
+  },
+  {
+   "check": "MAR-SCOPE-01.c1",
+   "status": "missing",
+   "paragraphs": [],
+   "evidence": "",
+   "explanation": "Traded products are not mapped to REMIT-only or REMIT-and-MAR."
+  },
+  {
+   "check": "MAR-SCOPE-01.c2",
+   "status": "missing",
+   "paragraphs": [],
+   "evidence": "",
+   "explanation": "No statement that MAR applies to products that are financial instruments."
+  },
+  {
+   "check": "REMIT-GP-01.c1",
+   "status": "partial",
+   "paragraphs": [
+    "P2",
+    "P11"
+   ],
+   "evidence": "Owner: Head of Trading, with Compliance",
+   "explanation": "Compliance is mentioned as reporting recipient and co-owner, but no REMIT compliance officer or responsible function is defined."
+  },
+  {
+   "check": "REMIT-GP-01.c2",
+   "status": "missing",
+   "paragraphs": [],
+   "evidence": "",
+   "explanation": "No statement that Compliance reports to senior management independently of trading; the policy is owned and reviewed by the Head of Trading."
+  },
+  {
+   "check": "REMIT-GP-01.c3",
+   "status": "missing",
+   "paragraphs": [],
+   "evidence": "",
+   "explanation": "No statement on Compliance access to trading and operational information."
+  },
+  {
+   "check": "REMIT-GP-04.c1",
+   "status": "missing",
+   "paragraphs": [],
+   "evidence": "",
+   "explanation": "Training is not addressed."
+  },
+  {
+   "check": "REMIT-GP-04.c2",
+   "status": "missing",
+   "paragraphs": [],
+   "evidence": "",
+   "explanation": "No training frequency or onboarding training."
+  },
+  {
+   "check": "REMIT-GP-04.c3",
+   "status": "missing",
+   "paragraphs": [],
+   "evidence": "",
+   "explanation": "No training attendance records."
+  },
+  {
+   "check": "REMIT-GP-05.c1",
+   "status": "covered",
+   "paragraphs": [
+    "P11"
+   ],
+   "evidence": "Reports can also be made anonymously through the group whistleblowing system",
+   "explanation": "Concerns can be raised to Compliance or anonymously."
+  },
+  {
+   "check": "REMIT-GP-05.c2",
+   "status": "covered",
+   "paragraphs": [
+    "P11"
+   ],
+   "evidence": "nobody will suffer disadvantages for reporting in good faith.",
+   "explanation": "Protection from retaliation for good-faith reporting."
+  },
+  {
+   "check": "REMIT-GP-09.c1",
+   "status": "missing",
+   "paragraphs": [],
+   "evidence": "",
+   "explanation": "No information barriers between asset operations and trading are described."
+  },
+  {
+   "check": "REMIT-GP-09.c2",
+   "status": "missing",
+   "paragraphs": [],
+   "evidence": "",
+   "explanation": "No trade-stop mechanism for inside information; the algorithm kill switch is not a documented trade stop."
+  },
+  {
+   "check": "REMIT-GP-10.c1",
+   "status": "covered",
+   "paragraphs": [
+    "P14"
+   ],
+   "evidence": "Trader telephone lines and Bloomberg chats are recorded.",
+   "explanation": "Recorded channels named: phone and Bloomberg chat (e-mail not mentioned)."
+  },
+  {
+   "check": "REMIT-GP-10.c2",
+   "status": "covered",
+   "paragraphs": [
+    "P14"
+   ],
+   "evidence": "Recordings, chat logs and trade tickets are kept for five years.",
+   "explanation": "Five-year retention for communications and trade records."
+  },
+  {
+   "check": "REMIT-GP-11.c1",
+   "status": "covered",
+   "paragraphs": [
+    "P13"
+   ],
+   "evidence": "Each trader trades only within the products, markets and limits set out in his or her individual trading mandate",
+   "explanation": "Documented individual trading mandates and limits."
+  },
+  {
+   "check": "REMIT-GP-11.c2",
+   "status": "missing",
+   "paragraphs": [],
+   "evidence": "",
+   "explanation": "No requirement to record reasons for unusual orders or trades."
+  },
+  {
+   "check": "REMIT-GP-12.c1",
+   "status": "missing",
+   "paragraphs": [],
+   "evidence": "",
+   "explanation": "Erroneous orders are not assessed as possible inside information."
+  },
+  {
+   "check": "REMIT-GP-12.c2",
+   "status": "missing",
+   "paragraphs": [],
+   "evidence": "",
+   "explanation": "No incident investigation steps after erroneous orders."
+  },
+  {
+   "check": "REMIT-GP-13.c1",
+   "status": "partial",
+   "paragraphs": [
+    "P19"
+   ],
+   "evidence": "New algorithms are tested in the EPEX simulation environment before go-live and require the written approval of the Head of Trading.",
+   "explanation": "Written approval before go-live for new algorithms, but changes to existing algorithms are not covered."
+  },
+  {
+   "check": "REMIT-GP-13.c2",
+   "status": "missing",
+   "paragraphs": [],
+   "evidence": "",
+   "explanation": "Vendor-supplied algorithms are not addressed."
+  },
+  {
+   "check": "REMIT-GP-14.c1",
+   "status": "missing",
+   "paragraphs": [],
+   "evidence": "",
+   "explanation": "No compliance sign-off before new products or venues; mandates are approved by Trading and Risk Management only."
+  }
+ ],
+ "transaction-reporting-procedure.docx": [
+  {
+   "check": "REMIT-REG-01.c1",
+   "status": "covered",
+   "paragraphs": [
+    "P4"
+   ],
+   "evidence": "Nordwind Trading is registered as a market participant with the Bundesnetzagentur (ACER code A0001234N.DE).",
+   "explanation": "Names Bundesnetzagentur as the NRA."
+  },
+  {
+   "check": "REMIT-REG-01.c2",
+   "status": "missing",
+   "paragraphs": [],
+   "evidence": "",
+   "explanation": "No requirement that new group entities register before starting reportable trading."
+  },
+  {
+   "check": "REMIT-REG-01.c3",
+   "status": "covered",
+   "paragraphs": [
+    "P5"
+   ],
+   "evidence": "The Head of Back Office is responsible for the registration in CEREMP and for keeping it up to date.",
+   "explanation": "Responsible role named."
+  },
+  {
+   "check": "REMIT-REG-01.c4",
+   "status": "covered",
+   "paragraphs": [
+    "P4"
+   ],
+   "evidence": "The ACER code is recorded in the static data of the trading system.",
+   "explanation": "States where the ACER code is recorded."
+  },
+  {
+   "check": "REMIT-REG-02.c1",
+   "status": "partial",
+   "paragraphs": [
+    "P6"
+   ],
+   "evidence": "Changes to registration data are reported to the Bundesnetzagentur at the annual review of registration data in January.",
+   "explanation": "Changes are reported to the NRA, but only annually rather than as they occur; specific items like place of publication of inside information are not mentioned."
+  },
+  {
+   "check": "REMIT-REG-02.c2",
+   "status": "contradicts",
+   "paragraphs": [
+    "P6"
+   ],
+   "evidence": "Changes to registration data are reported to the Bundesnetzagentur at the annual review of registration data in January.",
+   "explanation": "Batching changes to an annual January review can delay notification up to a year; Article 9(5) requires prompt notification."
+  },
+  {
+   "check": "REMIT-REG-02.c3",
+   "status": "missing",
+   "paragraphs": [],
+   "evidence": "",
+   "explanation": "No internal trigger events for registration updates are listed."
+  },
+  {
+   "check": "REMIT-REG-02.c4",
+   "status": "contradicts",
+   "paragraphs": [
+    "P6"
+   ],
+   "evidence": "Changes to registration data are reported to the Bundesnetzagentur at the annual review of registration data in January.",
+   "explanation": "Instead of a short internal time limit, changes wait for the annual review, inconsistent with prompt notification."
+  },
+  {
+   "check": "REMIT-REG-02.c5",
+   "status": "covered",
+   "paragraphs": [
+    "P5"
+   ],
+   "evidence": "The Head of Back Office is responsible for the registration in CEREMP and for keeping it up to date.",
+   "explanation": "Head of Back Office responsible for registration updates."
+  },
+  {
+   "check": "REMIT-REG-02.c6",
+   "status": "covered",
+   "paragraphs": [
+    "P6"
+   ],
+   "evidence": "at the annual review of registration data in January.",
+   "explanation": "Annual review of registration data is specified."
+  },
+  {
+   "check": "REMIT-REP-01.c1",
+   "status": "covered",
+   "paragraphs": [
+    "P8"
+   ],
+   "evidence": "power and natural gas spot and futures on EEX and EPEX SPOT, and OTC forwards in power and gas through brokers and bilaterally, including non-standard contracts",
+   "explanation": "Lists reportable products and venues."
+  },
+  {
+   "check": "REMIT-REP-01.c2",
+   "status": "covered",
+   "paragraphs": [
+    "P10",
+    "P17"
+   ],
+   "evidence": "reported by Nordwind Trading through the registered reporting mechanism TradeLink RRM.",
+   "explanation": "Names TradeLink RRM and exchanges reporting on the company's behalf."
+  },
+  {
+   "check": "REMIT-REP-01.c3",
+   "status": "contradicts",
+   "paragraphs": [
+    "P9"
+   ],
+   "evidence": "Only executed transactions are reported. Orders that are not executed are not reportable.",
+   "explanation": "REMIT requires reporting of orders to trade as well as transactions; excluding non-executed orders conflicts with Article 8(1)."
+  },
+  {
+   "check": "REMIT-REP-01.c4",
+   "status": "covered",
+   "paragraphs": [
+    "P10"
+   ],
+   "evidence": "OTC trades, including non-standard contracts, are reported by Nordwind Trading through the registered reporting mechanism TradeLink RRM.",
+   "explanation": "Off-OMP trades, including non-standard contracts, are reported by the company via its RRM."
+  },
+  {
+   "check": "REMIT-REP-02.c1",
+   "status": "covered",
+   "paragraphs": [
+    "P14"
+   ],
+   "evidence": "Standard contracts are reported by the end of the next working day (T+1).",
+   "explanation": "T+1 is stricter than the two-working-day deadline."
+  },
+  {
+   "check": "REMIT-REP-02.c2",
+   "status": "contradicts",
+   "paragraphs": [
+    "P15"
+   ],
+   "evidence": "Non-standard contracts are reported within one month of their conclusion.",
+   "explanation": "One month exceeds the ten-working-day deadline for non-standard contracts."
+  },
+  {
+   "check": "REMIT-REP-02.c3",
+   "status": "missing",
+   "paragraphs": [],
+   "evidence": "",
+   "explanation": "Deadlines are not applied to lifecycle events (amendments, cancellations, terminations)."
+  },
+  {
+   "check": "REMIT-REP-02.c4",
+   "status": "partial",
+   "paragraphs": [
+    "P14",
+    "P15"
+   ],
+   "evidence": "Standard contracts are reported by the end of the next working day (T+1).",
+   "explanation": "Distinguishes standard and non-standard contracts, but does not classify OMP vs OTC trades or address off-venue lifecycle events on OMP trades."
+  },
+  {
+   "check": "REMIT-REP-03.c1",
+   "status": "covered",
+   "paragraphs": [
+    "P10",
+    "P17"
+   ],
+   "evidence": "Trades on EEX and EPEX SPOT are also reported to ACER by the exchanges.",
+   "explanation": "Identifies that exchanges report OMP trades and the company reports OTC trades via TradeLink RRM."
+  },
+  {
+   "check": "REMIT-REP-03.c2",
+   "status": "covered",
+   "paragraphs": [
+    "P17"
+   ],
+   "evidence": "Back Office checks every morning that the exchanges' reporting confirmations have been received.",
+   "explanation": "Daily verification that exchange reports were submitted."
+  },
+  {
+   "check": "REMIT-REP-03.c3",
+   "status": "missing",
+   "paragraphs": [],
+   "evidence": "",
+   "explanation": "Only receipt of exchange confirmations is checked; accuracy of delegated reports is not verified."
+  },
+  {
+   "check": "REMIT-REP-03.c4",
+   "status": "missing",
+   "paragraphs": [],
+   "evidence": "",
+   "explanation": "No escalation, including informing NRA and ACER, when the RRM or third party cannot report."
+  },
+  {
+   "check": "REMIT-REP-05.c1",
+   "status": "missing",
+   "paragraphs": [],
+   "evidence": "",
+   "explanation": "No statement on how fundamental data and disclosed inside information reach ACER."
+  },
+  {
+   "check": "REMIT-REP-06.c1",
+   "status": "contradicts",
+   "paragraphs": [
+    "P11"
+   ],
+   "evidence": "To be on the safe side, Nordwind Trading additionally reports all trades executed on EEX and EPEX SPOT through TradeLink RRM.",
+   "explanation": "Market participants must not report OMP data themselves; the company duplicates exchange reporting."
+  },
+  {
+   "check": "REMIT-REP-06.c3",
+   "status": "partial",
+   "paragraphs": [
+    "P17"
+   ],
+   "evidence": "Back Office checks every morning that the exchanges' reporting confirmations have been received.",
+   "explanation": "Exchange confirmations are checked for receipt, but OMP reported-data access is not used to reconcile records."
+  },
+  {
+   "check": "REMIT-REP-07.c1",
+   "status": "covered",
+   "paragraphs": [
+    "P18"
+   ],
+   "evidence": "Back Office reconciles the trades reported through TradeLink RRM against the trade blotter of the trading system to ensure that all trades have been reported.",
+   "explanation": "Completeness reconciliation against the trading system."
+  },
+  {
+   "check": "REMIT-REP-07.c2",
+   "status": "missing",
+   "paragraphs": [],
+   "evidence": "",
+   "explanation": "No check that reported fields are accurate; reconciliation targets completeness only."
+  },
+  {
+   "check": "REMIT-REP-07.c3",
+   "status": "missing",
+   "paragraphs": [],
+   "evidence": "",
+   "explanation": "No check that reports were submitted within the applicable deadline."
+  },
+  {
+   "check": "REMIT-REP-07.c4",
+   "status": "covered",
+   "paragraphs": [
+    "P19"
+   ],
+   "evidence": "Rejected reports and validation errors received from TradeLink RRM are corrected and resubmitted on the same working day.",
+   "explanation": "Rejections and validation errors are corrected and resubmitted same day."
+  },
+  {
+   "check": "REMIT-REP-07.c5",
+   "status": "covered",
+   "paragraphs": [
+    "P18"
+   ],
+   "evidence": "Every working day, Back Office reconciles the trades reported through TradeLink RRM",
+   "explanation": "Daily reconciliation frequency."
+  },
+  {
+   "check": "REMIT-REP-08.c1",
+   "status": "contradicts",
+   "paragraphs": [
+    "P12"
+   ],
+   "evidence": "Intragroup trades between Nordwind companies concluded outside an organised market place are not REMIT-relevant and are not recorded for REMIT purposes.",
+   "explanation": "Off-OMP intragroup trades are reportable on ACER request and their details must be kept; the procedure declares them irrelevant and keeps no records."
+  },
+  {
+   "check": "REMIT-REP-08.c2",
+   "status": "contradicts",
+   "paragraphs": [
+    "P12"
+   ],
+   "evidence": "are not REMIT-relevant and are not recorded for REMIT purposes.",
+   "explanation": "No records are kept, conflicting with the five-year retention requirement following conclusion."
+  },
+  {
+   "check": "REMIT-REP-08.c3",
+   "status": "contradicts",
+   "paragraphs": [
+    "P12"
+   ],
+   "evidence": "Intragroup trades between Nordwind companies concluded outside an organised market place are not REMIT-relevant",
+   "explanation": "Identifies off-OMP intragroup trades but wrongly classifies them as not REMIT-relevant rather than reportable on request."
+  },
+  {
+   "check": "REMIT-REP-08.c4",
+   "status": "missing",
+   "paragraphs": [],
+   "evidence": "",
+   "explanation": "No process for answering ad-hoc ACER requests for these transactions."
+  },
+  {
+   "check": "REMIT-COOP-02.c1",
+   "status": "covered",
+   "paragraphs": [
+    "P21"
+   ],
+   "evidence": "Original OTC and non-standard contracts are archived in the contract management system and can be retrieved on request.",
+   "explanation": "Original contracts are archived and retrievable."
+  },
+  {
+   "check": "REMIT-COOP-02.c2",
+   "status": "missing",
+   "paragraphs": [],
+   "evidence": "",
+   "explanation": "No one is named to answer ACER data-quality queries."
+  },
+  {
+   "check": "REMIT-ALG-02.c1",
+   "status": "missing",
+   "paragraphs": [],
+   "evidence": "",
+   "explanation": "Algorithmic trading notification is not addressed."
+  },
+  {
+   "check": "REMIT-ALG-02.c2",
+   "status": "missing",
+   "paragraphs": [],
+   "evidence": "",
+   "explanation": "No algorithm documentation is kept ready for requests."
+  },
+  {
+   "check": "REMIT-ALG-02.c3",
+   "status": "missing",
+   "paragraphs": [],
+   "evidence": "",
+   "explanation": "No role named for the algorithmic-trading notification."
+  }
+ ]
+}

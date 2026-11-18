@@ -1,0 +1,515 @@
+# REMIT obligation checklist for Compliance Lens
+#
+# Each obligation says who it applies to, where it comes from, and what a
+# company procedure should state for the obligation to be covered. The
+# `procedure_should_cover` items drive the gap analysis; keep each one a single,
+# checkable statement.
+#
+# `requirement` texts are our own summaries, not quotations. Always check the
+# linked source before relying on an item.
+#
+# binding: law      = REMIT or an implementing/delegated act
+#          guidance = ACER guidance, Q&A or manual (non-binding, but what NRAs expect)
+
+meta:
+  version: 0.1.0
+  status: draft            # draft | reviewed
+  reviewer: null
+  sources_fetched: 2026-11-17
+  framework: REMIT (Regulation (EU) No 1227/2011 as amended by Regulation (EU) 2024/1106)
+  remit_url: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011R1227-20250205
+  ir_url: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R0256
+  acer_guidance_url: https://www.acer.europa.eu/sites/default/files/documents/Other%20Documents/6.1st_Edition_ACER_Guidance.pdf
+
+addressees:
+  market_participant: Any market participant entering into transactions reportable under Article 8(1)
+  third_country_mp: Market participant established or resident outside the EU
+  mp_with_inside_info: Market participant that owns, controls or operates facilities, or otherwise holds inside information it must disclose
+  algo_trader: Market participant engaging in algorithmic trading
+  dea_provider: Market participant providing direct electronic access to an OMP
+  ppat: Person professionally arranging transactions (e.g. an OMP or broker)
+  ppet: Person professionally executing transactions under Article 16 MAR who also executes non-financial wholesale energy transactions
+  any_person: Any natural or legal person, including employees and traders
+
+obligations:
+
+  # ----------------------------------------------------------------- registration
+  - id: REMIT-REG-01
+    area: registration
+    title: Register with the NRA before trading
+    legal_basis: ["Article 9(1) REMIT", "Article 9(4) REMIT"]
+    binding: law
+    applies_to: [market_participant]
+    status: in_force
+    requirement: >-
+      Register with the NRA of the Member State of establishment or residence, and
+      submit the registration form before entering into any reportable transaction.
+      Register with one NRA only.
+    procedure_should_cover:
+      - Names the NRA the company is registered with and its ACER code
+      - Requires registration to be in place before any new entity or desk starts reportable trading
+      - Assigns an owner for the registration
+    guidance: ["ACER Guidance 6.1, section 8.7"]
+    related_behaviours: [registration_failure]
+
+  - id: REMIT-REG-02
+    area: registration
+    title: Keep registration data up to date
+    legal_basis: ["Article 9(5) REMIT"]
+    binding: law
+    applies_to: [market_participant]
+    status: in_force
+    requirement: >-
+      Report any change to the registration information to the NRA promptly. This
+      includes where the company publishes its inside information.
+    procedure_should_cover:
+      - Defines events that trigger an update (e.g. new managers, ownership changes, new IIP, new backup publication channel)
+      - Sets a prompt timeline and an owner for submitting changes
+      - Requires periodic review of registration data
+    guidance: ["ACER Guidance 6.1, section 8.9", "ACER Guidance 6.1, section 4.2.1, para. (124)"]
+    related_behaviours: [registration_failure]
+
+  - id: REMIT-REG-03
+    area: registration
+    title: Designate an EU representative (third-country participants)
+    legal_basis: ["Article 9(1), second subparagraph, REMIT"]
+    binding: law
+    applies_to: [third_country_mp]
+    status: in_force
+    requirement: >-
+      A third-country market participant must appoint a representative in a Member
+      State where it is active, by written mandate. The representative must have the
+      powers and means to deal with NRAs and ACER. Its contact details must be notified
+      to that NRA and to ACER, and the participant registers with that NRA.
+    procedure_should_cover:
+      - Identifies the representative and the written mandate
+      - States the representative's powers to receive and answer NRA/ACER requests and to provide access to information
+      - Records that the representative's contact details were notified to the NRA and ACER
+    guidance: []
+    related_behaviours: [registration_failure]
+
+  # ----------------------------------------------------------------- reporting
+  - id: REMIT-REP-01
+    area: reporting
+    title: Report transactions and orders through an RRM
+    legal_basis: ["Article 8(1) REMIT"]
+    binding: law
+    applies_to: [market_participant]
+    status: in_force
+    requirement: >-
+      Report records of wholesale energy transactions, including orders to trade, to
+      ACER through a registered reporting mechanism (RRM), either directly or through a
+      third party. The report covers the product, price, quantity, execution date and
+      time, the parties and the beneficiaries.
+    procedure_should_cover:
+      - Lists the reportable products and venues the company trades
+      - Names the RRM(s) and any third party reporting on the company's behalf
+      - Covers both executed trades and orders to trade
+      - Covers OTC and non-standard contracts, not only exchange trades
+    guidance: ["ACER TRUM v7.0 (until 2027-10-29)", "ACER TRUM v8.0 (from 2027-10-29)"]
+    related_behaviours: [data_reporting_failure]
+
+  - id: REMIT-REP-02
+    area: reporting
+    title: Meet reporting deadlines
+    legal_basis: ["Article 10 REMIT IR 2026"]
+    binding: law
+    applies_to: [market_participant]
+    status: in_force
+    requirement: >-
+      Standard contracts must be reported as soon as possible and no later than two
+      working days after the trade, order or lifecycle event. Non-standard contracts
+      must be reported no later than ten working days. Different rules apply to
+      auctions and LNG.
+    procedure_should_cover:
+      - States the two-working-day deadline for standard contracts
+      - States the ten-working-day deadline for non-standard contracts
+      - Covers lifecycle events (amendments, cancellations, terminations)
+      - Has a daily or regular reconciliation that detects late or missing reports
+    guidance: ["ACER Open Letter IR 2026, section 8"]
+    related_behaviours: [data_reporting_failure]
+    notes: Deadlines apply since 2026-04-29 (Implementing Regulation (EU) 2026/256). Earlier procedures may still cite 1348/2014 timings.
+
+  - id: REMIT-REP-03
+    area: reporting
+    title: Keep responsibility for delegated reporting
+    legal_basis: ["Article 8(1) REMIT", "Article 8(4) REMIT"]
+    binding: law
+    applies_to: [market_participant]
+    status: in_force
+    requirement: >-
+      Overall responsibility for reporting stays with the market participant. The
+      obligation counts as fulfilled once the information has been received from a
+      third party, an OMP, a trade repository or another entity listed in Article 8(4)
+      that reports on the participant's behalf.
+    procedure_should_cover:
+      - Identifies which trades are reported by OMPs or third parties and which the company reports itself
+      - Requires checks that delegated reports were actually submitted and are correct
+      - Covers what happens when the RRM or third party fails
+    guidance: ["ACER Q&A, Q 2.4.50"]
+    related_behaviours: [data_reporting_failure]
+
+  - id: REMIT-REP-04
+    area: reporting
+    title: Report exposures (from 2027)
+    legal_basis: ["Article 8(1) REMIT", "Article 6 REMIT IR 2026"]
+    binding: law
+    applies_to: [market_participant]
+    status: upcoming
+    applies_from: 2027-01-01
+    requirement: >-
+      Market participants above the 600 GWh threshold must report their exposures by
+      product. Threshold assessment for 2027 uses transactions concluded by
+      31 December 2026. The first report is due by 31 October 2027 and reports are
+      quarterly after that.
+    procedure_should_cover:
+      - Explains how the 600 GWh threshold is assessed and by whom
+      - Sets quarterly report deadlines from October 2027
+    guidance: ["ACER Guidance on reporting exposure v1.0"]
+    related_behaviours: [data_reporting_failure]
+
+  - id: REMIT-REP-05
+    area: reporting
+    title: Provide fundamental data and disclosed inside information to ACER
+    legal_basis: ["Article 8(5) REMIT"]
+    binding: law
+    applies_to: [mp_with_inside_info]
+    status: in_force
+    requirement: >-
+      Provide ACER and NRAs with information on the capacity and use of production,
+      storage, consumption, transmission and LNG facilities. This includes planned and
+      unplanned unavailability and inside information disclosed under Article 4. In
+      practice this is usually done through the IIP and the ENTSO transparency platforms.
+    procedure_should_cover:
+      - States how fundamental data and disclosed inside information reach ACER (e.g. via the IIP's reporting)
+    guidance: ["ACER MoP on data reporting"]
+    related_behaviours: [data_reporting_failure]
+
+  # ----------------------------------------------------------------- insider trading
+  - id: REMIT-INS-01
+    area: insider_trading
+    title: Prevent trading on inside information
+    legal_basis: ["Article 3(1) REMIT", "Article 3(2) REMIT", "Article 3(5) REMIT"]
+    binding: law
+    applies_to: [any_person, market_participant]
+    status: in_force
+    requirement: >-
+      Persons with inside information must not use it to trade, or to cancel or amend
+      existing orders. They must not disclose it outside the normal course of their
+      duties, and must not recommend or induce others to trade on it. Where the holder
+      is a company, the prohibition also covers the individuals who take part in the
+      trading decision.
+    procedure_should_cover:
+      - Defines inside information and gives energy-specific examples (outages, capacity changes)
+      - Prohibits trading, recommending and unauthorised disclosure while in possession of inside information
+      - Explicitly covers cancelling or amending orders placed before the information was received
+      - Describes how access to inside information is restricted (information barriers, need-to-know)
+      - Describes how staff are trained and what they must do when they receive inside information
+    guidance: ["ACER Guidance 6.1, section 5.2.2", "ACER Q&A, Q 3.7.21"]
+    related_behaviours: [insider_trading]
+
+  - id: REMIT-INS-02
+    area: insider_trading
+    title: Use the unplanned-outage exemption correctly
+    legal_basis: ["Article 3(4)(b) REMIT"]
+    binding: law
+    applies_to: [mp_with_inside_info]
+    status: in_force
+    requirement: >-
+      Producers, storage operators and LNG import operators may trade only to cover the
+      immediate physical loss from an unplanned outage, where needed to meet existing
+      contracts or agreed with the TSO. The related transaction information must be
+      reported to ACER and the NRA. The Article 4(1) disclosure obligation still applies.
+    procedure_should_cover:
+      - Limits exemption trades to covering the immediate physical loss
+      - Requires reporting the exemption trades to ACER and the NRA
+      - Confirms that the outage is still disclosed under Article 4(1)
+      - States that the exemption cannot be combined with a delayed disclosure under Article 4(2)
+    guidance: ["ACER Guidance 6.1, section 5.5.2", "ACER Guidance 6.1, section 4.4, para. (136)"]
+    related_behaviours: [insider_trading]
+
+  # ----------------------------------------------------------------- disclosure
+  - id: REMIT-DIS-01
+    area: disclosure
+    title: Disclose inside information through an IIP
+    legal_basis: ["Article 4(1) REMIT"]
+    binding: law
+    applies_to: [mp_with_inside_info]
+    status: in_force
+    requirement: >-
+      Publicly disclose inside information about the company's own or controlled
+      business and facilities, including group undertakings. Since REMIT II this must
+      be done through an Inside Information Platform (IIP). A company website or social
+      media may be used only in addition, with identical content.
+    procedure_should_cover:
+      - Names the IIP(s) used
+      - Covers facilities of the parent and related undertakings, not only the company's own
+      - States that website or other channels are additional only and must carry identical content
+      - Describes who decides whether information is inside information and who publishes
+    guidance: ["ACER Guidance 6.1, section 4.2.1, paras. (116)-(123)"]
+    related_behaviours: [failure_to_publish_inside_information]
+
+  - id: REMIT-DIS-02
+    area: disclosure
+    title: Disclose without delay (at the latest within one hour)
+    legal_basis: ["Article 4(1) REMIT"]
+    binding: guidance
+    applies_to: [mp_with_inside_info]
+    status: in_force
+    requirement: >-
+      Disclosure must be timely. ACER expects publication as soon as possible and at the
+      latest within one hour, unless other applicable rules set a different time.
+    procedure_should_cover:
+      - Sets the "as soon as possible, at the latest within one hour" target
+      - Covers outages and events outside office hours (on-call or 24/7 arrangements)
+      - Requires the publication time to be recorded
+    guidance: ["ACER Guidance 6.1, section 4.3", "ACER MoP, Annex VII, field (5)"]
+    related_behaviours: [failure_to_publish_inside_information]
+
+  - id: REMIT-DIS-03
+    area: disclosure
+    title: Make disclosures complete, correct and in the standard UMM format
+    legal_basis: ["Article 4(1) REMIT"]
+    binding: guidance
+    applies_to: [mp_with_inside_info]
+    status: in_force
+    requirement: >-
+      Each Urgent Market Message (UMM) should contain the data fields in Annex VII of the
+      REMIT MoP, be concise and specific, and leave out executive statements or
+      advertising. Forecasts (e.g. outage duration) must be based on all available data
+      and updated when they change. An incomplete or incorrect disclosure counts as
+      non-effective.
+    procedure_should_cover:
+      - Refers to the UMM fields in Annex VII of the REMIT MoP or provides a template
+      - Requires updates when the expected duration or capacity changes
+      - Excludes statements, advertising and disclaimers from the message body
+      - Includes a check of completeness and correctness before publication
+    guidance: ["ACER Guidance 6.1, section 4.2.2, paras. (128)-(132)", "ACER MoP, Annex VII"]
+    related_behaviours: [failure_to_publish_inside_information]
+
+  - id: REMIT-DIS-04
+    area: disclosure
+    title: Delay disclosure only under the Article 4(2) conditions
+    legal_basis: ["Article 4(2) REMIT"]
+    binding: law
+    applies_to: [mp_with_inside_info]
+    status: in_force
+    requirement: >-
+      Disclosure may exceptionally be delayed to protect legitimate interests, but only
+      if the delay is not likely to mislead the public, confidentiality is ensured and no
+      trading decisions are based on the information. The information and a
+      justification must be sent to ACER and the NRA without delay. Disclosure follows as
+      soon as the legitimate interest ends.
+    procedure_should_cover:
+      - Names who may decide to delay and how the decision is documented
+      - Lists the three conditions (legitimate interest, not misleading, confidentiality) and the no-trading rule
+      - Requires notification of ACER and the NRA without delay, with justification, using ACER's standard format
+      - Requires disclosure as soon as the reason for the delay ends
+    guidance: ["ACER Guidance 6.1, section 4.4"]
+    related_behaviours: [failure_to_publish_inside_information, insider_trading]
+
+  - id: REMIT-DIS-05
+    area: disclosure
+    title: Handle selective disclosure
+    legal_basis: ["Article 4(3) REMIT"]
+    binding: law
+    applies_to: [mp_with_inside_info, any_person]
+    status: in_force
+    requirement: >-
+      If inside information is passed on in the normal course of duties to someone
+      without a duty of confidentiality, it must be made public at the same time. If it
+      was passed on unintentionally, it must be made public as soon as possible.
+    procedure_should_cover:
+      - Requires confidentiality obligations (NDAs) for external recipients of inside information
+      - Requires immediate public disclosure after an unintentional leak
+    guidance: ["ACER Guidance 6.1, section 5.2.2"]
+    related_behaviours: [failure_to_publish_inside_information, insider_trading]
+
+  - id: REMIT-DIS-06
+    area: disclosure
+    title: Have a fallback if the IIP fails
+    legal_basis: ["Article 4(1) REMIT"]
+    binding: guidance
+    applies_to: [mp_with_inside_info]
+    status: in_force
+    requirement: >-
+      Companies are not responsible for temporary technical problems of an IIP if they
+      submitted on time. ACER suggests considering a compliant backup solution, declared
+      in the registration, and switching platforms if problems persist. While disclosure
+      is delayed, the insider trading prohibition still applies.
+    procedure_should_cover:
+      - Describes the backup publication channel and when to use it
+      - Reminds that trading on the information remains prohibited until it is public
+    guidance: ["ACER Guidance 6.1, section 4.2.2, para. (127)"]
+    related_behaviours: [failure_to_publish_inside_information]
+
+  # ----------------------------------------------------------------- manipulation
+  - id: REMIT-MAN-01
+    area: market_manipulation
+    title: Prevent market manipulation
+    legal_basis: ["Article 5 REMIT", "Article 2(2) REMIT", "Article 2(3) REMIT"]
+    binding: law
+    applies_to: [any_person, market_participant]
+    status: in_force
+    requirement: >-
+      Engaging in, or attempting, market manipulation is prohibited. ACER lists the
+      practices it considers relevant, for example wash trades, layering, spoofing,
+      marking the close, capacity withholding and transmission capacity hoarding.
+    procedure_should_cover:
+      - Prohibits manipulation and attempted manipulation
+      - Describes the prohibited practices relevant to the company's markets, with examples
+      - Covers capacity withholding where the company owns generation, storage or transport assets
+      - Covers internal trades between desks or group companies (wash trade risk)
+      - Requires staff to report concerns to compliance
+    guidance: ["ACER Guidance 6.1, section 6.3.2", "ACER GN 1/2017 (wash trades)", "ACER GN 1/2019 (layering and spoofing)", "ACER GN 1/2018 (transmission capacity hoarding)"]
+    related_behaviours: [wash_trades, layering, spoofing, marking_reference_period, capacity_withholding_physical, capacity_withholding_economic, transmission_capacity_hoarding]
+
+  # ----------------------------------------------------------------- algorithmic trading
+  - id: REMIT-ALG-01
+    area: algorithmic_trading
+    title: Systems and risk controls for algorithmic trading
+    legal_basis: ["Article 5a(1) REMIT"]
+    binding: law
+    applies_to: [algo_trader]
+    status: in_force
+    requirement: >-
+      Have effective systems and risk controls so that algorithmic trading systems are
+      resilient, have enough capacity, work within thresholds and limits, prevent
+      erroneous orders and do not create a disorderly market. They must also comply with
+      REMIT and the rules of connected OMPs. Business continuity arrangements, full
+      testing and monitoring are required.
+    procedure_should_cover:
+      - Defines pre-trade limits and thresholds (price, volume, order rate)
+      - Describes controls against erroneous orders (including a kill switch)
+      - Describes testing before deployment and after changes
+      - Describes business continuity arrangements for system failure
+      - Describes ongoing monitoring of algorithm behaviour
+    guidance: []
+    related_behaviours: [algorithmic_trading_requirements, erroneous_orders]
+
+  - id: REMIT-ALG-02
+    area: algorithmic_trading
+    title: Notify algorithmic trading to the NRA and ACER
+    legal_basis: ["Article 5a(2) REMIT"]
+    binding: law
+    applies_to: [algo_trader]
+    status: in_force
+    requirement: >-
+      Notify the NRA of registration and ACER that the company engages in algorithmic
+      trading. The NRA can ask for strategy descriptions, parameters, limits, controls and
+      testing details.
+    procedure_should_cover:
+      - Records that the notification was made and who maintains it
+      - Keeps strategy descriptions, parameters and controls ready to provide on request
+    guidance: []
+    related_behaviours: [algorithmic_trading_requirements]
+
+  - id: REMIT-ALG-03
+    area: algorithmic_trading
+    title: Keep algorithmic trading records for five years
+    legal_basis: ["Article 5a(2), third subparagraph, REMIT"]
+    binding: law
+    applies_to: [algo_trader]
+    status: in_force
+    requirement: >-
+      Keep records on the matters in Article 5a(2) for five years, sufficient for the NRA
+      to monitor compliance.
+    procedure_should_cover:
+      - States a retention period of at least five years
+      - Lists the records kept (strategies, parameters, limits, tests, changes)
+    guidance: []
+    related_behaviours: [algorithmic_trading_requirements]
+
+  - id: REMIT-ALG-04
+    area: algorithmic_trading
+    title: Direct electronic access providers
+    legal_basis: ["Article 5a(3) REMIT"]
+    binding: law
+    applies_to: [dea_provider]
+    status: in_force
+    requirement: >-
+      A market participant providing direct electronic access to an OMP must notify the
+      NRA and ACER, be able to describe its systems and controls and show they are
+      applied, and keep records for five years.
+    procedure_should_cover:
+      - Records the DEA notification
+      - Describes controls over DEA clients
+      - States a retention period of at least five years
+    guidance: []
+    related_behaviours: [algorithmic_trading_requirements]
+
+  # ----------------------------------------------------------------- suspicious transactions (PPAT / PPET)
+  - id: REMIT-STR-01
+    area: suspicious_transactions
+    title: Notify suspicious orders and transactions within four weeks
+    legal_basis: ["Article 15(1) REMIT", "Article 15(2) REMIT"]
+    binding: law
+    applies_to: [ppat, ppet]
+    status: in_force
+    requirement: >-
+      Where there is a reasonable suspicion that an order or transaction, on or off an
+      OMP, could breach Article 3, 4 or 5, notify ACER and the NRA without further delay
+      and no later than four weeks after becoming aware of the suspicious event.
+    procedure_should_cover:
+      - States the "without further delay, at the latest four weeks" deadline
+      - Defines when the clock starts (awareness of the suspicious event)
+      - Covers orders, transactions, cancellations and modifications, on and off venue
+      - Covers potential breaches of all three articles (3, 4 and 5)
+    guidance: ["ACER Guidance 6.1, section 9.3.3", "ACER Guidance 6.1, section 9.3.4"]
+    related_behaviours: [stor_failure]
+    notes: Not an obligation for a market participant that is not a PPAT or PPET. Market participants may still notify voluntarily.
+
+  - id: REMIT-STR-02
+    area: suspicious_transactions
+    title: Maintain surveillance arrangements, systems and procedures
+    legal_basis: ["Article 15(3) REMIT"]
+    binding: law
+    applies_to: [ppat, ppet]
+    status: in_force
+    requirement: >-
+      Establish and maintain effective arrangements, systems and procedures to identify
+      potential breaches, to detect and report suspicious orders and transactions, and to
+      keep surveillance staff free of conflicts of interest and independent. ACER expects
+      this to be proportionate to the size and activity of the firm.
+    procedure_should_cover:
+      - Describes the surveillance system or alerts used to detect potential breaches
+      - Guarantees the independence of surveillance staff and addresses conflicts of interest
+      - Describes training for staff on REMIT compliance
+      - Describes periodic review of the effectiveness of surveillance
+    guidance: ["ACER Guidance 6.1, section 9.4.1", "ACER Guidance 6.1, section 9.4.2"]
+    related_behaviours: [stor_failure]
+
+  - id: REMIT-STR-03
+    area: suspicious_transactions
+    title: Document the assessment of alerts
+    legal_basis: ["Article 15(3) REMIT"]
+    binding: guidance
+    applies_to: [ppat, ppet]
+    status: in_force
+    requirement: >-
+      ACER expects a traceable process from alert to decision. Key decision points
+      should be recorded and data stored. Notifications should be substantiated, and
+      past events can be notified when new information makes them suspicious.
+    procedure_should_cover:
+      - Describes how an alert is assessed and who decides whether a suspicion is reasonable
+      - Requires each decision and its reasoning to be recorded, including decisions not to notify
+      - Covers notification of past events that become suspicious later
+      - Explains how notifications are written and submitted via ACER's Notification Platform
+    guidance: ["ACER Guidance 6.1, section 9.3.3, paras. (453)-(458)", "ACER Guidance 6.1, section 9.4.2, para. (473)"]
+    related_behaviours: [stor_failure]
+
+  - id: REMIT-STR-04
+    area: suspicious_transactions
+    title: Notify the right authorities
+    legal_basis: ["Article 15(4) REMIT"]
+    binding: law
+    applies_to: [ppat, ppet]
+    status: in_force
+    requirement: >-
+      Notifications go to ACER and to the NRAs of the Member States where the market
+      participant concerned is registered and where the product is delivered, following
+      those Member States' notification rules.
+    procedure_should_cover:
+      - Identifies which NRAs must be notified in a cross-border case
+    guidance: []
+    related_behaviours: [stor_failure]
