@@ -6,7 +6,8 @@
   python -m lens eval runs/nordwind/findings.json demo/nordwind/answer_key.yaml
   python -m lens serve                                                 # local server for the Word add-in
 
-Needs ANTHROPIC_API_KEY for real runs.
+Real runs need ANTHROPIC_API_KEY, or `--backend claude-code` to use your Claude
+subscription through a logged-in Claude Code CLI (no API key needed).
 """
 from __future__ import annotations
 
@@ -19,6 +20,21 @@ from pathlib import Path
 import yaml
 
 from . import analyze, checklist, documents, evaluate, llm, report
+
+
+def backend_transport(backend: str, model: str):
+    """None for the API; a `claude -p` transport for the Claude Code subscription."""
+    if backend == "api":
+        return None
+    from . import claude_cli
+
+    status = claude_cli.auth_status()
+    if not status.get("loggedIn"):
+        raise SystemExit("Claude Code is not logged in. Run `claude` once and log in with your Claude account.")
+    if status.get("authMethod") not in ("claude.ai", "oauth_token"):
+        print(f"warning: Claude Code uses '{status.get('authMethod')}' authentication, not a Claude subscription.",
+              file=sys.stderr)
+    return claude_cli.make_transport(model)
 
 ROOT = Path(__file__).resolve().parent.parent
 
@@ -57,7 +73,9 @@ def cmd_analyze(a) -> int:
     as_of = dt.date.fromisoformat(a.as_of) if a.as_of else dt.date.today()
     key = yaml.safe_load(Path(a.mock_key).read_text(encoding="utf-8")) if a.mock_key else None
     replay = json.loads(Path(a.replay).read_text(encoding="utf-8")) if a.replay else None
-    model = "mock" if key else (a.replay_label or "replay") if replay else a.model
+    model = "mock" if key else (a.replay_label or "replay") if replay else (
+        a.model if a.backend == "api" else f"{a.model} via Claude Code")
+    live = None if (key or replay or a.dry_run) else backend_transport(a.backend, a.model)
 
     run = {"company": prof["company"], "checklist_version": cl["meta"]["version"], "as_of": str(as_of),
            "model": model, "documents": []}
@@ -67,7 +85,7 @@ def cmd_analyze(a) -> int:
         checks = checklist.select(cl, prof["profile"], d["types"], today=as_of)
         n = sum(1 for c in checks if c.state == "run")
         print(f"{d['file']}: {len(paras)} paragraphs, {n} checks", file=sys.stderr)
-        transport = mock_transport(key, d["file"]) if key else replay_transport(replay, d["file"]) if replay else None
+        transport = mock_transport(key, d["file"]) if key else replay_transport(replay, d["file"]) if replay else live
         findings = analyze.analyse(d["file"], prof["company"], paras, checks, model=a.model,
                                    batch_size=a.batch_size, transport=transport, dry_run=a.dry_run,
                                    log=lambda m: print(m, file=sys.stderr))
@@ -100,6 +118,8 @@ def main(argv=None) -> int:
     an.add_argument("--checklist", default=str(ROOT / "obligations/remit.yaml"))
     an.add_argument("--as-of", help="assessment date (YYYY-MM-DD), default today")
     an.add_argument("--model", default=llm.DEFAULT_MODEL)
+    an.add_argument("--backend", choices=["api", "claude-code"], default="api",
+                     help="api: Anthropic API key; claude-code: your Claude subscription via the `claude` CLI")
     an.add_argument("--batch-size", type=int, default=20)
     an.add_argument("--out", default="runs/latest")
     an.add_argument("--dry-run", action="store_true")
@@ -111,6 +131,8 @@ def main(argv=None) -> int:
     sv.add_argument("--port", type=int, default=3000)
     sv.add_argument("--checklist", default=str(ROOT / "obligations/remit.yaml"))
     sv.add_argument("--model", default=llm.DEFAULT_MODEL)
+    sv.add_argument("--backend", choices=["api", "claude-code"], default="api",
+                     help="api: Anthropic API key; claude-code: your Claude subscription via the `claude` CLI")
     sv.add_argument("--cert", help="TLS certificate (default ~/.office-addin-dev-certs/localhost.crt)")
     sv.add_argument("--key", help="TLS key (default ~/.office-addin-dev-certs/localhost.key)")
     sv.add_argument("--no-tls", action="store_true", help="plain HTTP (API tests only; Word needs HTTPS)")

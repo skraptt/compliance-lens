@@ -22,13 +22,16 @@ export ANTHROPIC_API_KEY=...
 python -m lens analyze demo/nordwind/profile.yaml --as-of 2026-11-18 --out runs/nordwind
 open runs/nordwind/report.md
 
+# no API key? use your Claude subscription through Claude Code (logged-in `claude` CLI)
+python -m lens analyze demo/nordwind/profile.yaml --as-of 2026-11-18 --backend claude-code --out runs/nordwind
+
 # score the run against the answer key
 python -m lens eval runs/nordwind/findings.json demo/nordwind/answer_key.yaml
 ```
 
 <p><img src="docs/pane-selection.png" width="260" alt="Selection analysis"> <img src="docs/pane-document.png" width="260" alt="Document scan"></p>
 
-**Word add-in:** run `python -m lens serve` and sideload `addin/manifest.xml`. You can then analyse a selected passage, or scan the whole document with highlights and comments. Set-up for Mac is in [addin/README.md](addin/README.md).
+**Word add-in:** run `python -m lens serve` (or `python -m lens serve --backend claude-code`) and sideload `addin/manifest.xml`. You can then analyse a selected passage, or scan the whole document with highlights and comments. Set-up for Mac is in [addin/README.md](addin/README.md).
 
 Offline options: `--dry-run` prints the prompts; `--mock-key demo/nordwind/answer_key.yaml` runs the pipeline with a fake model; `--replay responses.json` replays saved model output. Tests: `python -m unittest discover tests`.
 

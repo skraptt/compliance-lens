@@ -45,7 +45,7 @@ class App:
             "profile_questions": cl.get("profile_questions", []),
             "addressees": cl.get("addressees", {}),
             "document_types": cl.get("document_types", {}),
-            "model": self.model,
+            "model": self.model if self.transport is None else f"{self.model} (Claude Code)",
         }
 
     def _checks(self, body: dict):
@@ -148,7 +148,10 @@ def default_certs() -> tuple[Path, Path]:
 
 
 def main(a) -> int:
-    app = App(Path(a.checklist), model=a.model, log=lambda m: print(m, file=sys.stderr))
+    from .__main__ import backend_transport
+
+    transport = backend_transport(a.backend, a.model)
+    app = App(Path(a.checklist), model=a.model, transport=transport, log=lambda m: print(m, file=sys.stderr))
     cert = key = None
     if not a.no_tls:
         cert, key = (Path(a.cert), Path(a.key)) if a.cert else default_certs()
@@ -158,7 +161,8 @@ def main(a) -> int:
             return 1
     httpd = serve(app, a.port, cert, key)
     scheme = "http" if a.no_tls else "https"
-    print(f"Compliance Lens on {scheme}://localhost:{a.port}  (checklist v{app.checklist['meta']['version']}, model {a.model})", file=sys.stderr)
+    via = "Claude Code subscription" if a.backend == "claude-code" else "Anthropic API"
+    print(f"Compliance Lens on {scheme}://localhost:{a.port}  (checklist v{app.checklist['meta']['version']}, model {a.model} via {via})", file=sys.stderr)
     try:
         httpd.serve_forever()
     except KeyboardInterrupt:

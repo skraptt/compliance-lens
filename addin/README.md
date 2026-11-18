@@ -22,11 +22,16 @@ Word ── task pane (https://localhost:3000/taskpane.html)
    ```bash
    npx office-addin-dev-certs install
    ```
-3. **Start the server** (keep this terminal open):
+3. **Start the server** (keep this terminal open). Pick one way to reach Claude:
    ```bash
+   # a) with your Claude subscription (Pro/Max): needs Claude Code installed and logged in
+   python3 -m lens serve --backend claude-code
+
+   # b) with an Anthropic API key (billed per use)
    export ANTHROPIC_API_KEY=sk-ant-...
    python3 -m lens serve
    ```
+   With **a)**, the engine calls `claude -p` with every tool switched off, in an empty temporary folder, and without `ANTHROPIC_API_KEY`, so usage goes to your subscription. It counts against the same limits as your normal Claude use. A whole-document scan makes a few calls; a selection makes one.
    Open https://localhost:3000/taskpane.html in Safari. If the page loads without a certificate warning, the certificate works. Outside Word it will only say "Compliance Lens runs in Word".
 4. **Sideload the manifest:**
    ```bash
