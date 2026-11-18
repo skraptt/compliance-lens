@@ -26,6 +26,7 @@ from . import analyze, checklist, documents, llm
 
 ROOT = Path(__file__).resolve().parent.parent
 ADDIN = ROOT / "addin"
+DEMO_PROFILE = ROOT / "demo" / "nordwind" / "profile.yaml"
 MAX_BODY = 5_000_000
 
 
@@ -46,7 +47,18 @@ class App:
             "addressees": cl.get("addressees", {}),
             "document_types": cl.get("document_types", {}),
             "model": self.model if self.transport is None else f"{self.model} (Claude Code)",
+            "demo": self._demo(),
         }
+
+    @staticmethod
+    def _demo() -> dict | None:
+        """The fictional Nordwind profile, so a new user can try the demo with one click."""
+        try:
+            import yaml
+            d = yaml.safe_load(DEMO_PROFILE.read_text(encoding="utf-8"))
+            return {"company": d["company"], "profile": {k: bool(v) for k, v in d["profile"].items()}}
+        except Exception:  # noqa: BLE001 - the demo is optional
+            return None
 
     def _checks(self, body: dict):
         profile = {k: bool(v) for k, v in (body.get("profile") or {}).items()}
@@ -54,7 +66,11 @@ class App:
         if not doc_types:
             raise ValueError("choose at least one document type")
         as_of = dt.date.fromisoformat(body["as_of"]) if body.get("as_of") else dt.date.today()
-        return checklist.select(self.checklist, profile, doc_types, today=as_of), as_of
+        checks = checklist.select(self.checklist, profile, doc_types, today=as_of)
+        if not any(c.state == "run" for c in checks):
+            raise ValueError("no REMIT checks apply with these settings. In Setup, tick what is true "
+                             "for the company (at least that it trades on EU wholesale energy markets).")
+        return checks, as_of
 
     def selection(self, body: dict) -> dict:
         text = str(body.get("text") or "")

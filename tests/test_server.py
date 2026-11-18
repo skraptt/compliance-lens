@@ -68,6 +68,8 @@ class ServerTest(unittest.TestCase):
         self.assertEqual(code, 200)
         self.assertIn("IIP", meta["document_types"])
         self.assertTrue(meta["profile_questions"])
+        self.assertEqual(meta["demo"]["company"], "Nordwind Energy Trading GmbH")
+        self.assertTrue(meta["demo"]["profile"]["algo_trader"])
 
     def test_static_files_and_blocked_paths(self):
         code, ctype, body = self.get("/taskpane.html")
@@ -94,6 +96,9 @@ class ServerTest(unittest.TestCase):
         code, data = self.post("/api/selection", {"text": "x" * 50, "doc_types": [], "profile": PROFILE})
         self.assertEqual(code, 400)
         self.assertIn("document type", data["error"])
+        code, data = self.post("/api/selection", {"text": "x" * 50, "doc_types": ["TRP"], "profile": {}})
+        self.assertEqual(code, 400)                                     # empty profile: nothing applies
+        self.assertIn("no REMIT checks apply", data["error"])
 
     def test_scan_uses_the_add_in_paragraph_ids(self):
         md = documents.load(ROOT / "demo/nordwind/src/inside-information-policy.md")

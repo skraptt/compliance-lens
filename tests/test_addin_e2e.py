@@ -126,6 +126,17 @@ class AddinE2E(unittest.TestCase):
             page.wait_for_selector("#doc-types input")
             self.assertFalse(page.is_hidden("#tab-setup"))
             page.check('[data-doctype="IIP"]')
+            self.assertEqual(page.inner_text("#status"), "Ready")           # warning clears once a type is ticked
+            page.click("#demo")                                              # one-click demo profile
+            self.assertTrue(page.is_checked('[data-flag="algo_trader"]'))
+            self.assertFalse(page.is_checked('[data-flag="lng_market_participant"]'))
+            self.assertEqual(page.input_value("#company"), "Nordwind Energy Trading GmbH")
+            self.assertTrue(page.is_checked('[data-doctype="IIP"]'))
+            page.check('[data-flag="dea_provider ppat"]')                   # one answer sets both flags
+            self.assertTrue(page.is_checked('[data-flag="ppat"]'))
+            page.uncheck('[data-flag="dea_provider ppat"]')                 # PPAT stays implied while DEA is ticked
+            page.uncheck('[data-flag="ppat"]')
+            self.assertFalse(page.is_checked('[data-flag="ppat"]'))
             for flag in ("market_participant", "registered_mp", "mp_disclosing", "has_group_facilities"):
                 page.check(f'[data-flag="{flag}"]')
             page.fill("#company", "Nordwind Energy Trading GmbH")

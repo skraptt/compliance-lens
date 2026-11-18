@@ -295,16 +295,25 @@
 
     var profile = local("cl.profile") || {};
     var seen = {};
+    function box(flags, label) {
+      var on = flags.every(function (f) { return profile[f]; });
+      return '<label><input type="checkbox" data-flag="' + L.escapeHtml(flags.join(" ")) + '"' + (on ? " checked" : "") + "> " +
+        L.escapeHtml(label || flags.join(", ")) + "</label>";
+    }
     $("profile").innerHTML = m.profile_questions.map(function (q) {
-      var flags = q.sets || q.sets_any_of || q.sets_one_of || [];
-      return flags.map(function (flag) {
-        if (seen[flag]) return "";
-        seen[flag] = true;
-        var label = flags.length > 1 ? m.addressees[flag] : q.text;
-        return '<label><input type="checkbox" data-flag="' + L.escapeHtml(flag) + '"' + (profile[flag] ? " checked" : "") + "> " +
-          L.escapeHtml(label || flag) + "</label>";
-      }).join("");
+      // "sets": one answer sets every listed flag. "sets_any_of"/"sets_one_of": the question
+      // heads a group with one choice per flag (each flag shown once across groups).
+      if (q.sets) return box(q.sets, q.text);
+      var flags = (q.sets_any_of || q.sets_one_of || []).filter(function (f) {
+        if (seen[f]) return false;
+        seen[f] = true;
+        return true;
+      });
+      if (!flags.length) return "";
+      return '<div class="group"><div class="q">' + L.escapeHtml(q.text) + ' <span class="small">Tick all that apply.</span></div>' +
+        flags.map(function (f) { return box([f], m.addressees[f]); }).join("") + "</div>";
     }).join("");
+    $("demo").hidden = !m.demo;
 
     $("company").value = local("cl.company") || "";
     $("meta").textContent = "Checklist v" + m.checklist_version + " · model " + m.model;
@@ -319,11 +328,22 @@
     });
     $("profile").addEventListener("change", function () {
       var p = {};
-      document.querySelectorAll("[data-flag]").forEach(function (el) { p[el.dataset.flag] = el.checked; });
+      document.querySelectorAll("[data-flag]").forEach(function (el) {
+        el.dataset.flag.split(" ").forEach(function (f) { p[f] = p[f] || el.checked; });
+      });
       local("cl.profile", p);
       state.selectionCache = {};
+      renderSetup();                                   // keep boxes that share a flag in step
     });
     $("company").addEventListener("change", function () { local("cl.company", $("company").value.trim()); });
+    $("demo").addEventListener("click", function () {
+      var d = state.meta.demo;
+      local("cl.profile", d.profile);
+      local("cl.company", d.company);
+      state.selectionCache = {};
+      renderSetup();
+      setStatus("Demo company filled in");
+    });
   }
 
   // ---------------------------------------------------------------- start
