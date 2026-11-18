@@ -44,6 +44,10 @@ scripts/                      checklist checker, md -> docx
 tests/                        offline tests
 ```
 
+## Licence
+
+Code is licensed under [Apache-2.0](LICENSE). The checklist, demo documents, answer key and reviews are licensed under [CC BY 4.0](LICENSE-DATA.md). Cited legal texts and guidance remain the property of their publishers.
+
 ## Roadmap
 
 1. ~~REMIT checklist~~ · 2. ~~engine + demo~~ (real-model evaluation pending) · 3. Word add-in: side panel, analyse selection · 4. whole-document scan with highlights and comments · 5. MAR and enforcement cases
